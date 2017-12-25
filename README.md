@@ -1,5 +1,8 @@
 # 3ds
-Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+).
-http://vita.customfw.xyz 
+Полное руководство по прошивке 3DS, от начала до boot9strap.
+http://3ds.customfw.xyz 
 
-A complete guide to PS Vita / Vita TV Homebrew Enablers, <br /> from stock to HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) or ePSP Homebrew (3.65+).
+A complete guide to 3DS custom firmware, 
+from stock to boot9strap.
+
+This repo is the fork of Plailect's guide with much more additional instructions
