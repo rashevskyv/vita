@@ -1,4 +1,4 @@
-# 3ds
+# PS Vita
 Полное руководство по прошивке 3DS, от начала до boot9strap.
 http://3ds.customfw.xyz 
 
