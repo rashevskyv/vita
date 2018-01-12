@@ -5,11 +5,17 @@ author_profile: true
 ---
 {% include toc title="Разделы" %}
 
-Select the appropriate page for your version from the chart below. {: .notice--primary}
+Выберите в таблице версию прошивки, соответствующую вашей. 
+{: .notice--primary}
 
-Your device version under the "System Information" Screen in Settings. {: .notice--success}
+Версию прошивки можно посмотреть в меню "Настройка", "Система", "Информация о системе". 
+{: .notice--success}
 
-![]({{ base_path }}/images/screenshots/system-version.png) {: .notice--info}
+![]({{ base_path }}/images/screenshots/system-version.png) 
+{: .text-center}
+{: .notice--info}
+
+#### Выберите прошивку
 
 <table>
   <colgroup>
@@ -19,31 +25,31 @@ Your device version under the "System Information" Screen in Settings. {: .notic
   </colgroup>
   <thead>
     <tr>
-      <th style="text-align: center">From</th>
-      <th style="text-align: center">To</th>
-      <th style="text-align: center">Method</th>
+      <th style="text-align: center">От</th>
+      <th style="text-align: center">До</th>
+      <th style="text-align: center">Способ</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center; font-weight: bold;">1.03</td>
       <td style="text-align: center; font-weight: bold;">3.57</td>
-      <td style="text-align: center; font-weight: bold;"><a href="manual-update-heus">Manual Update to 3.60 (Henkaku Easy Update Server)</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="manual-update-heus">Обновление до 3.60 (Henkaku Easy Update Server)</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;">3.60</td>
       <td style="text-align: center; font-weight: bold;">3.60</td>
-      <td style="text-align: center; font-weight: bold;"><a href="running-henkaku(browser)">Running Henkaku (Browser)</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="running-henkaku-browser">Запуск Henkaku через браузер</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;">3.61</td>
       <td style="text-align: center; font-weight: bold;">3.63</td>
-      <td style="text-align: center; font-weight: bold;"><a href="ARK(psvimgtools)">ARK ePSP CFW (psvimgtools)</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="ark-epsp-psvimgtools">ARK ePSP CFW (psvimgtools)</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;">3.65</td>
       <td style="text-align: center; font-weight: bold;">3.65</td>
-      <td style="text-align: center; font-weight: bold;"><a href="VHBL(psvimgtools)">VHBL ePSP Homebrew Loader (psvimgtools)</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="vhbl-psvimgtools">VHBL ePSP Homebrew Loader (psvimgtools)</a></td>
     </tr>
   </tbody>
 </table>

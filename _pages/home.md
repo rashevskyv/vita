@@ -7,7 +7,7 @@ header:
   overlay_image: images/home-page-feature.jpg
   overlay_filter: 0.5
   caption:
-excerpt: 'Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+).<br />**Последнее изменение:** 25 декабря 2017'
+excerpt: 'Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+).<br />**Последнее изменение:** 3 января 2018'
 ---
 
 {% include toc title="Разделы" %}
@@ -29,35 +29,35 @@ excerpt: 'Полное руководство по прошивке PS Vita / Vi
 
 ## Что такое Homebrew Enabler?
 
-**Homebrew Enabler** ("HEN") enables you to use more advanced hacks that userland homebrew can't easily do. For instance, signature patches let you install unsigned apps that appear right on your LiveArea screen.
+**Homebrew Enabler** ("HEN") позволяет использовать практически все возможности приставки, которые не доступны пользователям обычных userland-эксплойтов. Например, патчи подписи позволяют запускать не подписанный код прямиком из LiveArea.
 
-HEN can be easily set up on any console that is on 3.60 or lower.
+HEN можно запросто установить на любую приставку с прошивкой 3.60 или ниже.
 
-## What does this guide install?
+## Что устанавливается в этом руководстве?
 
-This guide has the end goal of taking a completely unmodified Vita from stock firmware to a boot time homebrew enabler called HENkaku Ensō (3.60). If your console is on 3.61 or higher, the best you can do is get ePSP CFW or Homebrew.
+Конечная цель этого руководства - это установка на не взломанную Vita HENkaku Ensō (3.60). Если на вашей приставке прошивка выше, чем 3.61 (включительно), максимум чего вы сможете добиться - запустить ePSP CFW или Homebrew.
 
-HENkaku Ensō is currently the only feasible method for running native homebrew on our PS Vita / TV systems. It will install an application that can be used to install packages and manage files called "molecularShell" which we will use to install "VitaShell", another package / file manager with more features. We will also install a boot time exploit to run HENkaku called HENkaku Ensō.
+HENkaku Ensō в данный момент является единственным доступным методом для запуска homebrew на PS Vita / TV. В процессе прошивки будет установлено приложение molecularShell, с помощью которого можно будет устанавливать другие приложения, в том числе файловый менеджер Vita Shell? открывающий полный доступ к файловой системе приставки. Так же установим Ensō - программу, устанавливающую Henkaku специальным образом и не требующую его реактивацию при загрузке системы. 
 
-For information on how HENkaku works, please see [this blog post](https://yifan.lu/2016/10/20/henkaku-koth-solved/) by [Yifan Lu](https://twitter.com/yifanlu).
+Подробнее о работе Henkaku можно прочитать [здесь](https://yifan.lu/2016/10/20/henkaku-koth-solved/) by [Yifan Lu](https://twitter.com/yifanlu).
 
-## What can I do with a Homebrew Enabler?
+## Что HEN позволяет делать?
 
-+ Customize your LiveArea Screen with user-created [themes](http://vstema.com/).
-+ Use "ROM hacks" for games that you own
-+ [Backup, edit, and restore](https://github.com/d3m3vilurr/vita-savemgr) saves for many games.
-+ Play games for older systems with various emulators, using RetroArch or other standalone emulators.
-+ Dump your game cards to a format you can install, and play them without needing the card.
-+ Certain games only: stream live gameplay to your PC wirelessly with Rincheat Streamer.
-+ Play backups of your PSP games on your Vita with Adrenaline ePSP CFW
++ Запускать бекапы игр от PS Vita и PSP с помощью Adrenaline (3.60) или ARK ePSP CFW (3.61-3.63)
++ Настраивать LiveArea по своему вкусу с помощью пользовательских тем [тем](http://vstema.com/).
++ Использовать "ROM-хаки" для установленных игр
++ [Делать резервную копию, редактировать и восстанавливать](https://github.com/d3m3vilurr/vita-savemgr) сохранения для многих игр.
++ Играть в игры от других старых платформ благодаря разным эмуляторам.
++ Дампить купленные игры в формате, который впоследствии можно установить прямо в систему и играть не используя картридж.
++ Стримить геймплей некоторых игр на ПК с помощью Rincheat Streamer.
 
-## What do I need to know before starting?
+## Что нужно знать перед тем, как начать?
 
-+ **Before beginning the guide, you must know the risks of Vita hacking: EVERY time you modify your system, there is always the potential for an UNRECOVERABLE brick. They're very very rare and usually only happen after modifying system files, but still a possibility, however that possibility is slim to none, considering that this guide does not have you modify any critical system files without using specially designed tools to do these modifications.**
-+ This guide will work on PS Vita, PS Vita Slim, and PSTV in all regions on firmware 3.60 or below.
-+ If everything goes according to plan, you will lose no data and end up with everything that you started with (games, PSN Account, saves, etc will be preserved).
-+ **Keep your device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off!**
-+ The PS Vita Slim is essentially identical to the Original PS Vita in terms of software, and that any steps which say "PS Vita" also apply to the slim model.
++ **Перед тем, как начинать прошивку, следует понимать риск взлома: КАЖДЫЙ раз, модифицируя прошивку консоли, вы рискуете получить НЕВОССТАНОВИМЫЙ брик. Вероятность этого крайне низкая, но шанс всё равно есть. Так что убедитесь, что вы СТРОГО следуете всем указаниям.**
++ Инструкция предназначена для всех приставок семейства PS Vita, PS Vita Slim, и PSTV всех регионов с прошивкой 3.60 и ниже.
++ Если всё пройдет по плану, вы ничего не потеряете и всё останется в первоначальном состоянии (игры, PSN-аккаунт, сохранения, и т.п.).
++ **Держите консоль подключенной к зарядному устройству на протяжении всего процесса, чтобы избежать потери данных или поломки, в случае внезапного отключения консоли!**
++ PS Vita Slim и PS Vita FAT фактически одно и то же. Для простаты обе эти консоли будут называться "PS Vita".
 
 ___
 
