@@ -49,11 +49,11 @@ author_profile: true
 ##### Часть II - Установка программ
 
 1. Находясь в VitaShell, перейдите в папку `ux0:`.
-2. Выберите `MaiDumpTool_Vxxx.xxxx_eng.vpk`и нажмите х для начала установки.
-3. Select the `TEMA.vpk`and press X to install it.
-4. Select the `Adrenaline.vpk`and press X to install it.
-5. Select the `savemgr.vpk`and press X to install it.
-6. **PS TV Only:** Select the `AntiBlacklist.vpk`and press X to install it
+2. Выберите `MaiDumpTool_Vxxx.xxxx_eng.vpk` и нажмите (X) для начала установки
+3. Выберите `TEMA.vpk` и нажмите (X) для начала установки
+4. Выберите `Adrenaline.vpk` и нажмите (X) для начала установки
+5. Выберите `savemgr.vpk` и нажмите (X) для начала установки
+6. **Только PS TV:**  Выберите `AntiBlacklist.vpk` и нажмите (X) для начала установки
 7. Закройте VitaShell.
 
 ##### Часть III - Установка Adrenaline
@@ -65,7 +65,6 @@ author_profile: true
 5. После окончания установки, нажмите Х для загрузки в PSP XMB.
 6. Настройте ePSP.
 7. Дважды нажмите кнопку PS, чтобы выйти из эмулятора PSP.
-8. 
 9. Добавьте следующую строку в `ux0:tai/config.txt` под строкой `*KERNEL`: `ux0:app/PSPEMUCFW/sce_module/adrenaline_kernel.skprx`.
 
 ##### Часть IV - Настраиваем Download Enabler

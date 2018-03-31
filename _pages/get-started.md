@@ -1,48 +1,55 @@
 ---
 permalink: /get-started.html
-title: Начнем
+title: Начнем (PS Vita)
 author_profile: true
 ---
 {% include toc title="Разделы" %}
 
-Цвет вашего устройства может отличаться от представленного на картинках, вам стоит обратить внимание на кнопки и особенности каждого типа устройства, чтобы сделать правильный выбор. 
-{: .notice}
+Выберите в таблице версию прошивки, соответствующую вашей. 
 
-Нажмите на изображение вашего устройства, чтобы перейти на соответствующую страницу. 
-{: .notice--primary}
-Действия для установки HENkaku Ensō или ePSP Homebrew могут отличаться для каждого типа устройтсва и версии его прошивки. Эта страница поможет вам определиться с чего именно стоит начать. 
-{: .notice--info}
-Перед тем как начать, пользователям Windows следует включить [отображение расширений файлов](file-extensions-windows)! 
+Версию прошивки можно посмотреть в меню "Настройка", "Система", "Информация о системе". 
 {: .notice--info}
 
-#### Таблица устройств
+![]({{ base_path }}/images/screenshots/system-version.jpg) 
+{: .text-center}
+
+## Выберите прошивку
+
+{: .ntice--info}
 
 <table>
   <colgroup>
-    <col span="1" style="width: 50%;">
-    <col span="1" style="width: 50%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 80%;">
   </colgroup>
   <thead>
     <tr>
-      <th style="text-align: center">PS TV</th>
-      <th style="text-align: center">PS Vita Fat / PS Vita Slim</th>
+      <th style="text-align: center">От</th>
+      <th style="text-align: center">До</th>
+      <th style="text-align: center">Способ</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">
-	    <a href="get-started-pstv">
-	      <img src="{{ base_path }}/images/consoles/pstv.png" style="padding: 0.5em;">
-		</a> 
-	  </td>
-      <td style="text-align: center">
-		<a href="get-started-vita">
-		  <img src="{{ base_path }}/images/consoles/vita_fat.png" style="padding: 0.5em;">
-		</a> 
-		<a href="get-started-vita">
-		  <img src="{{ base_path }}/images/consoles/vita_slim.png" style="padding: 0.5em;">
-		</a>
-	  </td>
+      <td style="text-align: center; font-weight: bold;">1.03</td>
+      <td style="text-align: center; font-weight: bold;">3.57</td>
+      <td style="text-align: center; font-weight: bold;"><a href="manual-update-heus">Обновление до 3.60 (Henkaku Easy Update Server)</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: bold;">3.60</td>
+      <td style="text-align: center; font-weight: bold;">3.60</td>
+      <td style="text-align: center; font-weight: bold;"><a href="get-started-360">Активация Henkaku через браузер</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: bold;">3.61</td>
+      <td style="text-align: center; font-weight: bold;">3.63</td>
+      <td style="text-align: center; font-weight: bold;"><a href="ark-epsp-psvimgtools">ARK ePSP CFW (psvimgtools)</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: bold;">3.65</td>
+      <td style="text-align: center; font-weight: bold;">3.65</td>
+      <td style="text-align: center; font-weight: bold;"><a href="vhbl-psvimgtools">VHBL ePSP Homebrew Loader (psvimgtools)</a></td>
     </tr>
   </tbody>
 </table>

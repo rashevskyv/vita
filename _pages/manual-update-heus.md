@@ -1,38 +1,41 @@
 ---
 permalink: /manual-update-heus.html
-title: Manual Update to 3.60 (HEUS)
+title: Обновление до 3.60 (Henkaku Easy Update Server)
 author_profile: true
 ---
 {% include toc title="Разделы" %}
 
-#### What you need
+## Что понадобится
 
-* An internet connection on your Vita / PS TV
+* Подключение к интернету на Vita / PS TV
 
-#### Instructions
+## Инструкция
 
-##### Section I: HENkaku Easy Update Server Setup
+### Часть I: Настройка подключения к HENkaku Update Server Setup
 
-1. Open the Settings app.
-2. Select 'Network'.
-3. Select 'Wi-Fi Settings'
-4. If you are not connected to the internet, do so now.
-5. Select your current connection. (Should have a green dot to the left.)
-6. Select 'Advanced Settings'
-7. Under 'DNS Settings', choose 'Manual'
-8. Set 'Primary DNS' to '212.47.229.76'.
-9. Leave 'Secondary DNS' blank.
-10. Make sure 'Proxy Server' is set to 'Do Not Use'.
-11. Press OK and back out to the main settings screen.
+1. Откройте "Настройки"
+1. Выберите пункт "Сеть"
+1. Выберите пункт "Настройки Wi-Fi"
+1. Подключитесь к интернету, если консоль еще не подключена
+1. Выберите текущее подключение (то, у которого зеленая точка слева от имени)
+1. Выберите пункт "Дополнительные настройки"
+1. Нажмите на "Настройки DNS" и измените на "Вручную"
+1. Установите значение "Primary DNS" на '212.47.229.76'.
+1. "Дополнительны DNS" оставьте пустым
+1. Убедитесь, что "Прокси-сервер" в положении "Не использовать"
+1. Нажмите "ОК", чтобы сохранить настройки
+1. Вернитесь на стартовый экран меню "Настройки"
 
-##### Section II: Updating to 3.60
+### Часть II: Обновление до 3.60
 
-1. Select 'System Update'.
-2. Select 'Update Using Wi-Fi'
-3. If you get an error saying your system is up to date, that means either your Vita is on 3.60 already, or it is on a firmware > 3.60 and is not supported by HENkaku.
-4. Make sure that the update says '3.60 (変革 Compatible)', if it says anything else, make sure you followed ALL the Steps!
-5. Proceed with the update process and wait for the system to reboot.
+1. Перейдите в пункт "Обновление системы"
+1. Выберите "Обновление с использованием Wi-Fi"
+	* Ошибка C3-12049-6 означает, что у вас и так 3.60 и обновление не нужно, либо что ваша система имеет более высокую прошивку и не поддерживает HENkaku
+1. Удостоверьтесь, что апдейтер пишет "3.60 (変革 Compatible)", если пишет что-то другое, убедитесь, что выполнили ВСЕ предыдущие пункты!
+1. Подтвердите обновление и ждите. По завершению приставка перезагрузится. 
 
-You can now go back into your Advanced Wi-Fi settings and change your DNS settings back if you would like, however, if you leave the DNS Settings alone after updating, you get an aditional update blocker so you wont accidentally update to an unhackable firmware version. {: .notice--info}
+Не меняйте адреса DNS после обновления! Это убережет вас от случайного обновления на не поддерживаемые прошивки!
+{: .notice--info}
 
-Continue to [Running HENkaku (Browser)](running-henkaku-browser) {: .notice--primary}
+Следующий шаг: [Запуск HENkaku](get-started-360) 
+{: .notice--success}
