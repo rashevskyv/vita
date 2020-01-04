@@ -1,8 +1,4 @@
-# PS Vita
-Полное руководство по прошивке 3DS, от начала до boot9strap.
-http://3ds.customfw.xyz 
+# Switch hack guide
+Полное руководство по использованию Switch для того самого
 
-A complete guide to 3DS custom firmware, 
-from stock to boot9strap.
-
-This repo is the fork of Plailect's guide with much more additional instructions
+http://switch.customfw.xyz

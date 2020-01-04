@@ -1,33 +1,33 @@
 ---
-permalink: /troubleshooting.html
-title: Troubleshooting
-author_profile: true
+title: "Проблемы и их решения"
 ---
- 
 
-{% include toc title="Разделы" %}
+{% include toc title="Содержание" %}
 
-If you are unable to boot your device, please look for the section relevant to you, and follow the instructions. Once a solution works for you, you can proceed on with the main guide (The section is fairly long, try using Ctrl+F to search for your issue.) {: .notice--primary}
+### Обязательно к прочтению
 
-## <a name="rm_psn" />Removing an PSN account without formatting your device
+При возникновении проблем, найдите соответствующий раздел и следуйте инструкциям.
 
-#### Instructions
+Если проблема всё ещё не может быть решена и вам требуется помощь, то обращайтесь с уже подготовленным описанием проблемы и проделанных действий по её устранению.
 
-1. TODO: figure out how to do this
+## Не работает эксплойт на основе браузера
 
-## <a name="ts_browser" />A browser based exploit is not working
+Эксплойты, базирующиеся на браузере (например WebKit эксплойт, используемый для HENkaku), нестабильны и часто не срабатывают, но в некоторых случаях это можно исправить, следуя рекомендациям ниже:
 
-Browser based exploits (such as the WebKit exploit used for HENkaku) can be unstable and crash frequently, but they can sometimes be fixed by doing the following steps
+1. Убедитесь, что консоль имеет стабильное сетевое подключение
+1. Запустите браузер, откройте настройки браузера
+1. Прокрутите до конца вниз и нажмите "Delete Cookies" и "Clear Search History"
+1. Попробуйте запустить эксплойт еще раз
 
-1. Launch the browser, then open the browser settings
-2. Scroll to the bottom and click "Delete Cookies" and "Clear Search History"
-3. Try the exploit again
+## Удаление аккаунта PSN без форматирования устройства
 
-## <a name="ts_os0-modification" />A message has appeared about os0: modifications while installing Ensō
+1. Перейдите на [страницу управления учетной записью PSN](https://account.sonyentertainmentnetwork.com/home/index!display.action)
+1. В разделе Устройства выберите "Системы PlayStation"
+1. Выберите вашу консоль
+1. Выберите "Деактивировать"
 
-Sometimes the Henkaku Ensō installer will alert you about modifications to your Vita's os0: partition and is usually a side effect of version spoofing. 1. Press X when prompted to download the 3.60 PUP. 1. Follow the instructions on screen to reinstall 3.60 1. Attempt to run the ensō installer again.
+## Черный экран при загрузке
 
-## <a name="ts_sys_down" />Black screen on boot
-
-1. TODO: add troubleshooting to do with resetting plugin config or something.
-2. If these instructions do not work, your device may be bricked. You will need to repair/replace your device.
+1. Удерживайте L при включении, чтобы отключить плагины TaiHEN
+1. Если консоль загружается, попробуйте отредактировать файл `ux0:tai/config.txt` и удалить недавно добавленные плагины
+1. Если эти инструкции не помогли, консоль, скорее всего, превратилась в брик

@@ -38,6 +38,7 @@ $type-size-7                  : 0.6875em !default; // ~11px
 $type-size-8                  : 0.8em !default;  // ~10px
    
 // Шрифт на странице
+
 #main {
   font-size: .8em;
 }
@@ -440,7 +441,7 @@ nav {
 	right:50px;
 	display:none;
 	text-indent:-9999px;
-	background: url('top.png') no-repeat;
+	background: url('images/top.png') no-repeat;
 	
   &:hover {
 	opacity:1;

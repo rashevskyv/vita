@@ -73,21 +73,21 @@ social:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-92824803-1"
+    tracking_id          : "UA-92824803-5"
 
 
 # Site Author
 author:
-  name             : "xHR"
+  name             : "nincfw team"
   avatar           : "/images/bio-photo.png"
-  location         : "Кривой рог, Украина"
+  location         : 
   email            : "rashevsky.v@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
-  vk               : "rashevskyv"
-  vk_group         : "3ds_cfw"
+  vk               : 
+  vk_group         : "nincfw"
   flickr           :
   facebook         :
   foursquare       :
@@ -102,7 +102,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "xHR_"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
@@ -181,10 +181,10 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+  # - jekyll-sitemap
+  # - jekyll-gist
+  # - jekyll-feed
+  # - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -240,4 +240,5 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: false
+      author_profile: true
+      permalink: /:basename:output_ext
