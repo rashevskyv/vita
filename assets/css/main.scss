@@ -10,8 +10,9 @@
   color: #494e52!important;
 }
 
-html, body {
- /* Убирает прокрутку по горизонтале, для мобильной версии */
+
+html {
+ /* Убирает прокрутку по горизонтали, для мобильной версии */
  overflow-x: hidden;
  /*margin-bottom: 0!important;*/
 }
@@ -161,6 +162,7 @@ summary {
 }
 
 .spoiler-body {
+    margin-bottom: 3em!important;
 /*  p {
     margin: 0 1.5rem 1.5em;
     line-height: 1.5;
@@ -267,4 +269,50 @@ summary {
 
 .greedy-nav a.site-title {
     margin-left: 15px;
+}
+
+.hide {
+  display:none;
+}
+
+.select_fw {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vh;
+    min-width: 300px;
+}
+
+.select_fw > input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.select_fw > label {
+	background-color: #e4e4e4;
+  border-radius: 4px 4px 4px 4px;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 22px;
+	line-height: 1;
+	text-align: center;
+	margin: 8px 40px;
+	padding: 16px 32px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.select_fw > label:hover {
+	cursor: pointer;
+}
+
+.select_fw > input:checked + label {
+    background-color: #a5dc86;
+    color: dark-green;
+    font-weight: bold;
+	box-shadow: none;
 }

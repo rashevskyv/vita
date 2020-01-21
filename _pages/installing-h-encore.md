@@ -1,91 +1,110 @@
 ---
-title: Installing h-encore
+title: Установка h-encore
 ---
 
-{% include toc title="Содержание" %}
+## Обязательно к прочтению
 
-### Обязательно к прочтению
+Эксплойт h-encore для PS Vita \ PS Vita TV позволяет устанавливать homebrew-приложения на главный экран консоли. Он совместим с версиями системного ПО от 3.65 до {% include vars/sys_version.txt %}.
 
-The h-encore exploit for the PS Vita (TV) allows for the installation of homebrew applications to your home screen. It is compatible with the firmware versions 3.65 to 3.72.
+Имейте ввиду, что этот эксплойт "не привязной" и требует запуска после каждой перезагрузки приставки (имеется ввиду отключение питания или перезагрузка, а не режим сна). Это временное ограничение, пока не будет установлен HENkaku Ensō далее по инструкции.
 
-Note that the h-encore exploit chain is not “persistent” (meaning it does not remain installed after a reboot). This means you will have to run the exploit again after each reboot.
+В дополнение ко всему, мы настроем доступ к "небезопасным" приложениям, что даст приложениям расширенные полномочия в системе. Паримерно так же работает запуск от имени администратора в Windows. 
 
-In addition to installing the h-encore exploit, we enable access to “unsafe” homebrew which gives extended permissions to homebrew applications. This idea could be considered analogous to the “administrator” mode on a computer.
-
-If you are on firmware versions 3.65 to 3.68, you will be using the h-encore exploit, however if you are on firmware versions 3.69 to 3.72, you will be using the h-encore² exploit. The program we use to install the exploit to your console (finalhe) should sort this out for you.
+В зависимости от версии системного ПО на консоли, будет использоваться разная версия h-encore. Для приставок на 3.65-3.68 - первая версия, для приставок на 3.69 и выше - вторая. Используемое для взлома ПО автоматически установит нужную версию. Ниже, для краткости, на протяжении всей страницы мы будем писать **h-encore** вне зависимости от того, какая версия именно установлена
 
 Если у вас PS Vita 1000, то вам также понадобится официальная карта памяти Sony (любого размера) для выполнения этого руководства. Это ограничение не применяется к PS Vita 2000 или PS TV, поскольку эти консоли имеют встроенную карту памяти.
 {: .notice--info}
 
-### Что понадобится
+## Выберите версию вашего системного ПО:
 
-* Свежая версия [finalhe](https://github.com/soarqin/finalhe/releases/latest)
-  - If you are using MacOS or Linux you will be required to compile finalhe yourself
+<div class="select_fw">
+    <input type="radio" id="365" name="fw" value="365"/>
+    <label for="365">3.65</label>
+    <input type="radio" id="367" name="fw" value="367" />
+    <label for="367">3.67 и выше</label>
+    <input type="radio" name="fw" id="none" checked class="hide">
+</div>
+{% capture notice-1 %}
 
-### Инструкция
+## Инструкция
 
-#### Часть I - finalhe
+{% endcapture %}
+<div class="hideble 365 367 370 hide">{{ notice-1 | markdownify }}</div>
 
-1. Скопируйте содержимое `zip-архива` finalhe в папку на вашем компьютере
-1. Запустите finalhe на компьютере
-  + If you are prompted to allow finalhe network access through the firewall, do so
-1. Запустите на консоли приложение "Управление данными"
-1. Выберите "Скопировать контент"
-1. Выберите "Компьютер"
-1. Выберите метод, который вы хотите использовать для подключения к finalhe
-  + Если вам предложат войти в аккаунт PlayStation Network, сделайте это
-  + Если у вас нет аккаунта PlayStation Network, создайте его
-1. Выберите / зарегистрируйте ваш компьютер, если появится запрос
-  + Если появится сообщение о необходимости обновления, перезагрузите консоль и попробуйте снова
-  + Если сообщение по-прежнему появляется, выполните инструкции на странице [Блокировка обновлений](blocking-updates) и попробуйте снова
-  + Если сообщение *по-прежнему* появляется, включите Режим авиаперелета в Системных настройках и попробуйте снова (это *не* работает для PS TV)
-  + If your device is not detected over USB, install [QcmaDriver_winusb](https://github.com/soarqin/finalhe/releases/download/v1.3/QcmaDriver_winusb.exe) and try again
 
-#### Часть II - Перенос h-encore
+{% capture notice-2 %}
 
-1. Выберите "Обрезать пузырь h-encore до ~13МБ"
-  + Only do this step if you are on 3.68 or below
-1. Выберите "Поехали!"
+### Обновление системного ПО
+
+Так как мы все равно собираемся откатывать прошивку и всё равно собираемся входить в PSN, проще всего будет обновить системное ПО до последней версии сразу, чтобы в дальнейшем избежать лишних действий, направленных на блокировку доступа к серверам Sony. **Если ваша прошивка {% include vars/sys_version.txt %}, пропустите этот шаг и перехиодите к следующему.**
+
+1. Запустите приложение **Настройки**
+1. Перейдите в "**Сеть**" -> "**Настройки Wi-Fi**" и подключитесь к вашей точке доступа
+1. Вернитесь на стартовый экран меню **Настройки**
+1. Перейдите в "**Обновление системы**" -> "**Обновить с использованием Wi-Fi**"
+1. Следуйте инструкциям на экране, чтобы обновить консоль до последней версии системного ПО
+  + После завершения процесса консоль перезагрузится автоматически
+  
+{% endcapture %}
+
+<div class="hideble 370 hide">{{ notice-2 | markdownify }}</div>
+
+{% capture notice-3 %}
+### Final h-encore
+
+{% include inc/finalhe.md %}
+
+### Установка h-encore на консоль
+
+1. Выберите "**Trim h-encore to ~7МБ**"
+1. Нажмите кнопку "**Let's GO!**"
   + Файлы эксплойта будут автоматически скачаны и подготовлены
-  + Этот процесс займет некоторое время
-1. Выберите "PC -> система PS Vita" на консоли
-1. Выберите "Приложения"
-1. Выберите "PS Vita"
-1. Select "h-encore" or "h-encore²" depending on which is displayed
-1. Выберите "Копировать"
-1. Выберите "OK"
+  + Этот процесс займёт некоторое время
+  + Когда статус-бар в окне программы будет заполнен на 100%, переходите к следующему пункту
+1. Выберите "**Компьютер -> система PS Vita**" на экране консоли
+1. Выберите "**Приложения**"
+1. Выберите "**PS Vita**"
+1. Отметьте галочкой "**h-encore**"
+1. Выберите "**Копировать**"
+1. Выберите "**OK**"
   + Эксплойт h-encore будет скопирован на вашу консоль
-  + Этот процесс займет некоторое время
-1. Закройте приложение "Управление данными" на консоли
-1. Закройте finalhe на компьютере
+  + Этот процесс займёт некоторое время
+1. Сверните приложение "**Управление данными**" на консоли, нажав кнопку (PS) и закройте его
+1. Закройте **Final h-encore** на компьютере
+    * Если всё сделано верно, на экране приставки появится новый пузырь - "**h-encore**"
+    
+### Запуск h-encore
 
-#### Часть III - Настройка h-encore
-
-h-encore² only has a ~25% success rate. It may take a long time to launch the h-encore² exploit.
-{: .notice--warning}
-
-1. Запустите приложение h-encore, держа нажатой кнопку (R)
-  + Если появится запрос о призах, выберите "Да", продолжая держать нажатой кнопку (R)
-1. Если эксплойт сработал, вы увидите меню h-encore bootstrap
-  + Если эксплойт завис на белом экране, просто закройте приложение (это приведет к перезагрузке консоли), затем попробуйте снова
+1. Запустите приложение **h-encore**, держа нажатой кнопку (R)
+  + Если появится запрос о призах, выберите "**Да**", продолжая держать нажатой кнопку (R)
+1. Если эксплойт сработал, вы увидите меню **h-encore bootstrap**
+  + Если эксплойт завис на белом экране, просто закройте приложение (это приведёт к перезагрузке консоли, если не привело - перезапустите консоль самостоятельно), затем попробуйте снова
   + Если это не помогло, удерживайте кнопку питания в течение 30 секунд для принудительной перезагрузки, затем попробуйте снова
-1. Выберите "Install HENkaku"
+1. Выберите "**Install HENkaku**"
   + Это действие установит эксплойт HENkaku и разрешит доступ к хоумбрю до следующей перезагрузки
-1. Выберите "Download VitaShell"
+1. Выберите "**Download VitaShell**"
   + Это действие установит хоумбрю приложение VitaShell для управления файловой системой консоли
   + VitaShell (как и все прочие хоумбрю приложения) останется установленным после перезагрузки, но будет выдавать ошибку при запуске, если эксплойт HENkaku не активен
-1. Выберите "Exit"
+1. Выберите "**Exit**"
 
-#### Часть IV - Настройка HENkaku
+### Настройка HENkaku
 
-1. Запустите приложение Настройки
-1. Перейдите в `Настройки HENkaku`
-  + Если пункт Настройки HENkaku отсутствует, выберите "Reset taiHEN config.txt" в меню h-encore bootstrap, затем попробуйте снова
-1. Установите флажок "Включить небезопасные приложения"
-1. Вернитесь в меню Настройки HENkaku
-1. Закройте приложение Настройки
-
+{% include inc/henkaku_settings.md %}
 ___
 
-### Continue to [Downgrading to 3.60](downgrading-firmware-(3.60))
-{: .notice--primary}
+{% endcapture %}
+
+<div class="hideble 365 367 370 hide">{{ notice-3 | markdownify }}</div>
+
+{% capture notice-4 %}
+### Следующий шаг: [Установка Ensō (3.65)](installing-enso)
+{: .notice--success}
+{% endcapture %}
+
+<div class="hideble 365 hide">{{ notice-4 | markdownify }}</div>
+
+{% capture notice-6 %}
+### Следующий шаг: [Понижение версии системного ПО до 3.65](downgrading-firmware)
+{: .notice--success}
+{% endcapture %}
+<div class="hideble 367 hide">{{ notice-6 | markdownify }}</div>

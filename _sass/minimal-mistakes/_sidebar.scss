@@ -75,7 +75,7 @@
 
   @include breakpoint($large) {
     position: sticky;
-    top: 5px;
+    top: 5px !important;
     right: 0;
     width: $right-sidebar-width-narrow;
     margin-right: -1 * $right-sidebar-width-narrow;
@@ -95,6 +95,15 @@
       /* calculate height of nav list */
     }
 }
+/*
+.sidebar__right {
+  @include breakpoint($large) { 
+	float: right;
+	position: sticky;
+    top: -20px !important;
+   }
+}
+*/
 
 
 .splash .sidebar__right {
