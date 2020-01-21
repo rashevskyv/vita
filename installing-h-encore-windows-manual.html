@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Установка h-encore (вручную для Windows) - Взлом PS Vita</title>
+
+
+
+
+<meta name="description" content="Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+)">
+
+
+
+
+<meta name="author" content="nincfw team">
+
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Взлом PS Vita">
+<meta property="og:title" content="Установка h-encore (вручную для Windows)">
+
+
+  <link rel="canonical" href="https://vita.customfw.xyz/installing-h-encore-windows-manual.html">
+  <meta property="og:url" content="https://vita.customfw.xyz/installing-h-encore-windows-manual.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "xHR",
+      "url" : "https://vita.customfw.xyz",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://vita.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS Vita Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://vita.customfw.xyz/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 300) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+        });
+          
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+  
+});
+    
+$(document).ready(function() {
+  $('input').change(function() {
+  $('div.hideble').hide();
+    if ($('input[value="365').is(':checked')) {
+      $('div.365').show();
+    }
+    else if ($('input[value="367').is(':checked')) {
+      $('div.367').show();
+    }
+    else if ($('input[value="370').is(':checked')) {
+      $('div.370').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
+  });
+});</script>
+
+<script src="https://vita.customfw.xyz/assets/js/main.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://vita.customfw.xyz/">Взлом PS Vita</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://3dscfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/exploits">Взлом</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/emunand">EmuNAND</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/addons">Полезные<br> инструкции</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/faq">FAQ</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка<br>игр</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/hbl">Запуск<br>HBL</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/exploits">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/update-to-latest">Безопасное<br>обновление</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/site-navigation">Навигация по сайту</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/contacts">Связаться с нами</a></li>
+          
+        </ul>
+        <button type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="nincfw team" itemprop="image"></center>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">nincfw team</h3><br>
+    
+  </div>
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+	<hr class="style-two">
+
+      <li><a href="https://vk.com/" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Вконтакте
+</a></li>
+<li><a href="https://vk.com/nincfw" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
+</a></li>
+	
+      
+
+      
+        <li>
+          <a href="mailto:rashevsky.v@gmail.com">
+            <meta itemprop="email" content="rashevsky.v@gmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/rashevskyv" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+    </ul>
+  </div>
+</div>
+
+
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Установка h-encore (вручную для Windows)">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Установка h-encore (вручную для Windows)
+</h1>
+          
+        </header>
+      
+	  
+	  	
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Содержание</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#обязательно-к-прочтению" id="markdown-toc-обязательно-к-прочтению">Обязательно к прочтению</a></li>
+  <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
+  <li><a href="#инструкция" id="markdown-toc-инструкция">Инструкция</a>    <ul>
+      <li><a href="#часть-i---подготовительные-работы" id="markdown-toc-часть-i---подготовительные-работы">Часть I - Подготовительные работы</a></li>
+      <li><a href="#часть-ii---auto-h-encore" id="markdown-toc-часть-ii---auto-h-encore">Часть II - auto h-encore</a></li>
+      <li><a href="#часть-iii---перенос-данных-qcma" id="markdown-toc-часть-iii---перенос-данных-qcma">Часть III - Перенос данных QCMA</a></li>
+    </ul>
+  </li>
+  <li><a href="#следующий-шаг-настройка-h-encore" id="markdown-toc-следующий-шаг-настройка-h-encore">Следующий шаг: Настройка h-encore</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
+
+<hr />
+
+<h3 id="обязательно-к-прочтению">Обязательно к прочтению</h3>
+
+<p>Этот метод требует компьютер под управлением Windows.</p>
+
+<p>Установка h-encore выполняется вручную и требует использования командной строки.</p>
+
+<p>Прежде чем продолжить, убедитесь, что прочитали всю информацию на странице <a href="installing-h-encore">Установка h-encore</a></p>
+
+<h3 id="что-понадобится">Что понадобится</h3>
+
+<ul>
+  <li><a href="https://vita.customfw.xyz/assets/files/unpack.bat" download="unpack.bat">unpack.bat</a></li>
+  <li>Демо-версия игры <a href="http://ares.dl.playstation.net/cdn/JP0741/PCSG90096_00/xGMrXOkORxWRyqzLMihZPqsXAbAXLzvAdJFqtPJLAZTgOcqJobxQAhLNbgiFydVlcmVOrpZKklOYxizQCRpiLfjeROuWivGXfwgkq.pkg">Bitter Smile</a> в формате <code class="highlighter-rouge">.pkg</code></li>
+  <li>Свежая версия <a href="https://github.com/TheOfficialFloW/h-encore/releases/latest">h-encore</a></li>
+  <li>Свежая версия <a href="https://github.com/yifanlu/psvimgtools/releases/latest">psvimgtools</a> <em>(<code class="highlighter-rouge">.zip-архив</code> для вашей ОС)</em></li>
+  <li>Свежая версия <a href="https://github.com/mmozeiko/pkg2zip/releases/latest">pkg2zip</a></li>
+  <li>Свежая версия <a href="https://github.com/codestation/qcma/releases/latest">QCMA</a>
+    <ul>
+      <li>Если ранее было установлено официальное приложение Sony Content Manager Assistant, удалите его</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="инструкция">Инструкция</h3>
+
+<h4 id="часть-i---подготовительные-работы">Часть I - Подготовительные работы</h4>
+
+<ol>
+  <li>Установите и запустите на компьютере QCMA, если вы еще этого не сделали</li>
+  <li>Скопируйте содержимое <code class="highlighter-rouge">zip-архива</code> auto h-encore в папку на вашем компьютере</li>
+  <li>Запустите на консоли приложение “Управление данными”</li>
+  <li>Выберите “Скопировать контент”</li>
+  <li>Выберите “Компьютер”</li>
+  <li>Выберите метод, который вы хотите использовать для подключения к QCMA
+    <ul>
+      <li>Если вам предложат войти в аккаунт PlayStation Network, сделайте это</li>
+      <li>Если у вас нет аккаунта PlayStation Network, создайте его</li>
+    </ul>
+  </li>
+  <li>Выберите / зарегистрируйте ваш компьютер, если появится запрос</li>
+</ol>
+
+<h4 id="часть-ii---auto-h-encore">Часть II - auto h-encore</h4>
+
+<ol>
+  <li>Перейдите по ссылке <a href="http://cma.henkaku.xyz/">cma.henkaku.xyz</a> на компьютере</li>
+  <li>Перейдите в папку <code class="highlighter-rouge">PS Vita\APP\</code> на компьютере с помощью проводника
+    <ul>
+      <li>По умолчанию эта папка находится внутри папки <code class="highlighter-rouge">Documents</code> на вашем компьютере</li>
+      <li>Если вы не можете её найти, проверьте настройку “Applications / Backups” в приложении QCMA, щелкнув правой кнопкой мыши значок QCMA в трее, а затем выбрав “Settings”</li>
+    </ul>
+  </li>
+  <li>Скопируйте имя папки внутри этой директории, затем вставьте его в поле “AID” на сайте CMA
+    <ul>
+      <li>Вот пример AID: <code class="highlighter-rouge">ec8d45ec9c055609</code></li>
+    </ul>
+  </li>
+  <li>Нажмите “Отправить запрос” для создания соответствующего ключа
+    <ul>
+      <li>Оставьте эту страницу открытой; ключ вам вскоре понадобится</li>
+      <li>Вот пример ключа: <code class="highlighter-rouge">488d3ff6cce7a9ef1be6da8338c7d18db18147c3255fa4d50596568555687174</code></li>
+    </ul>
+  </li>
+  <li>Скопируйте папку <code class="highlighter-rouge">h-encore</code> из <code class="highlighter-rouge">.zip-архива</code> h-encore в папку на вашем компьютере</li>
+  <li>Скопируйте содержимое <code class="highlighter-rouge">zip-архива</code> psvimgtools в папку <code class="highlighter-rouge">h-encore</code></li>
+  <li>Скопируйте файл <code class="highlighter-rouge">pkg2zip.exe</code> из <code class="highlighter-rouge">.zip-архива</code> pkg2zip в папку <code class="highlighter-rouge">h-encore</code></li>
+  <li>Переместите <code class="highlighter-rouge">.pkg-файл</code> Bitter Smile в папку <code class="highlighter-rouge">h-encore</code></li>
+  <li>Откройте окно командной строки</li>
+  <li>Перейдите в папку <code class="highlighter-rouge">h-encore</code> командой <code class="highlighter-rouge">cd</code></li>
+  <li>Выполните <code class="highlighter-rouge">unpack</code></li>
+  <li>Выполните <code class="highlighter-rouge">psvimg-create -n app -K YOUR_KEY app PCSG90096\app</code>
+    <ul>
+      <li>Замените “YOUR_KEY” на ключ, созданный ранее</li>
+    </ul>
+  </li>
+  <li>Выполните <code class="highlighter-rouge">psvimg-create -n appmeta -K YOUR_KEY appmeta PCSG90096\appmeta</code></li>
+  <li>Выполните <code class="highlighter-rouge">psvimg-create -n license -K YOUR_KEY license PCSG90096\license</code></li>
+  <li>Выполните <code class="highlighter-rouge">psvimg-create -n savedata -K YOUR_KEY savedata PCSG90096\savedata</code></li>
+  <li>Закройте окно командной строки</li>
+  <li>Скопируйте папку <code class="highlighter-rouge">h-encore\PCSG90096</code> в папку <code class="highlighter-rouge">PS Vita\APP\YOUR_AID\</code> на вашем компьютере с помощью проводника</li>
+</ol>
+
+<h4 id="часть-iii---перенос-данных-qcma">Часть III - Перенос данных QCMA</h4>
+
+<ol>
+  <li>Нажмите правой кнопкой мыши на значок QCMA в трее, затем выберите “Refresh database”</li>
+  <li>В приложении Управление данными на консоли выберите “PC -&gt; Система PS Vita”</li>
+  <li>Выберите “Приложения”</li>
+  <li>Выберите “PS Vita”</li>
+  <li>Выберите “h-encore”</li>
+  <li>Выберите “Копировать”</li>
+  <li>Выберите “OK”
+    <ul>
+      <li>Эксплойт h-encore будет скопирован на вашу консоль</li>
+      <li>Этот процесс займет некоторое время</li>
+    </ul>
+  </li>
+  <li>Закройте приложение Управление данными</li>
+</ol>
+
+<hr />
+
+<h3 class="notice--primary" id="следующий-шаг-настройка-h-encore">Следующий шаг: <a href="configuring-h-encore">Настройка h-encore</a></h3>
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    
+    
+	  <li><a href="https://vk.com/nincfw" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Custom Nintendo
+	  </a></li>	
+    
+    <li><a href="https://vita.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        if(b.getAttribute("href") && b.hostname !== location.hostname) {
+            b.target = "_blank";
+            b.rel = "noopener";
+        }
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window();
+external_new_window();
+</script>
+
+
+  </body>
+</html>

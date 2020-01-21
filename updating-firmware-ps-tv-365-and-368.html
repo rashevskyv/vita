@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Обновление прошивки (PS TV 3.65 и 3.68) - Взлом PS Vita</title>
+
+
+
+
+<meta name="description" content="Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+)">
+
+
+
+
+<meta name="author" content="nincfw team">
+
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Взлом PS Vita">
+<meta property="og:title" content="Обновление прошивки (PS TV 3.65 и 3.68)">
+
+
+  <link rel="canonical" href="https://vita.customfw.xyz/updating-firmware-ps-tv-365-and-368.html">
+  <meta property="og:url" content="https://vita.customfw.xyz/updating-firmware-ps-tv-365-and-368.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "xHR",
+      "url" : "https://vita.customfw.xyz",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://vita.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS Vita Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://vita.customfw.xyz/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 300) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+        });
+          
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+  
+});
+    
+$(document).ready(function() {
+  $('input').change(function() {
+  $('div.hideble').hide();
+    if ($('input[value="365').is(':checked')) {
+      $('div.365').show();
+    }
+    else if ($('input[value="367').is(':checked')) {
+      $('div.367').show();
+    }
+    else if ($('input[value="370').is(':checked')) {
+      $('div.370').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
+  });
+});</script>
+
+<script src="https://vita.customfw.xyz/assets/js/main.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://vita.customfw.xyz/">Взлом PS Vita</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://3dscfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/exploits">Взлом</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/emunand">EmuNAND</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/addons">Полезные<br> инструкции</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/faq">FAQ</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка<br>игр</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/hbl">Запуск<br>HBL</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/exploits">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/update-to-latest">Безопасное<br>обновление</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/site-navigation">Навигация по сайту</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/contacts">Связаться с нами</a></li>
+          
+        </ul>
+        <button type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="nincfw team" itemprop="image"></center>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">nincfw team</h3><br>
+    
+  </div>
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+	<hr class="style-two">
+
+      <li><a href="https://vk.com/" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Вконтакте
+</a></li>
+<li><a href="https://vk.com/nincfw" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
+</a></li>
+	
+      
+
+      
+        <li>
+          <a href="mailto:rashevsky.v@gmail.com">
+            <meta itemprop="email" content="rashevsky.v@gmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/rashevskyv" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+    </ul>
+  </div>
+</div>
+
+
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Обновление прошивки (PS TV 3.65 и 3.68)">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Обновление прошивки (PS TV 3.65 и 3.68)
+</h1>
+          
+        </header>
+      
+	  
+	  	
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Содержание</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#обязательно-к-прочтению" id="markdown-toc-обязательно-к-прочтению">Обязательно к прочтению</a></li>
+  <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
+  <li><a href="#инструкция" id="markdown-toc-инструкция">Инструкция</a>    <ul>
+      <li><a href="#часть-i---подготовка-накопителя" id="markdown-toc-часть-i---подготовка-накопителя">Часть I - Подготовка накопителя</a></li>
+      <li><a href="#часть-ii---обновление-прошивки" id="markdown-toc-часть-ii---обновление-прошивки">Часть II - Обновление прошивки</a></li>
+    </ul>
+  </li>
+  <li><a href="#следующий-шаг-установка-h-encore" id="markdown-toc-следующий-шаг-установка-h-encore">Следующий шаг: Установка h-encore</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
+
+<hr />
+
+<h3 id="обязательно-к-прочтению">Обязательно к прочтению</h3>
+
+<p>Эксплойт h-encore совместим только с версиями прошивки 3.65 и 3.68. Поэтому консоли с другой версией прошивки должны быть обновлены при помощи кастомного приложения для обновлений, чтобы использовать этот эксплойт.</p>
+
+<p>Хотя эксплойт h-encore и совместим с версией прошивки 3.68, пользователи с версией прошивки ниже 3.65 должны обновиться только до версии прошивки 3.65, поскольку это последняя версия, поддерживающая эксплойт Ensō.</p>
+
+<p>Пользователям с версией прошивки выше 3.65 придется обновиться до более ограниченной версии 3.68, чтобы использовать этот эксплойт.</p>
+
+<p>Обратите внимание, что кастомное приложение для обновлений может лишь увеличить версию прошивки, но не понизить её. Если ваша версия прошивки выше 3.68, то вы должны вернуться к <a href="get-started">Началу</a>.</p>
+
+<h3 id="что-понадобится">Что понадобится</h3>
+
+<ul>
+  <li>Отформатированный в FAT32 USB-накопитель, имеющий 150 МБ свободного места</li>
+  <li>Файл <code class="highlighter-rouge">PSP2Updat.PUP</code>, соответствующий версии прошивки, до которой вы пытаетесь обновиться
+    <ul>
+      <li><i class="fa fa-magnet" aria-hidden="true" title="Это magnet-ссылка. Воспользуйтесь торрент-клиентом, чтобы скачать этот файл."></i> - <a href="magnet:?xt=urn:btih:00c942232cb847b83ac8e3a1fdeee7f911f4b505&amp;dn=PSP2UPDAT.PUP&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&amp;tr=http%3A%2F%2Ftracker3.itzmx.com%3A6961%2Fannounce&amp;tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fthetracker.org%3A80%2Fannounce&amp;tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&amp;tr=udp%3A%2F%2Fdenis.stalker.upeer.me%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker1.itzmx.com%3A8080%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&amp;tr=udp%3A%2F%2Fopen.demonii.si%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fbt.xxx-tracker.com%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker4.itzmx.com%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.port443.xyz%3A6969%2Fannounce">PSP2UPDAT.PUP</a> (3.68) (<a href="http://dus01.psp2.update.playstation.net/update/psp2/image/2018_0319/rel_fdc6f6bb6eed9fd82f7c4bc7414eaf4c/PSP2UPDAT.PUP">mirror</a>) (<a href="https://web.archive.org/web/20180701022914id_/http://dus01.psp2.update.playstation.net/update/psp2/image/2018_0319/rel_fdc6f6bb6eed9fd82f7c4bc7414eaf4c/PSP2UPDAT.PUP">mirror</a>)</li>
+      <li><i class="fa fa-magnet" aria-hidden="true" title="Это magnet-ссылка. Воспользуйтесь торрент-клиентом, чтобы скачать этот файл."></i> - <a href="magnet:?xt=urn:btih:5f2437f2141408c925ffc5d81ff76e94e1a4c493&amp;dn=PSP2UPDAT.PUP&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&amp;tr=http%3A%2F%2Ftracker3.itzmx.com%3A6961%2Fannounce&amp;tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fthetracker.org%3A80%2Fannounce&amp;tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&amp;tr=udp%3A%2F%2Fdenis.stalker.upeer.me%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker1.itzmx.com%3A8080%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&amp;tr=udp%3A%2F%2Fopen.demonii.si%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fbt.xxx-tracker.com%3A2710%2Fannounce&amp;tr=http%3A%2F%2Ftracker4.itzmx.com%3A2710%2Fannounce&amp;tr=udp%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.port443.xyz%3A6969%2Fannounce">PSP2UPDAT.PUP</a> (3.65) (<a href="https://web.archive.org/web/20180630222648id_/http://dus01.psp2.update.playstation.net/update/psp2/image/2017_0317/rel_0a0f2a9ae58968ac5d1d2127049c3cba/PSP2UPDAT.PUP">mirror</a>)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="инструкция">Инструкция</h3>
+
+<h4 id="часть-i---подготовка-накопителя">Часть I - Подготовка накопителя</h4>
+
+<ol>
+  <li>Создайте папку <code class="highlighter-rouge">PSVITA</code> в корне USB-накопителя</li>
+  <li>Создайте папку <code class="highlighter-rouge">UPDATE</code> внутри папки <code class="highlighter-rouge">PSVITA</code> на USB-накопителе</li>
+  <li>Переименуйте скачанный файл <code class="highlighter-rouge">PSP2UPDAT.PUP</code> в <code class="highlighter-rouge">PSVUPDAT.PUP</code></li>
+  <li>Переместите файл <code class="highlighter-rouge">PSVUPDAT.PUP</code> в созданную папку <code class="highlighter-rouge">UPDATE</code></li>
+</ol>
+
+<h4 id="часть-ii---обновление-прошивки">Часть II - Обновление прошивки</h4>
+
+<ol>
+  <li>Полностью выключите PS TV</li>
+  <li>Держите нажатой кнопку питания не менее 7 секунд, чтобы загрузиться в безопасный режим</li>
+  <li>Подключите контроллер с помощью USB кабеля, затем нажмите кнопку (PS)</li>
+  <li>Перейдите в <code class="highlighter-rouge">Обновить системное ПО</code> -&gt; <code class="highlighter-rouge">Обновить из накопителя USB</code></li>
+  <li>Подключите USB-накопитель к PS TV</li>
+  <li>Следуйте инструкциям на экране, чтобы обновить консоль
+    <ul>
+      <li>После завершения процесса консоль перезагрузится автоматически</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h3 class="notice--primary" id="следующий-шаг-установка-h-encore">Следующий шаг: <a href="installing-h-encore">Установка h-encore</a></h3>
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    
+    
+	  <li><a href="https://vk.com/nincfw" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Custom Nintendo
+	  </a></li>	
+    
+    <li><a href="https://vita.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        if(b.getAttribute("href") && b.hostname !== location.hostname) {
+            b.target = "_blank";
+            b.rel = "noopener";
+        }
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window();
+external_new_window();
+</script>
+
+
+  </body>
+</html>
