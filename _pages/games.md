@@ -1,5 +1,5 @@
 ---
-title: Установка игр
+title: "Установка игр"
 ---
 
 {% include toc title="Разделы" %}
@@ -140,6 +140,10 @@ title: Установка игр
 1. Выбрать пункт **Install Folder**
 1. Дождаться завершения процедуры. Иконка игры должна появится на экране LiveArea.
 {% endspoiler %}
+
+### Установка игр PSM
+
+Для работы игр от **PlayStation Mobile** (PSM) вам понадобится плагин `nopsmdrm.skprx` (если прошивали по этому руководству, то уже установлен), а так же **PSM Runtime Package**. Скачать его можно через **PKGj** или **NPS Browser**, введя в поиске по Vita-играм **PlayStation Mobile Runtime Package**.
 
 ### Установка игр PSP и PSX 
 

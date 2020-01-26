@@ -1,6 +1,5 @@
 ---
 title: "Обновление ПО до 3.65 (PS TV)"
-redirect_from: /updating-firmware-ps-tv-365-and-368
 ---
 
 {% include toc title="Содержание" %}
