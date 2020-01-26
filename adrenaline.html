@@ -481,21 +481,21 @@ $(document).ready(function() {
       <li><strong>Reset settings</strong> - сбрасывает настройки к настройкам по-умолчанию</li>
     </ul>
   </li>
-  <li><strong>CPU Speed</strong> -
+  <li><strong>CPU Speed</strong> - работа с частотами процессора PSP
     <ul>
-      <li><strong>Speed in XMB</strong> -</li>
-      <li><strong>Speed in UMD/ISO</strong> -</li>
+      <li><strong>Speed in XMB</strong> - скорость процессора в главном меню</li>
+      <li><strong>Speed in UMD/ISO</strong> - скорость процессора в игре</li>
     </ul>
   </li>
-  <li><strong>Plugins</strong> -</li>
-  <li><strong>Registry hacks</strong> -
+  <li><strong>Plugins</strong> - меню работы с плагинами</li>
+  <li><strong>Registry hacks</strong>
     <ul>
-      <li><strong>Button assign</strong> -</li>
-      <li><strong>Activate WMA</strong> -</li>
-      <li><strong>Activate Flash Player</strong> -</li>
+      <li><strong>Button assign</strong> - здесь можно выбрать какая кнопка будет отвечать в меню за выбор, а какая за отмену</li>
+      <li><strong>Activate WMA</strong> - активация WMA-кодека</li>
+      <li><strong>Activate Flash Player</strong> - активация flash-плера в браузере PSP</li>
     </ul>
   </li>
-  <li><strong>Exit</strong> -</li>
+  <li><strong>Exit</strong> - выход из рекавери</li>
 </ul>
 </div></details>
 
@@ -558,21 +558,69 @@ $(document).ready(function() {
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Работа с плагинами</summary><div class="spoiler-body">
-<p>Если вы прошивались по этому руководству, то вместе с Adrenaline будут установлены следующие плагины:</p>
-<ul>
-  <li>category_lite.prx</li>
-  <li>dayviewer.prx</li>
-  <li>Набор плагинов Remaster Control</li>
-  <li>gta_remastered_v2.prx</li>
-  <li>khbbs_remastered.prx</li>
-  <li>mgs_remastered.prx</li>
-  <li>pop_remastered.prx</li>
-  <li>resistance_remastered.prx</li>
-  <li>splintercell_remastered.prx</li>
-  <li>tombraider_remastered.prx</li>
-  <li>npdrm_free.prx</li>
-</ul>
+<p>Плагины добавляют новый функционал к вашей прошивке. К сожалению, не все плагины от PSP подходят для Adrenaline, но большинство подходят.</p>
 
+<p>Плагины распространяются в формате <code class="highlighter-rouge">.prx</code>, однако, в ряде случаев, с плагином могут идти и дополнительные файлы.</p>
+
+<p>Плагины располагаются в папке <code class="highlighter-rouge">pspemu\seplugins</code>.</p>
+
+<h4 id="как-устанавливать-плагины">Как устанавливать плагины</h4>
+
+<ol>
+  <li>Скиньте необходимый плагин в папку <code class="highlighter-rouge">pspemu\seplugins</code>.</li>
+  <li>Пропишите путь к плагину в текстовом файле <code class="highlighter-rouge">vsh.txt</code>, <code class="highlighter-rouge">game.txt</code> или <code class="highlighter-rouge">pops.txt</code> в зависимости от того для чего этот плагин нужен
+    <ul>
+      <li>Как правило, информация о том куда конкретно прописывать плагин находится в readme к нему</li>
+      <li>В <code class="highlighter-rouge">vsh.txt</code> находятся плагины, работающие с основным меню PSP (XMB-меню)</li>
+      <li>В <code class="highlighter-rouge">game.txt</code> находятся плагины, работающие в играх и программах PSP</li>
+      <li>В <code class="highlighter-rouge">pops.txt</code> находятся плагины, работающие в играх PSX</li>
+      <li>В общем виде прописывать надо так: <code class="highlighter-rouge">ms0:/seplugins/Название_Плагина.prx 1</code>, где число в конце показывает включён плагин или нет; 1 - включён, 2 - отключён</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="включение-и-отключение-плагинов">Включение и отключение плагинов</h4>
+
+<ol>
+  <li>В главном меню нажмите (Select), чтобы открыть <strong>VSH-меню</strong></li>
+  <li>Перейдите в <strong>Plugins</strong></li>
+  <li>Выделите плагин, который хотите включить или выключить и нажмите (Крест)
+    <ul>
+      <li><strong>Enabled</strong> значит что плагин включён</li>
+      <li><strong>Disabled</strong> значит что плагин выключен</li>
+    </ul>
+  </li>
+  <li>Нажмите <strong>Back</strong></li>
+  <li>Нажмите <strong>Exit</strong>, чтобы закрыть рекавери</li>
+  <li>Снова откройте <strong>VSH-меню</strong> и выберите <strong>RESTART VSH</strong>
+    <ul>
+      <li>После перезагрузки меню плагин примет новое значение</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="плагины-в-составе-сборки">Плагины в составе сборки</h4>
+
+<p>Если вы прошивались по этому руководству, то вместе с Adrenaline будут установлены следующие плагины:</p>
+
+<ul>
+  <li><strong>category_lite.prx</strong> - плагин, позволяющий делить установленные игры и приложения по категориям. Для этого игры нужно класть в папки. Название папки будет совпадать с названием категории.</li>
+  <li><strong>dayviewer.prx</strong> - плагин, показывающий текущую дату вместе с часами</li>
+  <li><strong>Набор плагинов Remaster Control</strong> - специальные плагины, активирующие работу второго аналогового стика в <strong>некоторых</strong> играх. По-умолчанию эти плагины отключены. Для того, чтобы они начали работать - включите из и перезагрузите VSH-меню
+    <ul>
+      <li><strong>acbl_control.prx</strong> - Assassin’s Creed: Bloodlines</li>
+      <li><strong>gta_remastered_v2.prx</strong> - Grand Theft Auto: Liberty City Stories и Grand Theft Auto: Vice City Stories</li>
+      <li><strong>khbbs_remastered.prx</strong> - Kingdom Hearts Birth By Sleep (+ Final Mix)</li>
+      <li><strong>mgs_remastered.prx</strong> - Metal Gear Solid Peace Walker и Metal Gear Solid Portable Ops</li>
+      <li><strong>pop_remastered.prx</strong> - Prince of Persia: Revelation и Prince of Persia: Rival Swords</li>
+      <li><strong>resistance_remastered.prx</strong> - Resistance: Retribution</li>
+      <li><strong>splintercell_remastered.prx</strong> - Tom Clancy’s Splinter Cell: Essentials</li>
+      <li><strong>tombraider_remastered.prx</strong> - Lara Croft: Tomb Raider Legend и Lara Croft: Tomb Raider Anniversary</li>
+      <li><strong>warriors_remastered.prx</strong> - The Warriors</li>
+    </ul>
+  </li>
+  <li><strong>npdrm_free.prx</strong> - плагин, позволяющий запускать PSP игры в формате PBP</li>
+</ul>
 </div></details>
 
 <hr />
