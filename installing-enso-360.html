@@ -358,11 +358,9 @@ $(document).ready(function() {
 
 <h3 id="обязательно-к-прочтению">Обязательно к прочтению</h3>
 
-<p>Ensō это полноценное CFW решение для PS Vita \ PS Vita TV, которое предоставляет удобный доступ к хоумбрю путем запуска эксплойта в процессе загрузки для установки хоумбрю окружения HENkaku.</p>
+<p>Ensō - это кастомный загрузчик для PS Vita \ PS Vita TV, который предоставляет удобный доступ к хоумбрю путём запуска эксплойта в процессе загрузки приставки для активации HENkaku.</p>
 
-<p>Это решение более удобно чем HENkaku, поскольку не требует вручную активировать эксплойт после каждой перезагрузки.</p>
-
-<p class="notice--warning">Для выполнения этой части необходимо, чтобы на приставке стоял и был запущен <a href="installing-henkaku" target="_blank">henkaku</a>. Запустите henkaku, если ещё не делали этого.</p>
+<p>Это решение более удобно чем классический HENkaku, запущенный через браузер, поскольку не требует вручную активировать эксплойт после каждой перезагрузки.</p>
 
 <h3 id="что-понадобится">Что понадобится</h3>
 
@@ -377,17 +375,19 @@ $(document).ready(function() {
 <h4 id="часть-i---подготовительные-работы">Часть I - Подготовительные работы</h4>
 
 <ol>
-  <li>Запустите приложение molecularShell</li>
+  <li>Запустите пузырь <strong>molecularShell</strong></li>
+  <li>Слева от кнопки <strong>Запуск</strong> есть кнопка <strong>Install</strong>, нажмите её для запуска henkaku, если он не запущен</li>
+  <li>Запустите приложение <strong>molecularShell</strong></li>
   <li><a href="vitashell#запуск-на-приставке-ftp-сервера" about="_blank">Подключитесь к приставке по FTP</a></li>
-  <li>Используя FTP клиент, перейдите в <code class="highlighter-rouge">ux0:</code> -&gt; <code class="highlighter-rouge">VPK</code>
+  <li>Используя FTP клиент, перейдите в <code class="highlighter-rouge">ux0:</code> и создайте там папку <code class="highlighter-rouge">VPK</code>
     <ul>
       <li>Если вы не знаете как перенести файлы на PS Vita, <a href="vitashell#запуск-на-приставке-ftp-сервера" target="_blank">воспользуйтесь этой  инструкцией</a></li>
     </ul>
   </li>
-  <li>Загрузите <code class="highlighter-rouge">[enso.vpk](https://github.com/henkaku/enso/releases/latest/)</code> в папку <code class="highlighter-rouge">VPK</code></li>
-  <li>Загрузите <code class="highlighter-rouge">[VitaShell.vpk](https://github.com/TheOfficialFloW/VitaShell/releases/latest)</code> в папку <code class="highlighter-rouge">VPK</code></li>
+  <li>Загрузите <a href="https://github.com/henkaku/enso/releases/latest/"><code class="highlighter-rouge">enso.vpk</code></a> в папку <code class="highlighter-rouge">VPK</code></li>
+  <li>Загрузите <a href="https://github.com/TheOfficialFloW/VitaShell/releases/latest"><code class="highlighter-rouge">VitaShell.vpk</code></a> в папку <code class="highlighter-rouge">VPK</code></li>
   <li>Нажмите (Круг) на консоли чтобы выключить доступ по FTP</li>
-  <li>Установите файлs <code class="highlighter-rouge">ux0:/VPK/enso.vpk</code> и <code class="highlighter-rouge">ux0:/VPK/VitaShell.vpk</code>
+  <li>Установите файлы <code class="highlighter-rouge">ux0:/VPK/enso.vpk</code> и <code class="highlighter-rouge">ux0:/VPK/VitaShell.vpk</code>
     <ul>
       <li>Если вы не знаете как устанавливать <code class="highlighter-rouge">vpk-файлы</code> на PS Vita, <a href="vitashell#установка-файлов-в-формате-vpk" target="_blank">воспользуйтесь этой  инструкцией</a></li>
     </ul>
