@@ -5,30 +5,19 @@ main:
   - title: "<i>Купить<br>прошитую</i>"
     url: https://3dscfw.olx.ua/
   - title: "Взлом"
-    url: /exploits
-  - title: "EmuNAND"
-    url: /emunand
-  - title: "Полезные<br>
-  инструкции"
-    url: /addons
+    url: /get-started
   - title: "FAQ"
     url: /faq
   - title: "Проблемы и<br>их решение"
     url: /troubleshooting
-  - title: "Использование<br>прошитой Switch"
-    url: /usage
+  - title: "Использование<br>VitaShell"
+    url: /vitashell
   - title: "Установка<br>игр"
     url: /games
-  - title: "Kefir"
-    url: /kefir
-  - title: "Запуск<br>HBL"
-    url: /hbl
-  - title: "Методы<br>взлома"
-    url: /exploits
-  - title: "Безопасное<br>обновление"
-    url: /update-to-latest
-  - title: "Резервное<br>копирование"
-    url: /backup-nand
+  - title: "Установка<br>плагинов"
+    url: /plugins
+  - title: "Adrenaline"
+    url: /adrenaline
   - title: "Навигация по сайту"
     url: /site-navigation
   - title: "Пожертвования"
