@@ -23,7 +23,7 @@
 
 
 
-<meta name="author" content="nincfw team">
+<meta name="author" content="PG-team">
 
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Взлом PS Vita">
@@ -177,6 +177,9 @@ $(document).ready(function() {
             <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/vitashell">Использование<br>VitaShell</a></li>
           
             
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/sd2vita">sd2vita</a></li>
+          
+            
             <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка<br>игр</a></li>
           
             
@@ -219,13 +222,13 @@ $(document).ready(function() {
   
     <div class="author__avatar">
       
-        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="nincfw team" itemprop="image"></center>
+        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="PG-team" itemprop="image"></center>
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">nincfw team</h3><br>
+    <h3 class="author__name" itemprop="name">PG-team</h3><br>
     
   </div>
   
@@ -236,12 +239,12 @@ $(document).ready(function() {
       
 	<hr class="style-two">
 
-      <li><a href="https://vk.com/" itemprop="sameAs">
-  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Вконтакте
-</a></li>
-<li><a href="https://vk.com/nincfw" itemprop="sameAs">
+      
+
+<li><a href="https://vk.com/portablegaming" itemprop="sameAs">
   <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
 </a></li>
+
 	
       
 
@@ -342,7 +345,8 @@ $(document).ready(function() {
   <li><a href="#инструкция" id="markdown-toc-инструкция">Инструкция</a>    <ul>
       <li><a href="#часть-i---форматирование-microsd-карты" id="markdown-toc-часть-i---форматирование-microsd-карты">Часть I - Форматирование microSD-карты</a></li>
       <li><a href="#часть-ii---перенос-данных-на-sd2vita" id="markdown-toc-часть-ii---перенос-данных-на-sd2vita">Часть II - Перенос данных на sd2vita</a></li>
-      <li><a href="#часть-iii---настройка-sd2vita" id="markdown-toc-часть-iii---настройка-sd2vita">Часть III - Настройка sd2vita</a></li>
+      <li><a href="#часть-iii---установка-и-настройка-tf-card-plugin-tool" id="markdown-toc-часть-iii---установка-и-настройка-tf-card-plugin-tool">Часть III - Установка и настройка <strong>TF Card Plugin Tool</strong></a></li>
+      <li><a href="#часть-iv---настройка-sd2vita" id="markdown-toc-часть-iv---настройка-sd2vita">Часть IV - Настройка sd2vita</a></li>
     </ul>
   </li>
   <li><a href="#дополнительные-сведения" id="markdown-toc-дополнительные-сведения">Дополнительные сведения</a></li>
@@ -361,9 +365,9 @@ $(document).ready(function() {
 
 <p><strong>SD2Vita</strong> - это адаптер для microSD карты, который вставляется в слот для картриджа с игрой, а <strong>psvd</strong> это адаптер для microSD карты, который заменяет собой 3g модем на моделях PS Vita с поддержкой 3g.</p>
 
-<p>При помощи SD2Vita, microSD карта (или USB диск, если у вас PS Vita TV) могут быть смонтированы как <code class="highlighter-rouge">ux0:</code> вместо карты памяти Sony. Это весьма полезно, поскольку оригинальные карты Sony сколь-либо значимой ёмкости стоят невероятно дорого.</p>
+<p>При помощи SD2Vita, microSD карта (или USB диск, если у вас PS Vita TV) могут быть смонтированы как <code class="highlighter-rouge">ux0:</code> вместо карты памяти Sony. Это весьма полезно, поскольку оригинальные карты Sony, сколь-либо значимой ёмкости, стоят невероятно дорого.</p>
 
-<p class="notice--info">У вас уже должно быть установлено приложение VitaShell.</p>
+<p class="notice--info">У вас уже должно быть установлено приложение <a href="vitashell" target="_blank">VitaShell</a></p>
 
 <h2 id="что-понадобится">Что понадобится</h2>
 
@@ -386,7 +390,7 @@ $(document).ready(function() {
   <li>Установите <a href="https://sourceforge.net/projects/win32diskimager/">Win32DiskImager</a> на ваш ПК</li>
   <li>Вставьте microSD, которую вы планируете использовать с sd2vita, в компьютер</li>
   <li>Запустите <strong>Win32DiskImager</strong></li>
-  <li>Выберите <code class="highlighter-rouge">[zzBlank.img](https://vita.customfw.xyz/files/zzBlank.img)</code> в качестве “Image File”</li>
+  <li>Выберите <a href="https://vita.customfw.xyz/files/zzBlank.img"><code class="highlighter-rouge">zzBlank.img</code></a> в качестве “<strong>Image File</strong>”</li>
   <li>Выберите букву вашего накопителя в качестве “<strong>Device</strong>”</li>
   <li>Нажмите “<strong>Write</strong>”</li>
   <li>Нажмите “<strong>Yes</strong>” чтобы продолжить при появлении запроса</li>
@@ -466,10 +470,24 @@ $(document).ready(function() {
   </li>
   <li>Нажмите (Круг) на консоли, чтобы отмонтировать PS Vita от ПК</li>
   <li>Закройте приложение VitaShell</li>
-  <li>Перезагрузите консоль</li>
 </ol>
 
-<h3 id="часть-iii---настройка-sd2vita">Часть III - Настройка sd2vita</h3>
+<h3 id="часть-iii---установка-и-настройка-tf-card-plugin-tool">Часть III - Установка и настройка <strong>TF Card Plugin Tool</strong></h3>
+
+<p class="notice--info">Пропустите эту часть, если у вас уже есть установленный <strong>TF Card Plugin Tool</strong></p>
+
+<ol>
+  <li>Скачайте и установите <strong><a href="https://github.com/theheroGAC/TF-Card-Plugin-Tool">TF-Card-Plugin-Tool</a></strong> и <strong><a href="https://bitbucket.org/Lupo511/appstoragemanager/downloads/">Application Storage Manager</a></strong></li>
+  <li>Запустите “<strong>AppStorageManager</strong>”</li>
+  <li>Выберите “<strong>Memory Card -&gt; Internal Storage</strong>”</li>
+  <li>Выберите “<strong>[TFCARDPL0] TF Card Plugin Tool</strong>”, если таковой устанавливался на приставку</li>
+  <li>Нажмите (Крест) для  подтверждения перемещения</li>
+  <li>Нажмите (Крест) для продолжения работы, как только на экране появится зелёная надпись</li>
+  <li>Выйдите в главное меню PS Vita, нажав на кнопку (PS)</li>
+  <li>Удалите “<strong>AppStorageManager</strong>”</li>
+</ol>
+
+<h3 id="часть-iv---настройка-sd2vita">Часть IV - Настройка sd2vita</h3>
 
 <ol>
   <li>Запустите приложение <strong>TF Card Plugin Tool</strong></li>
@@ -529,8 +547,7 @@ $(document).ready(function() {
     
     
     
-    
-	  <li><a href="https://vk.com/nincfw" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Custom Nintendo
+	  <li><a href="https://vk.com/portablegaming" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Portable Gaming
 	  </a></li>	
     
     <li><a href="https://vita.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>

@@ -23,7 +23,7 @@
 
 
 
-<meta name="author" content="nincfw team">
+<meta name="author" content="PG-team">
 
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Взлом PS Vita">
@@ -177,6 +177,9 @@ $(document).ready(function() {
             <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/vitashell">Использование<br>VitaShell</a></li>
           
             
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/sd2vita">sd2vita</a></li>
+          
+            
             <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка<br>игр</a></li>
           
             
@@ -219,13 +222,13 @@ $(document).ready(function() {
   
     <div class="author__avatar">
       
-        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="nincfw team" itemprop="image"></center>
+        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="PG-team" itemprop="image"></center>
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">nincfw team</h3><br>
+    <h3 class="author__name" itemprop="name">PG-team</h3><br>
     
   </div>
   
@@ -236,12 +239,12 @@ $(document).ready(function() {
       
 	<hr class="style-two">
 
-      <li><a href="https://vk.com/" itemprop="sameAs">
-  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Вконтакте
-</a></li>
-<li><a href="https://vk.com/nincfw" itemprop="sameAs">
+      
+
+<li><a href="https://vk.com/portablegaming" itemprop="sameAs">
   <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
 </a></li>
+
 	
       
 
@@ -465,7 +468,7 @@ $(document).ready(function() {
         <ol>
           <li>Нажмите (Крест), чтобы начать установку Adrenaline</li>
           <li>Когда на экране появится надпись “<strong>The firmware has been installed successfully</strong>”, нажмите (Крест), чтобы запустить Adrenaline</li>
-          <li>Настройте его, затем нажмите дважды на кнопку (PS), чтобы выйти в главное меню PS Vita</li>
+          <li>Настройте его, затем нажмите дважды на кнопку (PS), чтобы выйти в главное меню PS Vita и закройте Adrenaline</li>
         </ol>
         <ul>
           <li>Подробнее об использовании Adrenaline, можно почитать на странице <a href="adrenaline" target="_blank">Adrenaline</a></li>
@@ -475,21 +478,29 @@ $(document).ready(function() {
   </li>
   <li>Запустите “<strong>AppStorageManager</strong>”
     <ol>
-      <li>Выберите “<strong>Memory Card -&gt; Internal Storage</strong>”</li>
-      <li>Выберите “<strong>[VITASHELL] VitaShell</strong>”</li>
-      <li>Нажмите (Крест) для  подтверждения перемещения</li>
-      <li>Нажмите (Крест) для продолжения работы, как только на экране появится зелёная надпись</li>
-    </ol>
-  </li>
-  <li>Выберите “<strong>[TFCARDPL0] TF Card Plugin Tool</strong>”, если таковой устанавливался на приставку
-    <ol>
-      <li>Нажмите (Крест) для  подтверждения перемещения</li>
-      <li>Нажмите (Крест) для продолжения работы, как только на экране появится зелёная надпись</li>
+      <li>Выберите “<strong>Memory Card -&gt; Internal Storage</strong>”
+        <ol>
+          <li>Выберите “<strong>[VITASHELL] VitaShell</strong>”
+            <ol>
+              <li>Нажмите (Крест) для  подтверждения перемещения</li>
+              <li>Нажмите (Крест) для продолжения работы, как только на экране появится зелёная надпись</li>
+            </ol>
+          </li>
+          <li>Выберите “<strong>[TFCARDPL0] TF Card Plugin Tool</strong>”, если таковой устанавливался на приставку
+            <ol>
+              <li>Нажмите (Крест) для  подтверждения перемещения</li>
+              <li>Нажмите (Крест) для продолжения работы, как только на экране появится зелёная надпись</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>Выйдите в главное меню PS Vita, нажав на кнопку (PS)</li>
     </ol>
   </li>
   <li>Запустите “<strong>3G Disabler</strong>”, если в вашей PS Vita есть 3G-модуль и вы устанавливали это приложение
     <ol>
       <li>Нажмите (Крест), чтобы отключить функции 3G на PS Vita</li>
+      <li>Выйдите в главное меню PS Vita, нажав на кнопку (PS)</li>
     </ol>
   </li>
 </ol>
@@ -497,8 +508,8 @@ $(document).ready(function() {
 <h3 id="часть-iv---установка-плагинов">Часть IV - Установка плагинов</h3>
 
 <ol>
-  <li>Запустите VitaShell</li>
-  <li>Удалите папку <code class="highlighter-rouge">tai</code> из раздел <code class="highlighter-rouge">ux0:</code></li>
+  <li>Запустите <strong>VitaShell</strong></li>
+  <li>Удалите папку <code class="highlighter-rouge">tai</code> из раздел <code class="highlighter-rouge">ux0:</code>, если таковая тут есть</li>
   <li>Перейдите в <code class="highlighter-rouge">ux0:/plugins</code></li>
   <li>Переместите папку <code class="highlighter-rouge">tai</code> из папки <code class="highlighter-rouge">ux0/plugins</code> в корень раздела <code class="highlighter-rouge">ur0:</code> с заменой (если таковая потребуется)
     <ul>
@@ -537,6 +548,8 @@ $(document).ready(function() {
     </ul>
   </li>
   <li>Закройте приложение <strong>Управление данными</strong></li>
+  <li>Запустите <strong>VitaShell</strong></li>
+  <li>Удалите папку <code class="highlighter-rouge">VPK</code> из раздел <code class="highlighter-rouge">ux0:/</code></li>
 </ol>
 
 <hr />
@@ -592,8 +605,7 @@ $(document).ready(function() {
     
     
     
-    
-	  <li><a href="https://vk.com/nincfw" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Custom Nintendo
+	  <li><a href="https://vk.com/portablegaming" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Portable Gaming
 	  </a></li>	
     
     <li><a href="https://vita.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
