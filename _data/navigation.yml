@@ -12,6 +12,8 @@ main:
     url: /troubleshooting
   - title: "Использование<br>VitaShell"
     url: /vitashell
+  - title: "sd2vita"
+    url: /sd2vita
   - title: "Установка<br>игр"
     url: /games
   - title: "Установка<br>плагинов"
