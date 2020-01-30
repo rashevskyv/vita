@@ -412,12 +412,11 @@ $(document).ready(function() {
 
 <h3 id="часть-i---подготовительные-работы">Часть I - Подготовительные работы</h3>
 
+<div class="notice--warning">
+<p class="notice--success">Выполните следующее, если ещё не скидывали на приставку <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a>:</p>
+
 <ol>
-  <li>Скачайте и разархивируйте <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a> на ПК в удобное для вас место
-    <ul>
-      <li>Не нужно этого делать, если вы уже скидывали пак в процессе выполнения этой инструкции</li>
-    </ul>
-  </li>
+  <li>Скачайте и разархивируйте <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a> на ПК в удобное для вас место</li>
   <li>Запустите приложение <strong>VitaShell</strong> и подключите приставку к ПК <a href="vitashell#доступ-к-памяти-приставки-через-пк" about="_blank">удобным способом</a></li>
   <li>На ПК, на примонтированном диске, удалите папку <code class="highlighter-rouge">tai</code>
     <ul>
@@ -426,13 +425,14 @@ $(document).ready(function() {
       <li>Если папки всё равно нет, отключите PS Vita от ПК и убедитесь, что и в VitaShell её тоже нет</li>
     </ul>
   </li>
-  <li>Скопируйте содержимое <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a> на PS Vita
+  <li>Скопируйте содержимое <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a> на PS Vita удобным для вас способом
     <ul>
-      <li>Не нужно этого делать, если вы уже скидывали пак в процессе выполнения этой инструкции</li>
+      <li>Если вы не знаете как перенести файлы на PS Vita, <a href="vitashell#доступ-к-памяти-приставки-через-пк" target="_blank">воспользуйтесь этой  инструкцией</a></li>
     </ul>
   </li>
   <li>Нажмите (Круг) на консоли чтобы отключить PS Vita от ПК</li>
 </ol>
+</div>
 
 <h3 id="часть-ii---установка-vpk">Часть II - Установка VPK</h3>
 
@@ -511,7 +511,7 @@ $(document).ready(function() {
   <li>Запустите <strong>VitaShell</strong></li>
   <li>Удалите папку <code class="highlighter-rouge">tai</code> из раздел <code class="highlighter-rouge">ux0:</code>, если таковая тут есть</li>
   <li>Перейдите в <code class="highlighter-rouge">ux0:/plugins</code></li>
-  <li>Переместите папку <code class="highlighter-rouge">tai</code> из папки <code class="highlighter-rouge">ux0/plugins</code> в корень раздела <code class="highlighter-rouge">ur0:</code> с заменой (если таковая потребуется)
+  <li>Переместите папку <code class="highlighter-rouge">tai</code> из папки <code class="highlighter-rouge">ux0:/plugins</code> в корень раздела <code class="highlighter-rouge">ur0:</code> с заменой (если таковая потребуется)
     <ul>
       <li><strong>ОБРАТИТЕ ВНИМАНИЕ</strong>, мы переносим папку из раздела u<strong>x</strong>0 в раздел u<strong>r</strong>0!</li>
       <li>Для копирования, нажмите (треугольник) на выбранной папке и выберите <code class="highlighter-rouge">Move</code></li>
@@ -549,8 +549,11 @@ $(document).ready(function() {
   </li>
   <li>Закройте приложение <strong>Управление данными</strong></li>
   <li>Запустите <strong>VitaShell</strong></li>
-  <li>Удалите папку <code class="highlighter-rouge">VPK</code> из раздел <code class="highlighter-rouge">ux0:/</code></li>
+  <li>Удалите папки <code class="highlighter-rouge">plugins</code> и <code class="highlighter-rouge">VPK</code></li>
+  <li>Перезапустите PS Vita</li>
 </ol>
+
+<p class="notice--info">Если всё сделано правильно, вы сможете запускать и обновлять игры от PS Vita, PSP и PSX бесплатно, устанавливать для PSV-игр патчи и модификации. Благодаря плагинам у вас появится возможность <a href="games#разгон-на-ps-vita" target="blank_">разгонять приставку</a> по нажатию (Select)+(вверх), процентное значение заряда возле индикатора батареи, дополнительные пункты в быстром меню (вызывается по долгому нажатию кнопки (PS)), возможность прослушивать свою музыку даже в играх и управлять ей через быстрое меню, делать скриншоты в PNG по нажатию (PS)+(Start).</p>
 
 <hr />
 

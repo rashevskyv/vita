@@ -343,6 +343,10 @@ $(document).ready(function() {
   <li><a href="#обязательно-к-прочтению" id="markdown-toc-обязательно-к-прочтению">Обязательно к прочтению</a></li>
   <li><a href="#не-работает-эксплойт-на-основе-браузера" id="markdown-toc-не-работает-эксплойт-на-основе-браузера">Не работает эксплойт на основе браузера</a></li>
   <li><a href="#черный-экран-при-загрузке" id="markdown-toc-черный-экран-при-загрузке">Черный экран при загрузке</a></li>
+  <li><a href="#не-работает-подключение-по-usb-к-пк-на-windows" id="markdown-toc-не-работает-подключение-по-usb-к-пк-на-windows">Не работает подключение по USB к ПК на Windows</a></li>
+  <li><a href="#перестали-работать-все-плагины" id="markdown-toc-перестали-работать-все-плагины">Перестали работать все плагины</a></li>
+  <li><a href="#не-могу-подключиться-к-finalhe-хотя-раньше-всё-работало" id="markdown-toc-не-могу-подключиться-к-finalhe-хотя-раньше-всё-работало">Не могу подключиться к finalhe, хотя раньше всё работало</a></li>
+  <li><a href="#не-могу-обновить-удалить-vitashell--tf-card-plugin-tool" id="markdown-toc-не-могу-обновить-удалить-vitashell--tf-card-plugin-tool">Не могу обновить (удалить) VitaShell / TF Card Plugin Tool</a></li>
 </ul>
 
   </nav>
@@ -367,7 +371,7 @@ $(document).ready(function() {
 <ol>
   <li>Убедитесь, что консоль имеет стабильное сетевое подключение</li>
   <li>Запустите браузер, откройте настройки браузера</li>
-  <li>Прокрутите до конца вниз и нажмите “Delete Cookies” и “Clear Search History”</li>
+  <li>Прокрутите до конца вниз и нажмите “<strong>Delete Cookies</strong>” и “<strong>Clear Search History</strong>”</li>
   <li>Попробуйте запустить эксплойт еще раз</li>
 </ol>
 
@@ -378,6 +382,37 @@ $(document).ready(function() {
   <li>Если консоль загружается, удалите недавно добавленные плагины</li>
   <li>Если эти инструкции не помогли, консоль, скорее всего, превратилась в брик</li>
 </ol>
+
+<h2 id="не-работает-подключение-по-usb-к-пк-на-windows">Не работает подключение по USB к ПК на Windows</h2>
+
+<p>Установите <a href="files/QcmaDriver_winusb.zip">драйвер</a>, перезагрузите ПК и попробуйте ещё раз</p>
+
+<h2 id="перестали-работать-все-плагины">Перестали работать все плагины</h2>
+
+<p>Вероятно, вы случайно сбросили настройки TaiHEN, вам придётся переустановить все плагины. Для этого:</p>
+
+<ol>
+  <li>Скачайте <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a></li>
+  <li>Запустите приложение <strong>VitaShell</strong> и подключите приставку к ПК <a href="vitashell#доступ-к-памяти-приставки-через-пк" about="_blank">удобным способом</a></li>
+  <li>На ПК, на примонтированном диске, удалите папку <code class="highlighter-rouge">tai</code></li>
+  <li>Скопируйте папку <code class="highlighter-rouge">plugins</code> из архива <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a> на PS Vita</li>
+  <li>Перейдите в <code class="highlighter-rouge">ux0:/plugins</code></li>
+  <li>Переместите папку <code class="highlighter-rouge">tai</code> из папки <code class="highlighter-rouge">ux0:/plugins</code> в корень раздела <code class="highlighter-rouge">ur0:</code> с заменой (если таковая потребуется)
+    <ul>
+      <li><strong>ОБРАТИТЕ ВНИМАНИЕ</strong>, мы переносим папку из раздела u<strong>x</strong>0 в раздел u<strong>r</strong>0!</li>
+      <li>Для копирования, нажмите (треугольник) на выбранной папке и выберите <code class="highlighter-rouge">Move</code></li>
+      <li>Для того, чтобы вставить скопированное в другую папку, зайдите в папку, в которую хотите скопировать данные, нажмите (треугольник) и выберите <code class="highlighter-rouge">Paste</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="не-могу-подключиться-к-finalhe-хотя-раньше-всё-работало">Не могу подключиться к finalhe, хотя раньше всё работало</h2>
+
+<p>Удалите старое подключение на вашей консоли и зарегистрируйте новое</p>
+
+<h2 id="не-могу-обновить-удалить-vitashell--tf-card-plugin-tool">Не могу обновить (удалить) VitaShell / TF Card Plugin Tool</h2>
+
+<p>Это происходит из-за того, что программа(ы) перенесена(ы) во внутреннюю память приставки. Установите и запустите <strong><a href="https://bitbucket.org/Lupo511/appstoragemanager/downloads/">Application Storage Manager</a></strong>, выберите “<strong>Internal Storage -&gt; Memory Card</strong>” и перенесите VitaShell / TF Card Plugin Tool на карту памяти. После этого приложение(я) можно будет без проблем обновить (удалить).</p>
 
 				
         
