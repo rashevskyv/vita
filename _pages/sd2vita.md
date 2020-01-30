@@ -90,8 +90,9 @@ title: "Настройка и работа с sd2vita"
 
 ### Часть III - Установка и настройка **TF Card Plugin Tool**
 
-Пропустите эту часть, если у вас уже есть установленный **TF Card Plugin Tool**
-{: .notice--info}
+{% capture notice-1 %}
+Выполните следующее, если у вас **не установлено TF Card Plugin Tool** (а если установлено, сразу переходите к следующей части)
+{: .notice--success}
 
 1. Скачайте и установите **[TF-Card-Plugin-Tool](https://github.com/theheroGAC/TF-Card-Plugin-Tool)** и **[Application Storage Manager](https://bitbucket.org/Lupo511/appstoragemanager/downloads/)**
 1. Запустите "**AppStorageManager**"
@@ -101,6 +102,8 @@ title: "Настройка и работа с sd2vita"
 1. Нажмите (Крест) для продолжения работы, как только на экране появится зелёная надпись
 1. Выйдите в главное меню PS Vita, нажав на кнопку (PS)
 1. Удалите "**AppStorageManager**"
+{% endcapture %}
+<div class="notice--warning">{{ notice-1 | markdownify }}</div>
  
 ### Часть IV - Настройка sd2vita
 

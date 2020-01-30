@@ -14,7 +14,7 @@ sitemap: false
 * [Начало](get-started)
 * [Обновление ПО до 3.65 (PS TV)](updating-firmware-ps-tv-365)
 * [Обновление ПО до 3.65 (PS Vita)](updating-firmware-ps-vita-365)
-* [Обновление прошивки (3.60)updating-to-360)
+* [Обновление прошивки (3.60)](updating-to-360)
 * [Понижение версии системного ПО до 3.65](downgrading-firmware)
 * [Проблемы и их решения](troubleshooting)
 * [Установка Ensō (3.60)](installing-enso-360)
