@@ -180,7 +180,7 @@ $(document).ready(function() {
             <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/sd2vita">sd2vita</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка<br>игр</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка игр</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/plugins">Установка<br>плагинов</a></li>
@@ -340,7 +340,6 @@ $(document).ready(function() {
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Содержание</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#обязательно-к-прочтению" id="markdown-toc-обязательно-к-прочтению">Обязательно к прочтению</a></li>
   <li><a href="#настройки-adrenaline" id="markdown-toc-настройки-adrenaline">Настройки Adrenaline</a></li>
   <li><a href="#работа-с-файлами" id="markdown-toc-работа-с-файлами">Работа с файлами</a></li>
 </ul>
@@ -354,9 +353,7 @@ $(document).ready(function() {
 
 <hr />
 
-<h3 id="обязательно-к-прочтению">Обязательно к прочтению</h3>
-
-<p>Adrenaline - это приложение, модифицирующее PSP-эмулятор PS Vita, позволяющее запустить кастомную прошивку PSP внутри PS Vita и обеспечивающее доступ к главному меню PSP внутри официального эмулятора PSP. Запускает игры, приложения и плагины, разработанные для PSP и PS One (практически все, за редкими исключениями). CFW (Custom Firmware) Adrenaline основана на базе прошивки 6.61 для PSP.</p>
+<p>Adrenaline - это приложение, модифицирующее PSP-эмулятор PS Vita, позволяющее запустить кастомную прошивку PSP внутри PS Vita и обеспечивающее доступ к главному меню PSP внутри официального эмулятора PSP. Запускает игры, приложения и плагины, разработанные для PSP (практически все, за редкими исключениями)? а так же практически всю библиотеку игр дляPS One. Adrenaline основана на базе прошивки 6.61 для PSP.</p>
 
 <p>Для использования Adrenaline не требуется активация учётной записи PSN.</p>
 
@@ -369,12 +366,12 @@ $(document).ready(function() {
   <li>Cервисы, которые были отключены Sony, после прекращения поддержки оригинальной консоли PlayStation Portable.</li>
 </ul>
 
-<p>Adrenaline поддерживает следующие разделы памяти, для хранения игр/плагинов/сохранений: <code class="highlighter-rouge">ux0:/</code>, <code class="highlighter-rouge">uma0:/</code>, <code class="highlighter-rouge">ur0:/</code>, <code class="highlighter-rouge">imc0:/</code>, <code class="highlighter-rouge">xmc0:/</code>. С каким именно разделом будет работать Adrenaline, задаётся в его настройках. Обратите внимание, что Adrenaline работает только с одним разделом за раз.</p>
+<p>Adrenaline поддерживает следующие разделы памяти, для хранения игр/плагинов/сохранений: <code class="highlighter-rouge">ux0:/</code>, <code class="highlighter-rouge">uma0:/</code>, <code class="highlighter-rouge">ur0:/</code>, <code class="highlighter-rouge">imc0:/</code>, <code class="highlighter-rouge">xmc0:/</code>. С каким именно разделом будет работать Adrenaline, задаётся в его настройках. Обратите внимание, что Adrenaline работает только с одним выбранным разделом.</p>
 
 <h3 id="настройки-adrenaline">Настройки Adrenaline</h3>
 
 <details class="spoiler"><summary class="spoiler-title">Меню настроек Adrenaline</summary><div class="spoiler-body">
-<p>Для входа в Меню Adrenaline нажмите и удерживаете клавишу (PS), выберите пункт “Настройки”.
+<p>Для входа в Меню Adrenaline нажмите и удерживаете клавишу (PS), выберите пункт “<strong>Настройки</strong>”.
 В открывшимся меню содержится 4 вкладки. Перемещение по вкладкам осуществляется с помощью клавиш (L) и (R)</p>
 
 <ul>
@@ -383,7 +380,7 @@ $(document).ready(function() {
       <li><strong>Enter Standby Mode</strong> - переход в режим сна</li>
       <li><strong>Open Official Setting</strong> - открыть настройки эмулятора (эмулятор PSP имеет свои отдельные от настроек Adrenaline настройки, настройки довольно простые, поэтому не будут описаны отдельно)</li>
       <li><strong>Exit PSPEmu Application</strong> - выйти на экран LiveArea</li>
-      <li><strong>Exit Adrenaline Menu</strong> - перейти в XMB PSP</li>
+      <li><strong>Exit Adrenaline Menu</strong> - перейти в главное меню PSP</li>
     </ul>
   </li>
   <li><strong>States</strong> - меню сохранения/загрузки. Содержит 32 слота для быстрых сохранений в любом месте</li>
@@ -391,10 +388,10 @@ $(document).ready(function() {
     <ul>
       <li><strong>Graphics Filtering</strong> - графические фильтры</li>
       <li><strong>Smooth Graphics</strong> - настройки сглаживания</li>
-      <li><strong>f.lux Filter Color</strong> - цветовой фильтр изображения)</li>
+      <li><strong>f.lux Filter Color</strong> - цветовой фильтр изображения</li>
       <li><strong>Screen Scale X/Y (PSP)</strong> - масштабирование изображения по осям, для PSP игр. По умолчанию значение установлено в 2.000. Шаг в 0.005.</li>
       <li><strong>Screen Scale X/Y (PS1)</strong> - масштабирование изображения по осям, для PSP игр. По умолчанию значение установлено в 1.000. Шаг в 0.005.</li>
-      <li><strong>Memory Stick Location</strong> - выбор раздела памяти для чтения по умолчанию, в котором хранятся игры. Обратите внимание, что если вы устанавливаете плагины или игры, то делать это нужно на тот диск, что указан здесь! Так же, если вы используете <a href="sd2vita" about="_blank">sd2vita</a> и оригинальную карту PS Vita одновременно, то карта будет смонитрована в <code class="highlighter-rouge">uma0</code> и может быть использована Adrenaline</li>
+      <li><strong>Memory Stick Location</strong> - выбор раздела памяти для чтения по умолчанию, в котором хранятся игры. Обратите внимание, что если вы устанавливаете плагины или игры, то делать это нужно на тот диск, что указан здесь! Так же, если вы используете <a href="sd2vita" about="_blank">sd2vita</a> и оригинальную карту PS Vita одновременно, то оригинальная карта PS Vita будет смонитрована в <code class="highlighter-rouge">uma0</code> и может быть использована Adrenaline</li>
       <li><strong>USB device</strong> - выбор устройства для подключения по USB через меню PSP:
         <ul>
           <li><strong>Memory Card</strong> - оригинальная карта памяти</li>
@@ -406,8 +403,6 @@ $(document).ready(function() {
       <li><strong>Use DS3/DS4 Controller</strong> - переключение режима для поддержки контроллеров DualShock</li>
       <li><strong>Skip Adrenaline Boot Logo</strong> - включение параметра отключит логотип Adrenaline при запуске прошивки PSP</li>
     </ul>
-
-    <p class="notice--info">Начиная с версии 6.4, в Adrenaline появилась функция ускорения игр PSOne, с помощью сочетания клавиш (L) + (Select)</p>
   </li>
   <li><strong>About</strong> - сведения о разработчиках</li>
 </ul>
@@ -419,7 +414,7 @@ $(document).ready(function() {
 <ul>
   <li><strong>CPU Clock XMB</strong> - частота процессора в меню</li>
   <li><strong>CPU Clock GAME</strong> - частота процессора в играх</li>
-  <li><strong>UMD ISO Mode</strong> - режим работы эмулятора привода</li>
+  <li><strong>UMD ISO Mode</strong> - режим работы эмулятора привода приставки</li>
   <li><strong>SUSPEND DEVICE</strong> – отправить приставку в сон</li>
   <li><strong>RECOVERY MENU</strong> - запустить рекавери (подробнее ниже)</li>
   <li><strong>RESTART VSH</strong> - перезапуск главного меню эмулятора PSP</li>
@@ -438,15 +433,15 @@ $(document).ready(function() {
 
 <p>В меню восстановления содержатся следующие пункты:</p>
 <ul>
-  <li><strong>Toggle USB</strong> - позволяет смонтировать выбранную в VSH-меню память приставrb в качестве носителя в вашем ПК</li>
-  <li><strong>Configuration</strong> - тонкие настройки эмулятора PSP
+  <li><strong>Toggle USB</strong> - позволяет смонтировать выбранную в VSH-меню память приставки в качестве носителя в вашем ПК</li>
+  <li><strong>Configuration</strong>:
     <ul>
       <li><strong>Skip Sony logo</strong> - пропуск логотипа Sony при запуске Adrenaline (рекомендуется: <strong>Enable</strong>)</li>
       <li><strong>Skip gameboot</strong> - пропуск бутскрина при запуске игры (рекомендуется: <strong>Enable</strong>)</li>
       <li><strong>Hide corrupt icon</strong> - прятать иконки повреждённых данных (рекомендуется: <strong>Disabled</strong>)</li>
       <li><strong>Hide MAC address</strong> - прятать MAC-адрес вашей приставки (рекомендуется: <strong>Disabled</strong>)</li>
       <li><strong>Autorun program at /PSP/GAME/BOOT/EBOOT.PBP</strong> - при запуске Adrenaline будет запускаться программа, расположенная по указанному пути (рекомендуется: <strong>Disabled</strong>)</li>
-      <li><strong>UMD mode</strong> - режим работы эмулятора привода (рекомендуется: <strong>Inferno</strong>)</li>
+      <li><strong>UMD mode</strong> - режим работы эмулятора привода приставки (рекомендуется: <strong>Inferno</strong>)</li>
       <li><strong>Fake Region</strong> - позволяет задать вручную регион приставки (рекомендуется: <strong>Disabled</strong>)</li>
       <li><strong>Hide DLC’s in game menu</strong> - прятать DLC в игровом меню (рекомендуется: <strong>Disabled</strong>)</li>
       <li><strong>Hide PIC0.PNG and PIC1.PNG ingame menu</strong> - прячет дополнительные изображения игр в правой части экрана (рекомендуется: <strong>Disabled</strong>)</li>
@@ -455,7 +450,7 @@ $(document).ready(function() {
       <li><strong>Use NODRM Engine</strong> - Использование движка фейковых лицензий (рекомендуется: <strong>Enable</strong>)</li>
     </ul>
   </li>
-  <li><strong>Advanced</strong>
+  <li><strong>Advanced</strong>:
     <ul>
       <li><strong>Advanced configuration</strong> - меню расширенных настроек
         <ul>
@@ -491,7 +486,7 @@ $(document).ready(function() {
 <details class="spoiler"><summary class="spoiler-title">Файловая структура эмулятора PSP</summary><div class="spoiler-body">
 <p class="notice--info">Adrenaline CFW поддерживает всю структуру папок, аналогичную таковой в PSP.</p>
 
-<p class="notice--info">Если файла или каталога нет в Вашей системе, создайте его вручную.</p>
+<p class="notice--info">Если файла или каталога нет в вашей системе, создайте его вручную.</p>
 
 <p class="notice--warning">На PS Vita каталоги могут хранится в <code class="highlighter-rouge">ux0:/</code>, <code class="highlighter-rouge">ur0:/</code>, <code class="highlighter-rouge">uma0:/</code>, <code class="highlighter-rouge">imc0:/</code>, <code class="highlighter-rouge">xmc0:/</code>. Не забывайте, что папка <code class="highlighter-rouge">pspemu</code> должна находится именно на том разделе, который прописан в настройках Adrenaline!</p>
 
@@ -501,7 +496,7 @@ $(document).ready(function() {
     <ul>
       <li><code class="highlighter-rouge">/pspemu/PSP/GAME</code> - каталог для хранения игр PSP/PSOne в формате *.PBP
         <ul>
-          <li><code class="highlighter-rouge">/pspemu/PSP/GAME/XXXX00000/eboot.pbp</code> - общий вид папки, где XXXX00000 - региональный код игры, или имя папки с игрой.</li>
+          <li><code class="highlighter-rouge">/pspemu/PSP/GAME/название_игры/eboot.pbp</code> - общий вид папки, где <code class="highlighter-rouge">название_игры</code> - региональный код игры, или имя папки с игрой.</li>
         </ul>
       </li>
       <li><code class="highlighter-rouge">/pspemu/PSP/SAVEDATA</code> - каталог в котором содержатся файлы сохранений игр.</li>
@@ -525,13 +520,15 @@ $(document).ready(function() {
 <details class="spoiler"><summary class="spoiler-title">Установка игр</summary><div class="spoiler-body">
 <p>Adrenaline может воспроизводить игры для PSP и для PSX в следующих форматах: <strong>ISO</strong>, <strong>CSO</strong>, <strong>PBP</strong>.</p>
 
-<p class="notice--info">Игры от PSP и PSX ставятся в зависимости от того, в каком они формате.</p>
+<p class="notice--info">Не важно от какой системы ваша игра. Место её установки зависит исключительно от того в каком она формате!</p>
 
 <p class="notice--info"><strong>CSO</strong> и <strong>PBP</strong>, если речь идёт об играх для PSP, являются сжатой разновидностью <strong>ISO</strong> и весят меньше при прочих равных. Поэтому именно они и рекомендуются в первую очередь к использованию.</p>
 
 <p class="notice--info">В формате <strong>PBP</strong> могут быть как игры для <strong>PSP</strong>, так и игры для <strong>PSX</strong>, так и простые приложения. В любом случае они устанавливаются одинаково - в папку <code class="highlighter-rouge">/pspemu/PSP/GAME/</code>.</p>
 
 <p class="notice--warning">Поддержка <strong>PBP</strong> для <strong>PSP-игр</strong> доступна только в случае установки установки плагина <a href="files/npdrm_free.prx"><code class="highlighter-rouge">npdrm_free.prx</code></a> (если прошивали по этому гайду - уже установлен)</p>
+
+<p class="notice--info">Начиная с версии 6.4, в Adrenaline появилась функция ускорения игр PSOne, с помощью сочетания клавиш (L) + (Select)</p>
 
 <ul>
   <li>Игры в формате PBP идут в следующем виде: <code class="highlighter-rouge">папка/EBOOT.PBP</code>, где в качестве имени папки может выступать как TitLEID игры, так и любое другое название. Их следует класть по пути <code class="highlighter-rouge">/pspemu/PSP/GAME/</code>, то есть в итоге должно получиться следующее: <code class="highlighter-rouge">/pspemu/PSP/GAME/папка/EBOOT.PBP</code>.</li>
@@ -543,6 +540,8 @@ $(document).ready(function() {
 <p>Если вы будете держать папку <code class="highlighter-rouge">pspemu</code> не в <code class="highlighter-rouge">ux0</code>, то следует указать в файле <code class="highlighter-rouge">pkgj/config.txt</code> в строке <code class="highlighter-rouge">install_psp_psx_location ux0:</code> вместо <code class="highlighter-rouge">ux0:</code> тот диск, на котором будут находится файлы для эмулятора PSP. Если вы не сделаете этого, то PKGj будет качать игры в <code class="highlighter-rouge">ux0</code>. Напоминаю, что место, в котором Adrenaline будет искать свои папки указывается в настройках самого Adrenaline!</p>
 
 <p>Если вы хотите установить игру для PSX, но она у вас в формате ISO, вам нужно сконвертировать её в PBP с помощью <a href="http://www.pspx.ru/forum/showthread.php?t=101703">PSX2PSP</a>.</p>
+
+<p>Для того, чтобы сжать игру в формате ISO в СЫЩ, используйте программу <a href="https://www.iso2cso.com">ISO2CSO</a>. Не рекомендуется ставить уровень сжатия (compression level) на значения выше, чем 5? иначе сжатая игра может начать тормозить</p>
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Работа с плагинами</summary><div class="spoiler-body">
@@ -594,6 +593,7 @@ $(document).ready(function() {
 <ul>
   <li><strong>category_lite.prx</strong> - плагин, позволяющий делить установленные игры и приложения по категориям. Для этого игры нужно класть в папки. Название папки будет совпадать с названием категории.</li>
   <li><strong>dayviewer.prx</strong> - плагин, показывающий текущую дату вместе с часами</li>
+  <li><a href="https://wololo.net/talk/viewtopic.php?t=4997"><strong>nploader.prx</strong></a> - плагин, позволяющий устанавливать DLC для PSP-игр</li>
   <li><strong>Набор плагинов Remaster Control</strong> - специальные плагины, активирующие работу второго аналогового стика в <strong>некоторых</strong> играх. По-умолчанию эти плагины отключены. Для того, чтобы они начали работать - включите из и перезагрузите VSH-меню
     <ul>
       <li><strong>acbl_control.prx</strong> - Assassin’s Creed: Bloodlines</li>

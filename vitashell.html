@@ -180,7 +180,7 @@ $(document).ready(function() {
             <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/sd2vita">sd2vita</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка<br>игр</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка игр</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/plugins">Установка<br>плагинов</a></li>
@@ -341,25 +341,9 @@ $(document).ready(function() {
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Содержание</h4></header>
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#внешний-вид-и-управление" id="markdown-toc-внешний-вид-и-управление">Внешний вид и управление</a></li>
-  <li><a href="#настройки-программы" id="markdown-toc-настройки-программы">Настройки программы</a>    <ul>
-      <li><a href="#меню-главного-экрана-программы" id="markdown-toc-меню-главного-экрана-программы">Меню главного экрана программы</a></li>
-      <li><a href="#меню-настроек-программы" id="markdown-toc-меню-настроек-программы">Меню настроек программы</a></li>
-      <li><a href="#контекстное-меню-выделенных-папок-и-файлов-операции-с-файлами" id="markdown-toc-контекстное-меню-выделенных-папок-и-файлов-операции-с-файлами">Контекстное меню выделенных папок и файлов, операции с файлами</a>        <ul>
-          <li><a href="#функции-диалогового-окна-при-работе-с-файлами-и-папками" id="markdown-toc-функции-диалогового-окна-при-работе-с-файлами-и-папками">Функции диалогового окна при работе с файлами и папками</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#установка-файлов-в-формате-vpk" id="markdown-toc-установка-файлов-в-формате-vpk">Установка файлов в формате VPK</a>    <ul>
-      <li><a href="#установка-одного-vpk-файла" id="markdown-toc-установка-одного-vpk-файла">Установка одного VPK-файла</a></li>
-      <li><a href="#установка-всех-vpk-файлов-в-папке" id="markdown-toc-установка-всех-vpk-файлов-в-папке">Установка всех VPK-файлов в папке</a></li>
-    </ul>
-  </li>
-  <li><a href="#доступ-к-памяти-приставки-через-пк" id="markdown-toc-доступ-к-памяти-приставки-через-пк">Доступ к памяти приставки через ПК</a>    <ul>
-      <li><a href="#запуск-на-приставке-ftp-сервера" id="markdown-toc-запуск-на-приставке-ftp-сервера">Запуск на приставке FTP-сервера</a></li>
-      <li><a href="#монтирование-приставки-в-качестве-usb-диска" id="markdown-toc-монтирование-приставки-в-качестве-usb-диска">Монтирование приставки в качестве USB-диска</a></li>
-    </ul>
-  </li>
+  <li><a href="#настройки-программы" id="markdown-toc-настройки-программы">Настройки программы</a></li>
+  <li><a href="#установка-файлов-в-формате-vpk" id="markdown-toc-установка-файлов-в-формате-vpk">Установка файлов в формате VPK</a></li>
+  <li><a href="#доступ-к-памяти-приставки-через-пк" id="markdown-toc-доступ-к-памяти-приставки-через-пк">Доступ к памяти приставки через ПК</a></li>
 </ul>
 
   </nav>
@@ -374,12 +358,16 @@ $(document).ready(function() {
 <p><strong>VitaShell</strong> - многофункциональный файловый менеджер, умеющий монтировать память приставки в качестве сменного носителя на ПК, имеющий встроенный FTP-сервер, может производить операции с файлами, имеет доступ ко всем необходимым разделам внутренней памяти приставки, умеет устанавливать приложения в формате VPK, обновлять LiveArea, и многое другое. 
 На базе VitaShell построен <strong>molecularShell</strong>, который является облегчённым вариантом первой и распространяется вместе с установкой Henkaku на прошивке 3.60. Сам по себе он используется только для того, чтобы установить VitaShell на вашу приставку :)</p>
 
-<p>Большинство функций МшефЫрудд и molecularShell совпадают, оэтому говоря об VitaShell, мы подразумеваем обе эти программы. В тех случаях, где не указано обратное.</p>
+<p>Большинство функций VitaShell и molecularShell совпадают, поэтому говоря об VitaShell, мы подразумеваем обе эти программы. В тех случаях, где не указано обратное.</p>
 
 <ul>
-  <li>VitaShell поддерживает следующие типы файлов: <code class="highlighter-rouge">png</code> / <code class="highlighter-rouge">jpg</code> / <code class="highlighter-rouge">mp3</code> / <code class="highlighter-rouge">ogg</code> / <code class="highlighter-rouge">txt</code> (и производные) / <code class="highlighter-rouge">zip</code> / <code class="highlighter-rouge">7zip</code> / <code class="highlighter-rouge">sfo</code> / и др.</li>
-  <li>Для установки <code class="highlighter-rouge">*.vpk</code> - выберите необходимый файл и нажмите (Крест).</li>
-  <li>Установка может занимать длительное время, так как скорость установки <code class="highlighter-rouge">*.vpk</code> напрямую зависит от количества файлов в этом контейнере.</li>
+  <li>VitaShell умнеет работать со следующими типами файлов: <code class="highlighter-rouge">png</code> / <code class="highlighter-rouge">jpg</code> / <code class="highlighter-rouge">mp3</code> / <code class="highlighter-rouge">ogg</code> / <code class="highlighter-rouge">txt</code> (и производные) / <code class="highlighter-rouge">zip</code> / <code class="highlighter-rouge">7zip</code> / <code class="highlighter-rouge">sfo</code> / и др.</li>
+  <li>Для установки <code class="highlighter-rouge">*.vpk</code> выберите необходимый файл и нажмите (Крест).</li>
+  <li>Установка может занимать длительное время, так как скорость установки <code class="highlighter-rouge">*.vpk</code> напрямую зависит от количества файлов в этом контейнере.
+    <ul>
+      <li><code class="highlighter-rouge">.vpk</code>-файл - обычный архив и его можно распаковать с помощью любого архиватора</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="внешний-вид-и-управление">Внешний вид и управление</h3>
@@ -392,16 +380,19 @@ $(document).ready(function() {
 <ul>
   <li><strong>ux0:</strong> - точка монтирования внешней карты памяти. После установки драйвера sd2vita, по этому пути будет доступна ваша microSD, а внешняя оригинальная карта станет находится в разделе <strong>uma0:</strong></li>
   <li><strong>uma0:</strong> (может отсутствовать) - точка монтирования, которая будет доступен при использовании sd2vita. Сюда смонтируется оригинальная внешняя карта приставки</li>
-  <li><strong>imc0:</strong> (только для консолей Slim) - встроенная карта памяти вашей PS Vita Slim / PS Vita TV</li>
+  <li><strong>imc0:</strong> (отсутствует в PS Vita 1000) - встроенная карта памяти вашей PS Vita Slim / PS Vita TV</li>
   <li><strong>ur0:</strong> - системный раздел. Сюда мы будем устанавливать все наши плагины и конфиги</li>
 </ul>
 
-<p class="notice--warning">Остальные разделы являются системными и неизменяемыми по умолчанию. Любые попытки внести изменения в эти разделы - копирование, перемещение, удаление файлов - может повлечь за собой неработоспособность консоли!</p>
+<p class="notice--warning">Остальные разделы являются системными и неизменяемыми по умолчанию. Любые попытки внести изменения в такие разделы - копирование, перемещение, удаление файлов - может повлечь за собой неработоспособность консоли!!!</p>
 
-<p>В левом верхнем углу (<strong>home (UNSAFE MODE)</strong>) отображена версия приложения, а так же каталог, в котором находиться пользователь и режим работы приложения.
-Пометка <strong>UNSAFE MODE</strong> указывает на то, что включён пункт меню “<strong>Небезопасные приложения</strong>” в разделе “<strong>Настройки HENkaku</strong>” приложения “<strong>Настройки</strong>” приставки.
-Пометка <strong>SAFE MODE</strong> указывает на то, что пункт меню “<strong>Небезопасные приложения</strong>” отключён, доступен только раздел <strong>ux0:</strong>. molecularShell всегда работает отлько в безопасном режиме.</p>
+<p>В левом верхнем углу (<strong>home (UNSAFE MODE)</strong>) отображена версия приложения, а так же каталог, в котором находиться пользователь и режим работы приложения.</p>
 
+<p>Пометка <strong>UNSAFE MODE</strong> указывает на то, что включён пункт меню “<strong>Небезопасные приложения</strong>” в разделе “<strong>Настройки HENkaku</strong>” приложения “<strong>Настройки</strong>” приставки.</p>
+
+<p>Пометка <strong>SAFE MODE</strong> указывает на то, что пункт меню “<strong>Небезопасные приложения</strong>” отключён, в таком случае будет доступен только раздел <strong>ux0:</strong>.</p>
+
+<p>Управление:</p>
 <ul>
   <li>Навигация по меню происходит с помощью кнопок (ВВЕРХ) и (ВНИЗ)</li>
   <li>Подтверждение и отмена выбора с помощью (Крест) и (Круг) соответственно</li>
@@ -412,8 +403,7 @@ $(document).ready(function() {
 
 <h3 id="настройки-программы">Настройки программы</h3>
 
-<h4 id="меню-главного-экрана-программы">Меню главного экрана программы</h4>
-
+<details class="spoiler"><summary class="spoiler-title">Меню главного экрана программы</summary><div class="spoiler-body">
 <p>Нажав на (Треугольник), находясь в главном меню программы, вы попадёте в его меню.</p>
 
 <p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/vs/vs_menu.jpg" alt="" /></p>
@@ -421,47 +411,46 @@ $(document).ready(function() {
 <ul>
   <li><strong>Refresh LiveArea</strong> - обновление экрана LiveArea, используется так же как пункт для установки NoNpDrm-игр.</li>
   <li><strong>Refresh license database</strong> - обновление базы данных лицензий консоли. Добавляет недостающие лицензии, если они есть.</li>
-  <li><strong>Mount uma0:/imc0:/xmc0:/</strong> - монтирует выбранный раздел памяти для использования.</li>
-  <li><strong>Unmount uma0:/imc0:/xmc0:/</strong> - размонтирование выбранного раздела.</li>
-  <li><strong>Mount USB ux0:</strong> - монтирование внешнего накопителя как <strong>ux0:</strong>, подключенного по USB</li>
-  <li><strong>Unmount USB ux0:</strong> - размонтирование внешнего накопителя подключенного по USB</li>
-  <li><strong>Mount/Unmount gamecard ux0</strong> - Монтирование / Размонтирование sd2vita как раздел <strong>ux0:</strong>, если используется плагин storagemgr от CelesteBlue</li>
+  <li><strong>Mount uma0:/, imc0:/, xmc0:/</strong> - монтирует выбранный раздел памяти для использования.</li>
+  <li><strong>Unmount uma0:/, imc0:/, xmc0:/</strong> - размонтирование выбранного раздела.</li>
+  <li><strong>Mount USB ux0:</strong> - монтирование внешнего накопителя, подключённого по USB, как <strong>ux0:</strong></li>
+  <li><strong>Unmount USB ux0:</strong> - размонтирование внешнего накопителя, подключённого по USB</li>
+  <li><strong>Mount/Unmount gamecard ux0</strong> - Монтирование / размонтирование sd2vita-карты памяти в качестве раздела <strong>ux0:</strong></li>
 </ul>
+</div></details>
 
-<h4 id="меню-настроек-программы">Меню настроек программы</h4>
-
-<p>Меню <strong>Main Settings</strong> вызывается с помощью кнопки Start из любого каталога.</p>
+<details class="spoiler"><summary class="spoiler-title">Меню настроек программы</summary><div class="spoiler-body">
+<p>Меню <strong>Main Settings</strong> вызывается с помощью кнопки (Start) из любого каталога.</p>
 
 <p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/vs/vs_settings.jpg" alt="" /></p>
 
 <ul>
-  <li><strong>Theme</strong> - Выбор установленной темы. По умолчанию доступно две - Default и Electron. Можно установить сторонние темы оформления. Расположение: <code class="highlighter-rouge">ux0:VitaShell/theme/</code></li>
-  <li><strong>USB Device</strong> - Выбор монтируемого устройства для режима передачи данных по USB.
+  <li><strong>Theme</strong> - Выбор установленной темы. По умолчанию доступно две - Default и Electron. Можно установить сторонние темы оформления. Тему следует класть в <code class="highlighter-rouge">ux0:/VitaShell/theme/</code></li>
+  <li><strong>USB Device</strong> - Выбор монтируемого устройства для режима передачи данных по USB
     <ul>
-      <li><strong>Memory Card</strong> - оригинальная внешняя карта памяти приставки. Важно понимать, что этот пункт подключит оригинальную карту памяти к ПК, как бы она был не смонтирована в вашей приставке.</li>
+      <li><strong>Memory Card</strong> - оригинальная внешняя карта памяти приставки. Важно понимать, что этот пункт подключит оригинальную карту памяти к ПК, как бы она был не смонтирована в вашей приставке. То есть, даже если у вас установлена sd2vita и её карта памяти смонтирована в ux0, при значении <strong>Memory Card</strong> к ПК все равно подмонтируется оригинальная карта памяти, находящаяся в uma0</li>
       <li><strong>Game Card</strong> - игровой картридж</li>
-      <li><strong>sd2vita</strong> - microSD, подключённая через адаптер sd2vita. Важно понимать, что этот пункт подключит оригинальную карту памяти к ПК, как бы она был не смонтирована в вашей приставке.</li>
-      <li><strong>psvsd</strong> - microSD, подключённая через адаптер psvsd. Важно понимать, что этот пункт подключит оригинальную карту памяти к ПК, как бы она был не смонтирована в вашей приставке.</li>
+      <li><strong>sd2vita</strong> - microSD, подключённая через адаптер sd2vita. Важно понимать, что этот пункт подключит карту памяти в переходнике sd2vita к ПК, как бы она был не смонтирована в вашей приставке.</li>
+      <li><strong>psvsd</strong> - microSD, подключённая через адаптер psvsd. Важно понимать, что этот пункт подключит окарту памяти в переходнике psvsd к ПК, как бы она был не смонтирована в вашей приставке.</li>
     </ul>
   </li>
   <li><strong>SELECT button</strong> - Выбор между монтированием консоли по USB или FTP-сервером
     <ul>
-      <li>Режим передачи данных - вызывается с помощью Select из любого каталога. Отключается кнопкой (Круг). В случае, если активирован FTP-сервер, можно свернуть сообщение с IP-адресом кнопкой (Крест)</li>
+      <li>Режим передачи данных - вызывается с помощью (Select) из любого каталога. Отключается кнопкой (Круг). В случае, если активирован FTP-сервер, можно свернуть сообщение с IP-адресом кнопкой (Крест) и продолжать использовать VitaShell, когда как FTP-сервер будет запущен в фоне</li>
     </ul>
   </li>
-  <li><strong>Disable auto-updates</strong> - Отключение автообновления программы.</li>
-  <li><strong>Disable warning messages</strong> - Отключение предупреждения перед установкой файлов *.vpk (рекомендуется включить)</li>
-  <li><strong>Restart VitaShell</strong> - перезапуск программы без перехода на экран LiveArea.</li>
+  <li><strong>Disable auto-updates</strong> - Отключение автообновления VitaShell</li>
+  <li><strong>Disable warning messages</strong> - Отключение предупреждения перед установкой файлов *.vpk (рекомендуется активировать)</li>
+  <li><strong>Restart VitaShell</strong> - перезапуск программы без перехода на экран LiveArea</li>
   <li><strong>Подраздел Power</strong>
     <ul>
-      <li><strong>Reboot</strong> - перезагрузка консоли.</li>
-      <li><strong>Power off</strong> - выключение консоли.</li>
-      <li><strong>Standby</strong> - переход в режим ожидания.</li>
+      <li><strong>Reboot</strong> - перезагрузка консоли</li>
+      <li><strong>Power off</strong> - выключение консоли</li>
+      <li><strong>Standby</strong> - переход в режим ожидания</li>
     </ul>
   </li>
 </ul>
-
-<h4 id="контекстное-меню-выделенных-папок-и-файлов-операции-с-файлами">Контекстное меню выделенных папок и файлов, операции с файлами</h4>
+</div></details>
 
 <p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/vs/vs_context.jpg" alt="" /></p>
 
@@ -472,50 +461,52 @@ $(document).ready(function() {
   <li>Выделить один или несколько объектов - (Квадрат)</li>
 </ul>
 
-<h5 id="функции-диалогового-окна-при-работе-с-файлами-и-папками">Функции диалогового окна при работе с файлами и папками</h5>
+<details class="spoiler"><summary class="spoiler-title">Функции контекстного меню при работе с файлами и папками</summary><div class="spoiler-body">
+<p class="notice--info">Вызов контекстного меню выделенных папок осуществляется по нажатию клавиши (Треугольник)</p>
 
 <ul>
-  <li><strong>Open decrypted</strong> - позволяет перейти в каталог и не в расшифрованном формате.</li>
-  <li><strong>Mark All / Unmark All</strong> - выделить/снять выделение с объектов в текущем каталоге.</li>
-  <li><strong>Move / Copy / Paste</strong> - действия “Переместить”, “Копировать”, “Вставить”.</li>
-  <li><strong>Delete</strong> - Удалить объект.</li>
-  <li><strong>Rename</strong> - Переименовать файл или папку.</li>
-  <li><strong>Properties</strong> - Свойства объекта.</li>
-  <li><strong>New</strong> - Вывод диалогового окна для создания:
+  <li><strong>Open decrypted</strong> - позволяет перейти в зашифрованный каталог</li>
+  <li><strong>Mark All / Unmark All</strong> - выделить/снять выделение с объектов в текущем каталоге</li>
+  <li><strong>Move / Copy / Paste</strong> - действия “Переместить”, “Копировать”, “Вставить”</li>
+  <li><strong>Delete</strong> - Удалить объект</li>
+  <li><strong>Rename</strong> - Переименовать файл или папку</li>
+  <li><strong>Properties</strong> - Свойства объекта</li>
+  <li><strong>New</strong>
     <ul>
-      <li><strong>New File</strong> - создать новый файл в текущем каталоге. Создается пустой файл без расширения. Необходимо переименовать файл с указанием расширения (например *.txt) для его формирования.</li>
-      <li><strong>New folder</strong> - создать новую папку в текущем каталоге.</li>
-      <li><strong>New bookmark</strong> - создать новую закладку выбранного каталога.</li>
+      <li><strong>New File</strong> - создать новый файл в текущем каталоге. Создаётся пустой файл без расширения. Необходимо переименовать файл с указанием расширения (например *.txt) для его формирования</li>
+      <li><strong>New folder</strong> - создать новую папку в текущем каталоге</li>
+      <li><strong>New bookmark</strong> - создать новую закладку выбранного каталога</li>
     </ul>
   </li>
-  <li><strong>Sort by</strong> - отсортировать файлы и папки в каталоге по:
+  <li><strong>Sort by</strong> - отсортировать файлы и папки в каталоге:
     <ul>
-      <li><strong>By name</strong> - по имени.</li>
-      <li><strong>By size</strong> - по размеру.</li>
-      <li><strong>By date</strong> - по дате создания.</li>
+      <li><strong>By name</strong> - по имени</li>
+      <li><strong>By size</strong> - по размеру</li>
+      <li><strong>By date</strong> - по дате создания</li>
     </ul>
   </li>
   <li><strong>More</strong> - Дополнительные функции:
     <ul>
-      <li><strong>Compress</strong> - создать *.zip-архив из выбранных объектов (файлов и папок)</li>
-      <li><strong>Install all/Install Folder</strong> - функция для установки игр из папки и *.vpk. Подробнее тут.</li>
-      <li><strong>Export Media</strong> - регистрация и экспорт в систему изображений и аудио-файлов.</li>
-      <li><strong>Calculate SHA1</strong> - создание контрольной суммы для файла и/или папки. Необходимо для проверки целостности объекта.</li>
+      <li><strong>Compress</strong> - создать <code class="highlighter-rouge">*.zip</code>-архив из выбранных объектов (файлов и папок)</li>
+      <li><strong>Install all/Install Folder</strong> - функция для <a href="vitashell#установка-файлов-в-формате-vpk">установки игр из папки или распакованного *.vpk</a></li>
+      <li><strong>Export Media</strong> - регистрация и экспорт в систему изображений и аудио-файлов</li>
+      <li><strong>Calculate SHA1</strong> - подсчёт контрольной суммы для файла и/или папки. Необходимо для проверки целостности объекта</li>
     </ul>
   </li>
   <li><strong>Ad-Hoc</strong> - передача файлов между двумя консолями по Wi-Fi:
     <ul>
-      <li><strong>Send</strong> - передать выбранный объект(ы).</li>
-      <li><strong>Recieve</strong> - принять данные.</li>
+      <li><strong>Send</strong> - передать выбранное</li>
+      <li><strong>Recieve</strong> - принять данные</li>
     </ul>
   </li>
   <li><strong>Bookmarks</strong> - закладки и недавние файлы:
     <ul>
-      <li><strong>Show bookmarks</strong> - показать созданные закладки. С закладками возможно взаимодействовать как с каталогами и ярлыками. Основное расположение закладок: ux0:VitaShell/bookmarks/</li>
-      <li><strong>Recent files</strong> - недавние файлы. Открывает список недавних файлов и операций с ними. Возможно взаимодействие с объектами.</li>
+      <li><strong>Show bookmarks</strong> - показать созданные закладки. С закладками возможно взаимодействовать как с каталогами и ярлыками. Закладки расположены в <code class="highlighter-rouge">ux00:/VitaShell/bookmarks/</code></li>
+      <li><strong>Recent files</strong> - недавние файлы. Открывает список недавних файлов и операций с ними</li>
     </ul>
   </li>
 </ul>
+</div></details>
 
 <h3 id="установка-файлов-в-формате-vpk">Установка файлов в формате VPK</h3>
 
@@ -523,8 +514,7 @@ $(document).ready(function() {
 
 <p class="notice--info">Перед началом установки множества файлов, рекомендуем зайти в меню программы и поставить значение пункта <strong>Disable warning messages</strong> в положение “<strong>On</strong>”, чтобы отключить навязчивые запросы о предоставлении расширенных прав.</p>
 
-<h4 id="установка-одного-vpk-файла">Установка одного VPK-файла</h4>
-
+<details class="spoiler"><summary class="spoiler-title">Установка одного VPK-файла</summary><div class="spoiler-body">
 <ol>
   <li>На консоли перейдите в <code class="highlighter-rouge">ux0:</code> -&gt; <code class="highlighter-rouge">VPK</code></li>
   <li>Нажмите (Крест), выделив необходимый файл, чтобы установить его</li>
@@ -538,9 +528,9 @@ $(document).ready(function() {
   <li>Нажмите (Крест) чтобы подтвердить удаление</li>
   <li>Закройте файловый менедже</li>
 </ol>
+</div></details>
 
-<h4 id="установка-всех-vpk-файлов-в-папке">Установка всех VPK-файлов в папке</h4>
-
+<details class="spoiler"><summary class="spoiler-title">Установка всех VPK-файлов в папке</summary><div class="spoiler-body">
 <ol>
   <li>Перейдите в папку <code class="highlighter-rouge">ux0:/VPK</code> и выделите любой <code class="highlighter-rouge">vpk-файл</code>, нажав (Квадрат)</li>
   <li>Нажмите (Треугольник) чтобы открыть меню, затем выберите “<strong>More</strong>” -&gt; “<strong>Install all</strong>” чтобы установить все выделенные файлы</li>
@@ -554,11 +544,46 @@ $(document).ready(function() {
   <li>Нажмите (Крест) чтобы подтвердить удаление</li>
   <li>Выйдите в главное меню PS Vita, нажав на кнопку (PS)</li>
 </ol>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Установка игр из папок или распакованного VPK</summary><div class="spoiler-body">
+<p class="notice--info">Этот метод быстрее установки на PS Vita, потому что самый ресурсоёмкий процесс - распаковку, мы будем проводить на ПК</p>
+
+<ol>
+  <li>Переименуйте ваш <code class="highlighter-rouge">.vpk</code>-файл в <code class="highlighter-rouge">.zip</code> и распакуйте</li>
+  <li>Переместите папку на консоль <a href="vitashell#доступ-к-памяти-приставки-через-пк">любым удобным способом</a></li>
+  <li>Выделите папку с файлами  нажмите (Треугольник)
+    <ul>
+      <li>Не нужно заходить в саму папку, нужно её просто выделить</li>
+      <li>Убедитесь, что папка, на который вы это делаете - это папка, содержащая файлы игры, а не папка, содержащая одну папку, в которой уже, в свою очередь, находятся игровые файлы</li>
+    </ul>
+  </li>
+  <li>Перейдите в диалоговом меню “<strong>More</strong>” и выберите “<strong>Install Folder</strong>”</li>
+  <li>Дождитесь окончания установки. Игра появится на главном экране консоли</li>
+</ol>
+</div></details>
 
 <h3 id="доступ-к-памяти-приставки-через-пк">Доступ к памяти приставки через ПК</h3>
 
-<h4 id="запуск-на-приставке-ftp-сервера">Запуск на приставке FTP-сервера</h4>
+<details class="spoiler"><summary class="spoiler-title">Монтирование приставки в качестве USB-диска (рекомендуется)</summary><div class="spoiler-body">
+<p class="notice--warning">molecularShell не поддерживает монтирование приставки к ПК в качестве носителя. Для получения доступа к памяти приставки используйте протокол FTP</p>
 
+<ol>
+  <li>Запустите приложение <strong>VitaShell</strong></li>
+  <li>Нажмите (Start) чтобы открыть настройки <strong>VitaShell</strong></li>
+  <li>Выделите пункт “<strong>SELECT button</strong>”, нажмите (Крест), чтобы изменить режим на “<strong>USB</strong>”
+    <ul>
+      <li>Обратите внимание, что в режиме USB по умолчанию открывается раздел <strong>ux0</strong></li>
+      <li>Некоторые файлы будут скрыты в режиме USB под Windows; вам необходимо <a href="https://customfw.xyz/file-extensions-windows">настроить проводник</a> для отображения всех файлов и папок на диске</li>
+    </ul>
+  </li>
+  <li>Нажмите (Круг) чтобы закрыть настройки VitaShell</li>
+  <li>Нажмите (Select) чтобы примонтировать приставку к ПК в виде съёмного носителя</li>
+  <li>Нажмите (Круг), чтобы отмонтировать приставку от ПК</li>
+</ol>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Запуск на приставке FTP-сервера</summary><div class="spoiler-body">
 <p class="notice--info">Этот метод походит как для <strong>molecularShell</strong>, так и для <strong>VitaShell</strong>, поэтому ниже мы будем говорить просто “файловый менеджер”, имея ввиду обе эти программы</p>
 
 <ol>
@@ -583,24 +608,7 @@ $(document).ready(function() {
   </li>
   <li>Нажмите (Круг), чтобы отключить FTP-сервер если он больше не нужен</li>
 </ol>
-
-<h4 id="монтирование-приставки-в-качестве-usb-диска">Монтирование приставки в качестве USB-диска</h4>
-
-<p class="notice--warning">molecularShell не поддерживает монтирование приставки к ПК в качестве носителя. Для получения доступа к памяти приставки используйте протокол FTP</p>
-
-<ol>
-  <li>Запустите приложение <strong>VitaShell</strong></li>
-  <li>Нажмите (Start) чтобы открыть настройки <strong>VitaShell</strong></li>
-  <li>Выделите пункт “<strong>SELECT button</strong>”, нажмите (Крест), чтобы изменить режим на “<strong>USB</strong>”
-    <ul>
-      <li>Обратите внимание, что в режиме USB по умолчанию открывается раздел <strong>ux0</strong></li>
-      <li>Некоторые файлы будут скрыты в режиме USB под Windows; вам необходимо <a href="https://customfw.xyz/file-extensions-windows">настроить проводник</a> для отображения всех файлов и папок на диске</li>
-    </ul>
-  </li>
-  <li>Нажмите (Круг) чтобы закрыть настройки VitaShell</li>
-  <li>Нажмите (Select) чтобы примонтировать приставку к ПК в виде съёмного носителя</li>
-  <li>Нажмите (Круг), чтобы отмонтировать приставку от ПК</li>
-</ol>
+</div></details>
 
 <hr />
 
