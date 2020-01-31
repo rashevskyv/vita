@@ -14,7 +14,7 @@ main:
     url: /vitashell
   - title: "sd2vita"
     url: /sd2vita
-  - title: "Установка<br>игр"
+  - title: "Установка игр"
     url: /games
   - title: "Установка<br>плагинов"
     url: /plugins
