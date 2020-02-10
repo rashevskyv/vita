@@ -6,7 +6,7 @@ header:
   overlay_image: images/home-page-feature.jpg
   overlay_filter: 0.5
   caption:
-excerpt: "Полное руководство по прошивке PS Vita / PS Vita TV, от начала до Ensō.<br />**Последнее изменение:** 1 февраля"
+excerpt: "Полное руководство по прошивке PS Vita / PS Vita TV, от начала до Ensō.<br />**Последнее изменение:** 10 февраля"
 ---
 
 {% include toc title="Разделы" %}
