@@ -154,7 +154,9 @@ Adrenaline может воспроизводить игры для PSP и для
 
 Если вы хотите установить игру для PSX, но она у вас в формате ISO, вам нужно сконвертировать её в PBP с помощью [PSX2PSP](http://www.pspx.ru/forum/showthread.php?t=101703). 
 
-Для того, чтобы сжать игру в формате ISO в СЫЩ, используйте программу [ISO2CSO](https://www.iso2cso.com). Не рекомендуется ставить уровень сжатия (compression level) на значения выше, чем 5? иначе сжатая игра может начать тормозить
+Для того, чтобы сжать игру в формате ISO в CSO, используйте программу [ISO2CSO](https://www.iso2cso.com). Не рекомендуется ставить уровень сжатия (compression level) на значения выше, чем 5, иначе сжатая игра может начать тормозить.
+
+Чтоб ввести игру из Adrenaline на главный экран PS Vita вы можете воспользоваться приложением [Adrenaline Bubble Manager](https://github.com/ONElua/AdrenalineBubbleManager/releases)
 {% endspoiler %}
 
 {% spoiler Работа с плагинами %}
