@@ -344,7 +344,6 @@ $(document).ready(function() {
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Содержание</h4></header>
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#обязательно-к-прочтению" id="markdown-toc-обязательно-к-прочтению">Обязательно к прочтению</a></li>
-  <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
   <li><a href="#инструкция" id="markdown-toc-инструкция">Инструкция</a>    <ul>
       <li><a href="#часть-i---форматирование-microsd-карты" id="markdown-toc-часть-i---форматирование-microsd-карты">Часть I - Форматирование microSD-карты</a></li>
       <li><a href="#часть-ii---перенос-данных-на-sd2vita" id="markdown-toc-часть-ii---перенос-данных-на-sd2vita">Часть II - Перенос данных на sd2vita</a></li>
@@ -371,12 +370,6 @@ $(document).ready(function() {
 <p>При помощи SD2Vita, microSD карта (или USB диск, если у вас PS Vita TV) могут быть смонтированы как <code class="highlighter-rouge">ux0:</code> вместо карты памяти Sony. Это весьма полезно, поскольку оригинальные карты Sony, сколь-либо значимой ёмкости, стоят невероятно дорого.</p>
 
 <p class="notice--info">У вас уже должно быть установлено приложение <a href="vitashell" target="_blank">VitaShell</a></p>
-
-<h2 id="что-понадобится">Что понадобится</h2>
-
-<ul>
-  <li>Установленное приложение <strong><a href="https://github.com/theheroGAC/TF-Card-Plugin-Tool">TF-Card-Plugin-Tool</a></strong></li>
-</ul>
 
 <h2 id="инструкция">Инструкция</h2>
 
@@ -473,6 +466,13 @@ $(document).ready(function() {
   </li>
   <li>Нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" /> на консоли, чтобы отмонтировать PS Vita от ПК</li>
   <li>Закройте приложение VitaShell</li>
+  <li>Перезагрузите приставку</li>
+  <li>Запустите “<strong>VitaShell</strong>”. Если у вас появился раздел “<strong>uma0</strong>” и его размер равен размеру вашей оригинальной карты памяти, а размер раздела “<strong>ux0</strong>” равен размеру microSD, вставленной в sd2vita, то все работает верно и не требует дальнейших настроек.
+    <ul>
+      <li>Раздел “<strong>uma0</strong>” появится только в том случае, если в приставку вставлена оригинальная карта памяти. Если у вас PS Vita Slim, то встроенная в приставку карта памяти будет смонтирована разделом “<strong>imc0</strong>”</li>
+      <li>Если раздел не появился, продолжайте следовать инструкции</li>
+    </ul>
+  </li>
 </ol>
 
 <h3 id="часть-iii---установка-и-настройка-tf-card-plugin-tool">Часть III - Установка и настройка <strong>TF Card Plugin Tool</strong></h3>
@@ -499,7 +499,11 @@ $(document).ready(function() {
   <li>Выберите <strong>вторую</strong> строку “<strong>SD2VITA = ux0 / MemoryCard = uma0</strong>” и нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" /></li>
   <li>Нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" />, чтобы подтвердить замену карты памяти на sd2vita</li>
   <li>Нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" />, чтобы перезагрузить приставку</li>
-  <li>Запустите “<strong>VitaShell</strong>”. Если у вас появился раздел “<strong>uma0</strong>” и его размер равен размеру вашей оригинальной карты памяти, а размер раздела “<strong>ux0</strong>” равен размеру microSD, вставленной в sd2vita, то все работает верно.</li>
+  <li>Запустите “<strong>VitaShell</strong>”. Если у вас появился раздел “<strong>uma0</strong>” и его размер равен размеру вашей оригинальной карты памяти, а размер раздела “<strong>ux0</strong>” равен размеру microSD, вставленной в sd2vita, то все работает верно.
+    <ul>
+      <li>Раздел “<strong>uma0</strong>” появится только в том случае, если в приставку вставлена оригинальная карта памяти. Если у вас PS Vita Slim, то встроенная в приставку карта памяти будет смонтирована разделом “<strong>imc0</strong>”</li>
+    </ul>
+  </li>
 </ol>
 
 <h2 id="дополнительные-сведения">Дополнительные сведения</h2>
