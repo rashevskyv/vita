@@ -205,7 +205,7 @@ Adrenaline может воспроизводить игры для PSP и для
     + **splintercell_remastered.prx** - Tom Clancy's Splinter Cell: Essentials
     + **tombraider_remastered.prx** - Lara Croft: Tomb Raider Legend и Lara Croft: Tomb Raider Anniversary
     + **warriors_remastered.prx** - The Warriors
-    + **onyhawk_remastered.prx** - Tony Hawk
+    + **tonyhawk_remastered.prx** - Tony Hawk
 + **npdrm_free.prx** - плагин, позволяющий запускать PSP игры в формате PBP
 {% endspoiler %}
 
