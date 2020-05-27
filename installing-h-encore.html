@@ -352,12 +352,14 @@ $(document).ready(function() {
 
 <h2 id="выберите-версию-вашего-системного-по">Выберите версию вашего системного ПО:</h2>
 
-<div class="select_fw">
-    <input type="radio" id="365" name="fw" value="365" />
-    <label for="365">3.65</label>
-    <input type="radio" id="367" name="fw" value="367" />
-    <label for="367">3.67 и выше</label>
-    <input type="radio" name="fw" id="none" checked="" class="hide" />
+<div class=".select_fw__wrapper">
+  <div class="select_fw">
+      <input type="radio" id="365" name="fw" value="365" />
+      <label for="365">3.65</label>
+      <input type="radio" id="367" name="fw" value="367" />
+      <label for="367">3.67 и выше</label>
+      <input type="radio" name="fw" id="none" checked="" class="hide" />
+  </div>
 </div>
 
 <div class="hideble 365 367 370 hide">
@@ -396,7 +398,6 @@ $(document).ready(function() {
   <li>Скачайте <code class="highlighter-rouge">7z-архив</code> с <a href="https://github.com/soarqin/finalhe/releases/latest">Final h-encore</a> из репозитория</li>
   <li>Скопируйте содержимое <code class="highlighter-rouge">7z-архива</code> <strong>Final h-encore</strong> в папку на вашем компьютере</li>
 </ol>
-
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Linux</summary><div class="spoiler-body">
@@ -444,14 +445,11 @@ $(document).ready(function() {
   <li>Отключить консоль от компьютера</li>
   <li>Переведите консоль в авиарежим (“<strong>Настройки</strong>” -&gt; “<strong>Режим авиаперелета</strong>”)</li>
   <li>Перезагрузите консоль</li>
-  <li>Запустите <strong>finalhe</strong> на вашем ПК</li>
-</ol>
-
-<ul>
-  <li>Если у вас компьютер под управлением Windows, и если появится запрос брандмауэра на разрешение доступа к сети для finalhe, разрешите доступ</li>
-</ul>
-
-<ol>
+  <li>Запустите <strong>finalhe</strong> на вашем ПК
+    <ul>
+      <li>Если у вас компьютер под управлением Windows, и если появится запрос брандмауэра на разрешение доступа к сети для finalhe, разрешите доступ</li>
+    </ul>
+  </li>
   <li>Запустите на консоли приложение “<strong>Управление данными</strong>”</li>
   <li>Выберите “<strong>Скопировать данные</strong>”</li>
   <li>Выберите “<strong>Компьютер</strong>”</li>
