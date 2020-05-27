@@ -17,12 +17,15 @@ title: "Установка h-encore"
 
 ## Выберите версию вашего системного ПО:
 
-<div class="select_fw">
-    <input type="radio" id="365" name="fw" value="365"/>
-    <label for="365">3.65</label>
-    <input type="radio" id="367" name="fw" value="367" />
-    <label for="367">3.67 и выше</label>
-    <input type="radio" name="fw" id="none" checked class="hide">
+
+<div class=".select_fw__wrapper">
+  <div class="select_fw">
+      <input type="radio" id="365" name="fw" value="365"/>
+      <label for="365">3.65</label>
+      <input type="radio" id="367" name="fw" value="367" />
+      <label for="367">3.67 и выше</label>
+      <input type="radio" name="fw" id="none" checked class="hide">
+  </div>
 </div>
 {% capture notice-1 %}
 

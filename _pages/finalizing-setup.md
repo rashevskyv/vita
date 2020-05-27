@@ -6,11 +6,13 @@ title: "Завершение установки"
 
 ## Выберите версию вашей консоли:
 
-<div class="select_fw">
-    <input type="radio" id="365" name="fw" value="365" checked>
-    <label for="365">PS Vita</label>
-    <input type="radio" id="370" name="fw" value="370" />
-    <label for="370">PS Vita TV</label>
+<div class=".select_fw__wrapper">
+    <div class="select_fw">
+        <input type="radio" id="365" name="fw" value="365" checked>
+        <label for="365">PS Vita</label>
+        <input type="radio" id="370" name="fw" value="370" />
+        <label for="370">PS Vita TV</label>
+    </div>
 </div>
 
 ## Обязательно к прочтению
