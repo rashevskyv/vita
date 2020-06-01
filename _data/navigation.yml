@@ -1,0 +1,49 @@
+# main links links
+main:
+  - title: "<b>Прошить другую<br>приставку</b>"
+    url: http://customfw.xyz
+  - title: "<i>Купить<br>прошитую</i>"
+    url: https://nincfw.olx.ua/
+  - title: "Взлом"
+    url: /get-started
+  - title: "FAQ"
+    url: /faq
+  - title: "Проблемы и<br>их решение"
+    url: /troubleshooting
+  - title: "Полезные<br>инструкции"
+    url: /addons
+  - title: "Использование<br>VitaShell"
+    url: /vitashell
+  - title: "sd2vita"
+    url: /sd2vita
+  - title: "Установка игр"
+    url: /games
+  - title: "Установка<br>плагинов"
+    url: /plugins
+  - title: "Adrenaline"
+    url: /adrenaline
+  - title: "Навигация по сайту"
+    url: /site-navigation
+  - title: "Пожертвования"
+    url: http://customfw.xyz/donations
+  - title: "Связаться с нами"
+    url: http://customfw.xyz/contacts
+
+addons:
+  - title: "Обширная база знаний по теме, для углублённого изучения вопроса"
+    url: https://vitawiki.xyz/doku.php?id=start
+  - title: "FAQ"
+    url: /faq
+  - title: "Adrenaline - эмулятор PSP внутри вашей PS Vita"
+    url: /adrenaline
+  - title: "Установка игр, DLC, обновлений"
+    url: /games
+  - title: "Использование плагинов"
+    url: /plugins
+  - title: "Использование sd2vita"
+    url: /sd2vita
+  - title: "Проблемы и их решения"
+    url: /troubleshooting
+            
+bottom:
+  - title: <div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br>По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
