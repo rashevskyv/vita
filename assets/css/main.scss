@@ -335,6 +335,7 @@ summary {
   }
 }
 
+
 .toc__menu {
   /* hide sub sub links on small screens*/
   li > ul li {
@@ -342,7 +343,3 @@ summary {
   }
 }
 
-.notice--warning, .notice--danger, .notice--info, .notice--success, .notice--primary, .notice, .toc, .author__name {
-  font-size: 1rem !important;
-  @include breakpoint($large) {font-size: .8rem !important;}
-}
