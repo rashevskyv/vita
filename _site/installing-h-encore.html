@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Установка h-encore - Взлом PS Vita</title>
+
+
+
+
+<meta name="description" content="Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+)">
+
+
+
+
+<meta name="author" content="PG-team">
+
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Взлом PS Vita">
+<meta property="og:title" content="Установка h-encore">
+
+
+  <link rel="canonical" href="https://vita.customfw.xyz/installing-h-encore.html">
+  <meta property="og:url" content="https://vita.customfw.xyz/installing-h-encore.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "xHR",
+      "url" : "https://vita.customfw.xyz",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://vita.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS Vita Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://vita.customfw.xyz/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 300) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+        });
+          
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+  
+});
+    
+$(document).ready(function() {
+  $('input').change(function() {
+  $('div.hideble').hide();
+    if ($('input[value="365').is(':checked')) {
+      $('div.365').show();
+    }
+    else if ($('input[value="367').is(':checked')) {
+      $('div.367').show();
+    }
+    else if ($('input[value="370').is(':checked')) {
+      $('div.370').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
+  });
+});</script>
+
+<script src="https://vita.customfw.xyz/assets/js/main.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://vita.customfw.xyz/">Взлом PS Vita</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/get-started">Взлом</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/faq">FAQ</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/addons">Полезные<br>инструкции</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/vitashell">Использование<br>VitaShell</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/sd2vita">sd2vita</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка игр</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/plugins">Установка<br>плагинов</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/adrenaline">Adrenaline</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/site-navigation">Навигация по сайту</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/contacts">Связаться с нами</a></li>
+          
+        </ul>
+        <button type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="PG-team" itemprop="image"></center>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">PG-team</h3><br>
+    
+  </div>
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+	<hr class="style-two">
+
+      
+
+<li><a href="https://vk.com/portablegaming" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
+</a></li>
+
+	
+      
+
+      
+        <li>
+          <a href="mailto:rashevsky.v@gmail.com">
+            <meta itemprop="email" content="rashevsky.v@gmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/rashevskyv" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+    </ul>
+  </div>
+</div>
+
+
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Установка h-encore">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Установка h-encore
+</h1>
+          
+        </header>
+      
+	  
+	  	
+        <h2 id="обязательно-к-прочтению">Обязательно к прочтению</h2>
+
+<p>Эксплойт h-encore для PS Vita \ PS Vita TV позволяет устанавливать homebrew-приложения на главный экран консоли. Он совместим с версиями системного ПО от 3.65 до 3.73.</p>
+
+<p>Имейте ввиду, что этот эксплойт “непривязной” и требует запуска после каждой перезагрузки приставки (имеется ввиду отключение питания или перезагрузка, а не режим сна). Это временное ограничение, пока не будет установлен HENkaku Ensō далее по инструкции.</p>
+
+<p>В дополнение ко всему, мы настроем доступ к “небезопасным” приложениям, что даст приложениям расширенные полномочия в системе. Паримерно так же работает запуск от имени администратора в Windows.</p>
+
+<p>В зависимости от версии системного ПО на консоли, будет использоваться разная версия h-encore. Для приставок на 3.65-3.68 - первая версия, для приставок на 3.69 и выше - вторая. Используемое для взлома ПО автоматически установит нужную версию. Ниже, для краткости, на протяжении всей страницы мы будем писать <strong>h-encore</strong> вне зависимости от того, какая версия именно установлена</p>
+
+<p class="notice--info">Если у вас PS Vita 1000, то вам также понадобится официальная карта памяти Sony (любого размера) для выполнения этого руководства. Это ограничение не применяется к PS Vita 2000 или PS TV, поскольку эти консоли имеют встроенную карту памяти.</p>
+
+<h2 id="выберите-версию-вашего-системного-по">Выберите версию вашего системного ПО:</h2>
+
+<div class=".select_fw__wrapper">
+  <div class="select_fw">
+      <input type="radio" id="365" name="fw" value="365" />
+      <label for="365">3.65</label>
+      <input type="radio" id="367" name="fw" value="367" />
+      <label for="367">3.67 и выше</label>
+      <input type="radio" name="fw" id="none" checked="" class="hide" />
+  </div>
+</div>
+
+<div class="hideble 365 367 370 hide">
+<h2 id="инструкция">Инструкция</h2>
+
+</div>
+
+<div class="hideble 370 hide">
+<h3 id="обновление-системного-по">Обновление системного ПО</h3>
+
+<p>Так как мы все равно собираемся откатывать прошивку и всё равно собираемся входить в PSN, проще всего будет обновить системное ПО до последней версии сразу, чтобы в дальнейшем избежать лишних действий, направленных на блокировку доступа к серверам Sony. <strong>Если ваша прошивка 3.73, пропустите этот шаг и перехиодите к следующему.</strong></p>
+
+<ol>
+  <li>Запустите приложение <strong>Настройки</strong></li>
+  <li>Перейдите в “<strong>Сеть</strong>” -&gt; “<strong>Настройки Wi-Fi</strong>” и подключитесь к вашей точке доступа</li>
+  <li>Вернитесь на стартовый экран меню <strong>Настройки</strong></li>
+  <li>Перейдите в “<strong>Обновление системы</strong>” -&gt; “<strong>Обновить с использованием Wi-Fi</strong>”</li>
+  <li>Следуйте инструкциям на экране, чтобы обновить консоль до последней версии системного ПО
+    <ul>
+      <li>После завершения процесса консоль перезагрузится автоматически</li>
+    </ul>
+  </li>
+</ol>
+
+</div>
+
+<div class="hideble 365 367 370 hide">
+<h3 id="final-h-encore">Final h-encore</h3>
+
+<h4 id="установка-final-h-encore">Установка Final h-encore</h4>
+
+<p class="notice--info">Если вы уже использовали это приложение, пропустите установку</p>
+
+<details class="spoiler"><summary class="spoiler-title">Windows</summary><div class="spoiler-body">
+<ol>
+  <li>Скачайте <code class="language-plaintext highlighter-rouge">7z-архив</code> с <a href="https://github.com/soarqin/finalhe/releases/latest">Final h-encore</a> из репозитория</li>
+  <li>Скопируйте содержимое <code class="language-plaintext highlighter-rouge">7z-архива</code> <strong>Final h-encore</strong> в папку на вашем компьютере</li>
+</ol>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Linux</summary><div class="spoiler-body">
+<p class="notice--warning">Версию для Debian-совместимых дистрибутивов придётся компилировать самому! Версия же для RPM-менеджера пакетов доступна в репозитории. Там же находится и инструкция по установке.</p>
+
+<ol>
+  <li>Для компиляции вам понадобятся следующие пакеты: <code class="language-plaintext highlighter-rouge">build-essential libxml2-dev libusb-1.0-0-dev zlib1g-dev qtbase5-dev cmake qt5-default qt5-qmake qtbase5-dev-tools qttools5-dev-tools git qttools5-dev pkg-config</code></li>
+  <li>Клонируйте репозиторий в удобную папку. Например, <code class="language-plaintext highlighter-rouge">git clone https://github.com/soarqin/finalhe.git</code></li>
+  <li>Перейдите в папку с исходниками программы <code class="language-plaintext highlighter-rouge">cd finalhe/</code></li>
+  <li>Выполните команду <code class="language-plaintext highlighter-rouge">cmake</code>, указав в качестве её параметра местонахождение папки с исходниками: <code class="language-plaintext highlighter-rouge">cmake ~/finalhe/</code></li>
+  <li>Начните компилирование: <code class="language-plaintext highlighter-rouge">make</code></li>
+  <li>После окончания компилирования, запустите программу: <code class="language-plaintext highlighter-rouge">./src/FinalHE</code>. Бинарник программы будет находится в папке <code class="language-plaintext highlighter-rouge">src</code></li>
+</ol>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">MacOS</summary><div class="spoiler-body">
+<ol>
+  <li><a href="files/FinalHE_mac.zip">Скачайте</a> собранный бинарник версии 1.92</li>
+  <li>Скопируйте содержимое <code class="language-plaintext highlighter-rouge">zip-архива</code> <strong>Final h-encore</strong> в папку на вашем компьютере</li>
+</ol>
+
+<details class="spoiler"><summary class="spoiler-title">Инструкция для самостоятельного компилирования под MacOS</summary><div class="spoiler-body">
+<ol>
+  <li>Установить brew командой из терминала: <code class="language-plaintext highlighter-rouge">/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</code></li>
+  <li>Установить qt5 libs командой из терминала: <code class="language-plaintext highlighter-rouge">brew install libusb qt</code></li>
+  <li>Загрузить исходники (source code): <code class="language-plaintext highlighter-rouge">https://github.com/soarqin/finalhe/releases</code></li>
+  <li>Загрузить cmake-3.16.2-Darwin-x86_64.dmg по ссылке <code class="language-plaintext highlighter-rouge">https://cmake.org/download/</code></li>
+  <li>Запустить программу cmake и указать пути для исходного кода и выходного файла (makefile)</li>
+  <li>Нажать “<strong>Configure</strong>”, выбрать тип <strong>Unix Makefile</strong>. Надстройка стандартная.</li>
+  <li>Указать поочередно пути: QT - Core / GUI / LinguistTools / Network / PrintSupport / Widgests.</li>
+  <li>Нажать “<strong>Generate</strong>” и дождаться выполнения</li>
+  <li>Открыть Терминал и выполнить команду <code class="language-plaintext highlighter-rouge">cd ~/finalheс/</code> (путь до директории с makefile)</li>
+  <li>Выполнить команду <code class="language-plaintext highlighter-rouge">make</code>. Дождаться завершения компиляции.</li>
+  <li>*.exec будет находиться в папке «src» (папка с makefile)</li>
+</ol>
+
+</div></details>
+
+</div></details>
+
+<h4 id="использование-final-h-encore">Использование Final h-encore</h4>
+
+<ol>
+  <li>Отключить консоль от компьютера</li>
+  <li>Переведите консоль в авиарежим (“<strong>Настройки</strong>” -&gt; “<strong>Режим авиаперелета</strong>”)</li>
+  <li>Перезагрузите консоль</li>
+  <li>Запустите <strong>finalhe</strong> на вашем ПК
+    <ul>
+      <li>Если у вас компьютер под управлением Windows, и если появится запрос брандмауэра на разрешение доступа к сети для finalhe, разрешите доступ</li>
+    </ul>
+  </li>
+  <li>Запустите на консоли приложение “<strong>Управление данными</strong>”</li>
+  <li>Выберите “<strong>Скопировать данные</strong>”</li>
+  <li>Выберите “<strong>Компьютер</strong>”</li>
+  <li>Выберите метод, который вы хотите использовать для подключения к ПК (по кабелю, или WiFi) и подключите консоль
+    <ul>
+      <li>Если выбранный метод не работает, попробуйте другой</li>
+      <li>При выборе подключения через WiFi, приставка и ПК должны быть подключены к одному роутеру и находится в одной подсети</li>
+    </ul>
+  </li>
+  <li>Выберите / зарегистрируйте ваш компьютер, если появится запрос</li>
+  <li>Введите код подтверждения, который отобразится в окне программы, если устройство не было зарегистрировано
+    <ul>
+      <li>Если устройство не определяется по USB-кабелю, установите <a href="files/QcmaDriver_winusb.zip">драйвер</a> и попробуйте снова</li>
+      <li>Если все сделано верно, в окне программы <strong>Final h-encore</strong> кнопка “<strong>Let’s GO!</strong>” станет активной</li>
+      <li>В некоторых случаях требуется вход в PSN, если у вас нет учётки PSN - зарегистрируйте её. Рекомендую делать это с ПК, поскольку так удобнее. После входа в PSN на консоли, перезапустите h-encore и начните подключение заново.</li>
+      <li>Если, при подключении по WiFi, у вас постоянно выбивает ошибку, удалите имеющееся подключение и создайте его заново</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="установка-h-encore-на-консоль">Установка h-encore на консоль</h3>
+
+<ol>
+  <li>Выберите “<strong>Trim h-encore to ~7МБ</strong>”</li>
+  <li>Нажмите кнопку “<strong>Let’s GO!</strong>”
+    <ul>
+      <li>Файлы эксплойта будут автоматически скачаны и подготовлены</li>
+      <li>Этот процесс займёт некоторое время</li>
+      <li>Когда статус-бар в окне программы будет заполнен на 100%, переходите к следующему пункту</li>
+    </ul>
+  </li>
+  <li>Выберите “<strong>Компьютер -&gt; система PS Vita</strong>” на экране консоли</li>
+  <li>Выберите “<strong>Приложения</strong>”</li>
+  <li>Выберите “<strong>PS Vita</strong>”</li>
+  <li>Отметьте галочкой “<strong>h-encore</strong>”</li>
+  <li>Выберите “<strong>Копировать</strong>”</li>
+  <li>Выберите “<strong>OK</strong>”
+    <ul>
+      <li>Эксплойт h-encore будет скопирован на вашу консоль</li>
+      <li>Этот процесс займёт некоторое время</li>
+    </ul>
+  </li>
+  <li>Сверните приложение “<strong>Управление данными</strong>” на консоли, нажав кнопку <img src="/images/buttons/PS.png" alt="(PS)" /> и закройте его</li>
+  <li>Закройте <strong>Final h-encore</strong> на компьютере
+    <ul>
+      <li>Если всё сделано верно, на экране приставки появится новый пузырь - “<strong>h-encore</strong>”</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="запуск-h-encore">Запуск h-encore</h3>
+
+<ol>
+  <li>Подключите консоль к Интернету</li>
+  <li>Запустите приложение <strong>h-encore</strong>, держа нажатой кнопку <img src="/images/buttons/R.png" alt="(R)" />
+    <ul>
+      <li>Если появится запрос о призах, выберите “<strong>Да</strong>”, продолжая держать нажатой кнопку <img src="/images/buttons/R.png" alt="(R)" /></li>
+    </ul>
+  </li>
+  <li>Если эксплойт сработал, вы увидите меню <strong>h-encore bootstrap</strong>
+    <ul>
+      <li>Если эксплойт завис на белом экране, просто закройте приложение (это приведёт к перезагрузке консоли, если не привело - перезапустите консоль самостоятельно), затем попробуйте снова</li>
+      <li>Если это не помогло, удерживайте кнопку питания в течение 30 секунд для принудительной перезагрузки, затем попробуйте снова</li>
+    </ul>
+  </li>
+  <li>Выберите “<strong>Install HENkaku</strong>”
+    <ul>
+      <li>Это действие установит эксплойт HENkaku и разрешит доступ к хоумбрю до следующей перезагрузки</li>
+    </ul>
+  </li>
+  <li>Выберите “<strong>Download VitaShell</strong>”
+    <ul>
+      <li>Это действие установит хоумбрю приложение VitaShell для управления файловой системой консоли</li>
+      <li>VitaShell (как и все прочие хоумбрю приложения) останется установленным после перезагрузки, но будет выдавать ошибку при запуске, если эксплойт HENkaku не активен</li>
+      <li>При возникновении ошибки, убедитесь, что приставка подключена к сети Интернет</li>
+    </ul>
+  </li>
+  <li>Выберите “<strong>Exit</strong>”</li>
+</ol>
+
+<p class="notice--warning">В дальнейшем, для запуска достаточно просто войти в приложение и сразу же выйти через “<strong>Exit</strong>”</p>
+
+<h3 id="настройка-henkaku">Настройка HENkaku</h3>
+
+<ol>
+  <li>Запустите приложение <strong>Настройки</strong></li>
+  <li>Перейдите в “<strong>Настройки HENkaku</strong>”</li>
+  <li>Установите флажок “<strong>Включить небезопасные приложения</strong>”</li>
+  <li>Перейдите в меню “<strong>Поддельная версия</strong>” и пропишите там <code class="language-plaintext highlighter-rouge">3.73</code></li>
+  <li>Выберите пункт “<strong>Перезагрузить устройство</strong>”, чтобы перезагрузить приставку</li>
+</ol>
+
+<hr />
+
+</div>
+
+<div class="hideble 365 hide">
+<h3 class="notice--success" id="следующий-шаг-установка-ensō-365">Следующий шаг: <a href="installing-enso">Установка Ensō (3.65)</a></h3>
+</div>
+
+<div class="hideble 367 hide">
+<h3 class="notice--success" id="следующий-шаг-понижение-версии-системного-по-до-365">Следующий шаг: <a href="downgrading-firmware">Понижение версии системного ПО до 3.65</a></h3>
+</div>
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    
+	  <li><a href="https://vk.com/portablegaming" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Portable Gaming
+	  </a></li>	
+    
+    <li><a href="https://vita.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        if(b.getAttribute("href") && b.hostname !== location.hostname) {
+            b.target = "_blank";
+            b.rel = "noopener";
+        }
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window();
+external_new_window();
+</script>
+
+
+  </body>
+</html>
