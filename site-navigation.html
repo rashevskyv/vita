@@ -13,25 +13,25 @@
 
 
 
-<title>Карта сайта - Взлом PS4</title>
+<title>Навигация по сайту - Взлом PS Vita</title>
 
 
 
 
-<meta name="description" content="Полное руководство по использованию PS4HEN на Playstation 4 с прошивкой 4.05">
+<meta name="description" content="Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+)">
 
 
 
 
-<meta name="author" content="xHR">
+<meta name="author" content="PG-team">
 
 <meta property="og:locale" content="ru_RU">
-<meta property="og:site_name" content="Взлом PS4">
-<meta property="og:title" content="Карта сайта">
+<meta property="og:site_name" content="Взлом PS Vita">
+<meta property="og:title" content="Навигация по сайту">
 
 
-  <link rel="canonical" href="https://ps4.customfw.xyz/site-navigation.html">
-  <meta property="og:url" content="https://ps4.customfw.xyz/site-navigation.html">
+  <link rel="canonical" href="https://vita.customfw.xyz/site-navigation.html">
+  <meta property="og:url" content="https://vita.customfw.xyz/site-navigation.html">
 
 
 
@@ -58,8 +58,8 @@
     {
       "@context" : "http://schema.org",
       "@type" : "Person",
-      "name" : "MeatWad, xHR",
-      "url" : "https://ps4.customfw.xyz",
+      "name" : "xHR",
+      "url" : "https://vita.customfw.xyz",
       "sameAs" : null
     }
   </script>
@@ -75,7 +75,7 @@
 <!-- end SEO -->
 
 
-<link href="https://ps4.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS4 Feed">
+<link href="https://vita.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS Vita Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -87,7 +87,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://ps4.customfw.xyz/assets/css/main.css">
+<link rel="stylesheet" href="https://vita.customfw.xyz/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -105,8 +105,45 @@
 <![endif]-->
 
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 300) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+        });
+          
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+  
+});
+    
+$(document).ready(function() {
+  $('input').change(function() {
+  $('div.hideble').hide();
+    if ($('input[value="365').is(':checked')) {
+      $('div.365').show();
+    }
+    else if ($('input[value="367').is(':checked')) {
+      $('div.367').show();
+    }
+    else if ($('input[value="370').is(':checked')) {
+      $('div.370').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
+  });
+});</script>
+
+<script src="https://vita.customfw.xyz/assets/js/main.min.js"></script>
   </head>
 
   <body class="layout--single">
@@ -118,50 +155,44 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://ps4.customfw.xyz/">Взлом PS4</a>
+        <a class="site-title" href="https://vita.customfw.xyz/">Взлом PS Vita</a>
         <ul class="visible-links">
           
             
-            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошивка<br>3DS, WiiU</b></a></li>
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/faq">FAQ</a></li>
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/troubleshootings">Проблемы и их решения</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/get-started">Взлом</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/info">Важно<br>знать</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/faq">FAQ</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/games">Установка<br>игр</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/start-hen">Запуск эксплойта<br>через DNS</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/addons">Полезные<br>инструкции</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/usb-update-672">Обновление<br>до 6.72</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/vitashell">Использование<br>VitaShell</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/start-hen-browser">Запуск эксплойта<br>через браузер</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/sd2vita">sd2vita</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/payloads">Запуск<br>эксплойта с ПК</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка игр</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/game-dumps">Дампинг<br>игр</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/plugins">Установка<br>плагинов</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/addons">Полезные<br>инструкции</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/adrenaline">Adrenaline</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/dns-payloads">Описание<br>пейлоадов</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/uninstall-hen">Удаление<br>HEN</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/site-navigation">Навигация<br>по сайту</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/site-navigation">Навигация по сайту</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
@@ -194,13 +225,13 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   
     <div class="author__avatar">
       
-        <center><img src="https://ps4.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="PG-team" itemprop="image"></center>
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    <h3 class="author__name" itemprop="name">PG-team</h3><br>
     
   </div>
   
@@ -209,19 +240,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Дружковка, Украина</span>
-        </li>
-      
 	<hr class="style-two">
 
       
-<li><a href="https://vk.com/rashevskyv" itemprop="sameAs">
-  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Вконтакте
-</a></li>
 
-
-<li><a href="https://vk.com/jailbreakps4" itemprop="sameAs">
+<li><a href="https://vk.com/portablegaming" itemprop="sameAs">
   <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
 </a></li>
 
@@ -239,12 +262,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
       
 
-      
-        <li>
-          <a href="https://twitter.com/xHR_" itemprop="sameAs">
-            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
-          </a>
-        </li>
       
 
       
@@ -307,74 +324,45 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  
   
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Карта сайта">
+    <meta itemprop="headline" content="Навигация по сайту">
     
     
     
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Карта сайта
+          <h1 class="page__title" itemprop="headline">Навигация по сайту
 </h1>
           
         </header>
       
 	  
 	  	
-        
-<aside class="sidebar__right">
-<nav class="toc">
-    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
-<ul class="toc__menu" id="markdown-toc">
-  <li><a href="#эксплойт" id="markdown-toc-эксплойт">Эксплойт</a></li>
-  <li><a href="#игры" id="markdown-toc-игры">Игры</a></li>
-  <li><a href="#другое" id="markdown-toc-другое">Другое</a></li>
-</ul>
+        <p><strong>Все страницы</strong></p>
 
-  </nav>
-</aside>
+<ul>
+  <li><a href="adrenaline">Adrenaline</a></li>
+  <li><a href="vitashell">VitaShell</a></li>
+  <li><a href="faq">Вопросы и ответы</a></li>
+  <li><a href="finalizing-setup">Завершение установки</a></li>
+  <li><a href="sd2vita">Настройка и работа с sd2vita</a></li>
+  <li><a href="get-started">Начало</a></li>
+  <li><a href="updating-firmware-ps-tv-365">Обновление ПО до 3.65 (PS TV)</a></li>
+  <li><a href="updating-firmware-ps-vita-365">Обновление ПО до 3.65 (PS Vita)</a></li>
+  <li><a href="updating-to-360">Обновление прошивки (3.60)</a></li>
+  <li><a href="downgrading-firmware">Понижение версии системного ПО до 3.65</a></li>
+  <li><a href="troubleshooting">Проблемы и их решения</a></li>
+  <li><a href="installing-enso-360">Установка Ensō (3.60)</a></li>
+  <li><a href="installing-enso">Установка Ensō (3.65)</a></li>
+  <li><a href="installing-henkaku">Установка HENkaku</a></li>
+  <li><a href="installing-h-encore">Установка h-encore</a></li>
+  <li><a href="games">Установка игр</a></li>
+  <li><a href="plugins">Установка плагинов</a></li>
+</ul>
 
 <hr />
 
-<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.</div>
-
-<div class="notice">По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a>.</div>
-
-<hr />
-
-<h3 id="эксплойт">Эксплойт</h3>
-
-<ul>
-  <li><a href="/" target="_blank">PS4 Guide</a></li>
-  <li><a href="payloads" target="_blank">Запуск пейлоадов (payloads)</a></li>
-  <li><a href="start-hen" target="_blank">Запуск эксплойта (DNS)</a></li>
-  <li><a href="start-hen" target="_blank">Запуск эксплойта (DNS)</a></li>
-  <li><a href="start-hen-browser" target="_blank">Запуск эксплойта через браузер</a></li>
-  <li><a href="get-started" target="_blank">Начнём</a></li>
-  <li><a href="usb-update" target="_blank">Обновление прошивки до 6.72</a></li>
-  <li><a href="dns-payloads" target="_blank">Описание пейлоадов, доступных через DNS</a></li>
-  <li><a href="uninstall-hen" target="_blank">Удаление взлома</a></li>
-</ul>
-
-<h3 id="игры">Игры</h3>
-
-<ul>
-  <li><a href="remote-play" target="_blank">Активация Remote Play</a></li>
-  <li><a href="game-patches" target="_blank">Применение игровых патчей на лицензионные копии игр</a></li>
-  <li><a href="backup" target="_blank">Резервное копирование и восстановление данных</a></li>
-  <li><a href="game-dumps" target="_blank">Создание дампов собственных игр</a></li>
-  <li><a href="games" target="_blank">Установка игр</a></li>
-</ul>
-
-<h3 id="другое">Другое</h3>
-
-<ul>
-  <li><a href="info" target="_blank">Важно знать</a></li>
-  <li><a href="ftp" target="_blank">Настройка FTP-соединения</a></li>
-  <li><a href="http://customfw.xyz/donations" target="_blank">Пожертвования</a></li>
-  <li><a href="addons" target="_blank">Полезные инструкции</a></li>
-  <li><a href="faq" target="_blank">Часто задаваемые вопросы</a></li>
-</ul>
+<p class="notice--success"><a href="javascript:window.close();">Закрыть страницу</a></p>
 
 				
         
@@ -403,56 +391,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
     <div class="page__footer-container">
       <footer class="page__footer">
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-	  
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > 300) {
-				$('.scrollup').fadeIn();
-			} else {
-				$('.scrollup').fadeOut();
-			}
-			});
-			  
-			$('.scrollup').click(function(){
-			$("html, body").animate({ scrollTop: 0 }, 600);
-			return false;
-		});
-	  
-	});
-
-	$(document).ready(function() {
-    $('input').change(function() {
-    $('div.hideble').hide();
-      if ($('input[value="button1').is(':checked')) {
-        $('div.button1').show();
-      }
-      else if ($('input[value="button2').is(':checked')) {
-        $('div.button2').show();
-      }
-      else if ($('input[value="button3').is(':checked')) {
-        $('div.button3').show();
-      }
-      else {
-        $('div.hideble').hide();
-      }
-    });
-  });
-  
-
-var ref=document.referrer;
-var refArr=ref.split('/');
-ref=refArr[3];
-//alert(ref);
-
-if (ref=='preparation-fuse') {document.getElementById('selector').classList.add('hide');}
-
-</script>
-
-<script src="https://ps4.customfw.xyz/assets/js/main.min.js"></script>
-
+        
         <div class="page__footer-follow">
   <ul class="social-icons">
     
@@ -464,17 +403,14 @@ if (ref=='preparation-fuse') {document.getElementById('selector').classList.add(
     
     
     
-	  <li><a href="https://vk.com/rashevskyv" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> ВК</a></li>
-    
-    
-	  <li><a href="https://vk.com/nincfw" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Custom Nintendo
+	  <li><a href="https://vk.com/portablegaming" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Portable Gaming
 	  </a></li>	
     
-    <li><a href="https://ps4.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="https://vita.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2020 MeatWad, xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -486,6 +422,36 @@ if (ref=='preparation-fuse') {document.getElementById('selector').classList.add(
 
 
 
+
+    <script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        if(b.getAttribute("href") && b.hostname !== location.hostname) {
+            b.target = "_blank";
+            b.rel = "noopener";
+        }
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window();
+external_new_window();
+</script>
 
 
   </body>

@@ -13,25 +13,25 @@
 
 
 
-<title>Начнём - Взлом PS4</title>
+<title>Начало - Взлом PS Vita</title>
 
 
 
 
-<meta name="description" content="Полное руководство по использованию PS4HEN на Playstation 4 с прошивкой 4.05">
+<meta name="description" content="Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+)">
 
 
 
 
-<meta name="author" content="xHR">
+<meta name="author" content="PG-team">
 
 <meta property="og:locale" content="ru_RU">
-<meta property="og:site_name" content="Взлом PS4">
-<meta property="og:title" content="Начнём">
+<meta property="og:site_name" content="Взлом PS Vita">
+<meta property="og:title" content="Начало">
 
 
-  <link rel="canonical" href="https://ps4.customfw.xyz/get-started.html">
-  <meta property="og:url" content="https://ps4.customfw.xyz/get-started.html">
+  <link rel="canonical" href="https://vita.customfw.xyz/get-started.html">
+  <meta property="og:url" content="https://vita.customfw.xyz/get-started.html">
 
 
 
@@ -58,8 +58,8 @@
     {
       "@context" : "http://schema.org",
       "@type" : "Person",
-      "name" : "MeatWad, xHR",
-      "url" : "https://ps4.customfw.xyz",
+      "name" : "xHR",
+      "url" : "https://vita.customfw.xyz",
       "sameAs" : null
     }
   </script>
@@ -75,7 +75,7 @@
 <!-- end SEO -->
 
 
-<link href="https://ps4.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS4 Feed">
+<link href="https://vita.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS Vita Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -87,7 +87,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://ps4.customfw.xyz/assets/css/main.css">
+<link rel="stylesheet" href="https://vita.customfw.xyz/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -105,8 +105,45 @@
 <![endif]-->
 
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 300) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+        });
+          
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+  
+});
+    
+$(document).ready(function() {
+  $('input').change(function() {
+  $('div.hideble').hide();
+    if ($('input[value="365').is(':checked')) {
+      $('div.365').show();
+    }
+    else if ($('input[value="367').is(':checked')) {
+      $('div.367').show();
+    }
+    else if ($('input[value="370').is(':checked')) {
+      $('div.370').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
+  });
+});</script>
+
+<script src="https://vita.customfw.xyz/assets/js/main.min.js"></script>
   </head>
 
   <body class="layout--single">
@@ -118,50 +155,44 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://ps4.customfw.xyz/">Взлом PS4</a>
+        <a class="site-title" href="https://vita.customfw.xyz/">Взлом PS Vita</a>
         <ul class="visible-links">
           
             
-            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошивка<br>3DS, WiiU</b></a></li>
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/faq">FAQ</a></li>
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/troubleshootings">Проблемы и их решения</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/get-started">Взлом</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/info">Важно<br>знать</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/faq">FAQ</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/games">Установка<br>игр</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/start-hen">Запуск эксплойта<br>через DNS</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/addons">Полезные<br>инструкции</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/usb-update-672">Обновление<br>до 6.72</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/vitashell">Использование<br>VitaShell</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/start-hen-browser">Запуск эксплойта<br>через браузер</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/sd2vita">sd2vita</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/payloads">Запуск<br>эксплойта с ПК</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка игр</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/game-dumps">Дампинг<br>игр</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/plugins">Установка<br>плагинов</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/addons">Полезные<br>инструкции</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/adrenaline">Adrenaline</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/dns-payloads">Описание<br>пейлоадов</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/uninstall-hen">Удаление<br>HEN</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/site-navigation">Навигация<br>по сайту</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/site-navigation">Навигация по сайту</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
@@ -194,13 +225,13 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   
     <div class="author__avatar">
       
-        <center><img src="https://ps4.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="PG-team" itemprop="image"></center>
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    <h3 class="author__name" itemprop="name">PG-team</h3><br>
     
   </div>
   
@@ -209,19 +240,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Дружковка, Украина</span>
-        </li>
-      
 	<hr class="style-two">
 
       
-<li><a href="https://vk.com/rashevskyv" itemprop="sameAs">
-  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Вконтакте
-</a></li>
 
-
-<li><a href="https://vk.com/jailbreakps4" itemprop="sameAs">
+<li><a href="https://vk.com/portablegaming" itemprop="sameAs">
   <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
 </a></li>
 
@@ -239,12 +262,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
       
 
-      
-        <li>
-          <a href="https://twitter.com/xHR_" itemprop="sameAs">
-            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
-          </a>
-        </li>
       
 
       
@@ -307,14 +324,14 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  
   
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Начнём">
+    <meta itemprop="headline" content="Начало">
     
     
     
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Начнём
+          <h1 class="page__title" itemprop="headline">Начало
 </h1>
           
         </header>
@@ -324,11 +341,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
         
 <aside class="sidebar__right">
 <nav class="toc">
-    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы**</h4></header>
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Содержание</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#блокировка-обновлений-через-интернет" id="markdown-toc-блокировка-обновлений-через-интернет">Блокировка обновлений через интернет</a></li>
-  <li><a href="#отключение-режима-сна" id="markdown-toc-отключение-режима-сна">Отключение режима сна</a></li>
-  <li><a href="#выберите-прошивку" id="markdown-toc-выберите-прошивку">Выберите прошивку</a></li>
+  <li><a href="#обязательно-к-прочтению" id="markdown-toc-обязательно-к-прочтению">Обязательно к прочтению</a></li>
+  <li><a href="#блокировка-обновлений" id="markdown-toc-блокировка-обновлений">Блокировка обновлений</a></li>
+  <li><a href="#таблица-версий" id="markdown-toc-таблица-версий">Таблица версий</a></li>
 </ul>
 
   </nav>
@@ -336,44 +353,54 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <hr />
 
-<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.</div>
-
-<div class="notice">По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a>.</div>
+<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
 
 <hr />
 
-<p class="notice--primary">Выберите в таблице версию прошивки, соответствующую вашей.</p>
+<h3 id="обязательно-к-прочтению">Обязательно к прочтению</h3>
 
-<p class="notice--success">Версию прошивки можно посмотреть в меню “<strong>Настройка</strong>”, “<strong>Система</strong>”, “<strong>Информация о системе</strong>”.</p>
+<p>Разные версии системного ПО консоли требуют различных действий для установки кастомной прошивки. Эта страница поможет вам понять, откуда именно следует начать.</p>
 
-<p class="text-center notice--info"><img src="/images/screenshots/system-version.png" alt="" /></p>
+<p>Если вы пользователь Windows, то перед началом работ убедитесь, что в вашей системе включено отображение расширений файлов, а так же скрытые и системные файлы. Если вы не знаете как это сделать, следуйте этой инструкции: <a href="https://customfw.xyz/file-extensions-windows">Расширения файлов (Windows)</a>!</p>
 
-<h2 id="блокировка-обновлений-через-интернет">Блокировка обновлений через интернет</h2>
+<p>Выберите подходящую для вашей версии страницу из таблицы ниже. Обратите внимание, что столбцы “С” и “По” обозначают границы диапазона.</p>
 
-<p>Первым делом нам следует заблокировать обновления через интернет</p>
+<p>Столбцы “С” и “По” обозначают границы диапазона. Это означает, к примеру, что диапазон “с 1.03 по 3.57” включает в себя как 1.03, так и 3.57, а так же все версии системного ПО, что были между ними.</p>
 
-<ol>
-  <li>Зайдите в настройки PS4 и перейдите в “<strong>Система</strong>” -&gt; “<strong>Автоматические загрузки</strong>”</li>
-  <li>Снимите галочки с пунктов “Файлы обновлений системного программного обеспечения” и “Автоматическая установка”</li>
-  <li>Вернитесь в меню Настройки и перейдите в “<strong>Настройки энергосбережения</strong>” -&gt; “<strong>Выбрать функции, доступные в режиме покоя</strong>”</li>
-  <li>Снимите галочку с пункта “<strong>Сохранить подключение к Интернету</strong>”</li>
-  <li>Верните кабель в приставку\включите роутер</li>
-</ol>
+<p>Версия прошивки вашей консоли отображается в меню <strong>Информация о системе</strong> в приложении <strong>Настройки</strong>.</p>
 
-<p>Многие жалуются, что приставка после этого все равно скачивает обновление - это не страшно, на следующей странице мы удалим его полностью и заблокируем от последующей скачки.</p>
+<p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/system-version_365.png" alt="" /></p>
 
-<p class="notice--info">Я настоятельно рекомендую прописать DNS в консоли (мы будем делать это на следующих страницах руководства), поскольку именно они блокируют приставке доступ к серверам SONY. Я намеренно не включаю в руководство список серверов, которые наиболее активные параноики любят блокировать в настройках роутера. Запуск эксплойта через DNS, либо с помощью сервера на ПК или ESP модуля - наиболее безопасные решения!</p>
+<h3 id="блокировка-обновлений">Блокировка обновлений</h3>
 
-<h2 id="отключение-режима-сна">Отключение режима сна</h2>
+<p>Для предотвращения нежелательных обновлений мы изменим настройки DNS вашей консоли, чтобы использовать кастомный сервер обновлений, который указывает на 3.60 в качестве последней доступной версии. Это действие заблокирует установку любых версий прошивки выше 3.60, когда консоль попытается выполнить обновление.</p>
 
-<p><strong>Категорически рекомендуется на данном этапе не использовать режим сна! Он крайне нестабильный и есть шансы из него вообще не выйти (по крайней мере без полной инициализации консоли)</strong></p>
+<p class="notice--warning">Обратите внимание, что адреса этих DNS серверов должны быть настроены для каждой сети, к которой вы подключаете свою консоль, чтобы обновления блокировались!</p>
 
 <ol>
-  <li>Перейдите в “<strong>Настройки</strong>” -&gt; “<strong>Настройки энергосбережения</strong>” -&gt; “<strong>Выбрать функции, доступные в режиме покоя</strong>”</li>
-  <li>Снимите галочку с “<strong>Приостановить приложение</strong>”</li>
+  <li>Запустите приложение Настройки</li>
+  <li>Перейдите в “<strong>Сеть</strong>” -&gt; “<strong>Настройки Wi-Fi</strong>”
+    <ul>
+      <li>Подключитесь к сети Wi-Fi, если вы еще этого не сделали</li>
+    </ul>
+  </li>
+  <li>Выберите ваше текущее подключение
+    <ul>
+      <li>Оно обозначено зелёной точкой рядом с сетью</li>
+    </ul>
+  </li>
+  <li>Выберите “<strong>Дополнительные настройки</strong>”</li>
+  <li>Измените “<strong>Настройки DNS” на “Вручную</strong>”</li>
+  <li>Измените “<strong>Основной DNS</strong>” и “<strong>Дополнительный DNS</strong>” на <code class="language-plaintext highlighter-rouge">212.47.229.76</code></li>
+  <li>Убедитесь, что настройка “<strong>Прокси-сервер</strong>” выставлена в значение “<strong>Не использовать</strong>”</li>
+  <li>Нажмите “<strong>ОК</strong>”</li>
+  <li>Вернитесь в главное меню настроек</li>
+  <li>Перейдите в <strong>Система</strong> -&gt; <strong>Настройка автозапуска</strong></li>
+  <li>Снимите флажок “<strong>Загружать файл обновления для системного программного обеспечения</strong>”</li>
+  <li>Нажмите <img src="/images/buttons/PS.png" alt="(PS)" /> для выхода на главный экран</li>
 </ol>
 
-<h2 id="выберите-прошивку">Выберите прошивку</h2>
+<h3 id="таблица-версий">Таблица версий</h3>
 
 <table>
   <colgroup>
@@ -383,25 +410,30 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   </colgroup>
   <thead>
     <tr>
-      <th style="text-align: center">От</th>
-      <th style="text-align: center">До</th>
-      <th style="text-align: center">Способ</th>
+      <th style="text-align: center; font-weight: bold;">С</th>
+      <th style="text-align: center; font-weight: bold;">По</th>
+      <th style="text-align: center; font-weight: bold;"></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center; font-weight: bold;">1.01</td>
-      <td style="text-align: center; font-weight: bold;">6.71</td>
-      <td style="text-align: center; font-weight: bold;"><a href="usb-update">Обновление до  6.72</a></td>
+      <td style="text-align: center; font-weight: bold;">1.03</td>
+      <td style="text-align: center; font-weight: bold;">3.57</td>
+      <td style="text-align: center; font-weight: bold;"><a href="updating-to-360">Обновление прошивки до 3.60</a></td>
     </tr>
     <tr>
-      <td style="text-align: center; font-weight: bold;" colspan="2">6.72</td>
-      <td style="text-align: center; font-weight: bold;"><a href="start-hen">Запуск взлома</a></td>
+      <td style="text-align: center; font-weight: bold;" colspan="2">3.60</td>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-henkaku">Установка HENkaku</a></td>
     </tr>
     <tr>
-      <td style="text-align: center; font-weight: bold;">7.00</td>
-      <td style="text-align: center; font-weight: bold;">и выше</td>
-      <td style="text-align: center; font-weight: bold;">Запуск эксплойта невозможен!</td>
+      <td style="text-align: center; font-weight: bold;">3.61</td>
+      <td style="text-align: center; font-weight: bold;">3.63</td>
+      <td style="text-align: center; font-weight: bold;"><a href="updating-firmware-ps-vita-365">Обновление прошивки (PS Vita)</a> или <a href="updating-firmware-ps-tv-365">Обновление прошивки (PS TV)</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: bold;">3.65</td>
+      <td style="text-align: center; font-weight: bold;">3.73</td>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-h-encore">Установка h-encore</a></td>
     </tr>
   </tbody>
 </table>
@@ -433,56 +465,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
     <div class="page__footer-container">
       <footer class="page__footer">
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-	  
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > 300) {
-				$('.scrollup').fadeIn();
-			} else {
-				$('.scrollup').fadeOut();
-			}
-			});
-			  
-			$('.scrollup').click(function(){
-			$("html, body").animate({ scrollTop: 0 }, 600);
-			return false;
-		});
-	  
-	});
-
-	$(document).ready(function() {
-    $('input').change(function() {
-    $('div.hideble').hide();
-      if ($('input[value="button1').is(':checked')) {
-        $('div.button1').show();
-      }
-      else if ($('input[value="button2').is(':checked')) {
-        $('div.button2').show();
-      }
-      else if ($('input[value="button3').is(':checked')) {
-        $('div.button3').show();
-      }
-      else {
-        $('div.hideble').hide();
-      }
-    });
-  });
-  
-
-var ref=document.referrer;
-var refArr=ref.split('/');
-ref=refArr[3];
-//alert(ref);
-
-if (ref=='preparation-fuse') {document.getElementById('selector').classList.add('hide');}
-
-</script>
-
-<script src="https://ps4.customfw.xyz/assets/js/main.min.js"></script>
-
+        
         <div class="page__footer-follow">
   <ul class="social-icons">
     
@@ -494,17 +477,14 @@ if (ref=='preparation-fuse') {document.getElementById('selector').classList.add(
     
     
     
-	  <li><a href="https://vk.com/rashevskyv" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> ВК</a></li>
-    
-    
-	  <li><a href="https://vk.com/nincfw" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Custom Nintendo
+	  <li><a href="https://vk.com/portablegaming" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Portable Gaming
 	  </a></li>	
     
-    <li><a href="https://ps4.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="https://vita.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2020 MeatWad, xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -516,6 +496,36 @@ if (ref=='preparation-fuse') {document.getElementById('selector').classList.add(
 
 
 
+
+    <script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        if(b.getAttribute("href") && b.hostname !== location.hostname) {
+            b.target = "_blank";
+            b.rel = "noopener";
+        }
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window();
+external_new_window();
+</script>
 
 
   </body>

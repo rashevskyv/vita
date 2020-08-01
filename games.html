@@ -13,25 +13,25 @@
 
 
 
-<title>Установка игр - Взлом PS4</title>
+<title>Установка игр - Взлом PS Vita</title>
 
 
 
 
-<meta name="description" content="Полное руководство по использованию PS4HEN на Playstation 4 с прошивкой 4.05">
+<meta name="description" content="Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+)">
 
 
 
 
-<meta name="author" content="xHR">
+<meta name="author" content="PG-team">
 
 <meta property="og:locale" content="ru_RU">
-<meta property="og:site_name" content="Взлом PS4">
+<meta property="og:site_name" content="Взлом PS Vita">
 <meta property="og:title" content="Установка игр">
 
 
-  <link rel="canonical" href="https://ps4.customfw.xyz/games.html">
-  <meta property="og:url" content="https://ps4.customfw.xyz/games.html">
+  <link rel="canonical" href="https://vita.customfw.xyz/games.html">
+  <meta property="og:url" content="https://vita.customfw.xyz/games.html">
 
 
 
@@ -58,8 +58,8 @@
     {
       "@context" : "http://schema.org",
       "@type" : "Person",
-      "name" : "MeatWad, xHR",
-      "url" : "https://ps4.customfw.xyz",
+      "name" : "xHR",
+      "url" : "https://vita.customfw.xyz",
       "sameAs" : null
     }
   </script>
@@ -75,7 +75,7 @@
 <!-- end SEO -->
 
 
-<link href="https://ps4.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS4 Feed">
+<link href="https://vita.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS Vita Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -87,7 +87,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://ps4.customfw.xyz/assets/css/main.css">
+<link rel="stylesheet" href="https://vita.customfw.xyz/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -105,8 +105,45 @@
 <![endif]-->
 
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 300) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+        });
+          
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+  
+});
+    
+$(document).ready(function() {
+  $('input').change(function() {
+  $('div.hideble').hide();
+    if ($('input[value="365').is(':checked')) {
+      $('div.365').show();
+    }
+    else if ($('input[value="367').is(':checked')) {
+      $('div.367').show();
+    }
+    else if ($('input[value="370').is(':checked')) {
+      $('div.370').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
+  });
+});</script>
+
+<script src="https://vita.customfw.xyz/assets/js/main.min.js"></script>
   </head>
 
   <body class="layout--single">
@@ -118,50 +155,44 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://ps4.customfw.xyz/">Взлом PS4</a>
+        <a class="site-title" href="https://vita.customfw.xyz/">Взлом PS Vita</a>
         <ul class="visible-links">
           
             
-            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошивка<br>3DS, WiiU</b></a></li>
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/faq">FAQ</a></li>
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/troubleshootings">Проблемы и их решения</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/get-started">Взлом</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/info">Важно<br>знать</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/faq">FAQ</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/games">Установка<br>игр</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/start-hen">Запуск эксплойта<br>через DNS</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/addons">Полезные<br>инструкции</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/usb-update-672">Обновление<br>до 6.72</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/vitashell">Использование<br>VitaShell</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/start-hen-browser">Запуск эксплойта<br>через браузер</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/sd2vita">sd2vita</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/payloads">Запуск<br>эксплойта с ПК</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка игр</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/game-dumps">Дампинг<br>игр</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/plugins">Установка<br>плагинов</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/addons">Полезные<br>инструкции</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/adrenaline">Adrenaline</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/dns-payloads">Описание<br>пейлоадов</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/uninstall-hen">Удаление<br>HEN</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://ps4.customfw.xyz/site-navigation">Навигация<br>по сайту</a></li>
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/site-navigation">Навигация по сайту</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
@@ -194,13 +225,13 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   
     <div class="author__avatar">
       
-        <center><img src="https://ps4.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="PG-team" itemprop="image"></center>
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    <h3 class="author__name" itemprop="name">PG-team</h3><br>
     
   </div>
   
@@ -209,19 +240,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Дружковка, Украина</span>
-        </li>
-      
 	<hr class="style-two">
 
       
-<li><a href="https://vk.com/rashevskyv" itemprop="sameAs">
-  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Вконтакте
-</a></li>
 
-
-<li><a href="https://vk.com/jailbreakps4" itemprop="sameAs">
+<li><a href="https://vk.com/portablegaming" itemprop="sameAs">
   <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
 </a></li>
 
@@ -239,12 +262,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
       
 
-      
-        <li>
-          <a href="https://twitter.com/xHR_" itemprop="sameAs">
-            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
-          </a>
-        </li>
       
 
       
@@ -326,10 +343,13 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#где-брать-игры" id="markdown-toc-где-брать-игры">Где брать игры</a></li>
-  <li><a href="#часть-i---запуск-эксплойта" id="markdown-toc-часть-i---запуск-эксплойта">Часть I - Запуск эксплойта</a></li>
-  <li><a href="#часть-ii---установка-игр" id="markdown-toc-часть-ii---установка-игр">Часть II - Установка игр</a></li>
-  <li><a href="#важно-помнить" id="markdown-toc-важно-помнить">Важно помнить</a></li>
+  <li><a href="#nonpdrm" id="markdown-toc-nonpdrm">NoNpDrm</a></li>
+  <li><a href="#другие-устаревшие-методы-установки" id="markdown-toc-другие-устаревшие-методы-установки">Другие, устаревшие методы установки</a></li>
+  <li><a href="#установка-игр-psm" id="markdown-toc-установка-игр-psm">Установка игр PSM</a></li>
+  <li><a href="#установка-игр-psp-и-psx" id="markdown-toc-установка-игр-psp-и-psx">Установка игр PSP и PSX</a></li>
+  <li><a href="#установка-переводов-и-модификаций" id="markdown-toc-установка-переводов-и-модификаций">Установка переводов и модификаций</a></li>
+  <li><a href="#порты-других-игр-и-эмуляторы" id="markdown-toc-порты-других-игр-и-эмуляторы">Порты других игр и эмуляторы</a></li>
+  <li><a href="#разгон-на-ps-vita" id="markdown-toc-разгон-на-ps-vita">Разгон на PS Vita</a></li>
 </ul>
 
   </nav>
@@ -337,146 +357,263 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <hr />
 
-<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.</div>
-
-<div class="notice">По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a>.</div>
+<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
 
 <hr />
 
-<h2 id="где-брать-игры">Где брать игры</h2>
+<p>Существуют три метода установки игр: NoNpDrm, Установка vkp-файлов, MaiDump. Однако лишь первый рекомендуется к использованию. Только этот метод гарантирует работоспособность игры, а так же позволит скачивать патчи для неё прямо с LiveArea.</p>
 
-<p>Дампы, сделанные для 4.05 и 4.55 так же будут работать!</p>
+<p>Два других метода будут упомянуты лишь вскользь, исключительно для общего развития, а так же для той редкой ситуации, когда искомая игра содержит какие-либо модификации и распространяется только в таком виде, а не иначе.</p>
 
-<ul>
-  <li><a href="http://pkg.customfw.xyz" target="_blank">Таблица с magnet-ссылками</a> (некоторые игры могут быть устаревшими; если закачка не идёт, ищите в других источниках)</li>
-  <li><a href="https://tapochek.net/viewforum.php?f=910" target="_blank">tapochek.net</a> (регистрация по инвайтам)</li>
-  <li><a href="https://rutracker.org/forum/viewforum.php?f=973" target="_blank">рутрекер</a></li>
-  <li><a href="https://torrent-games.eu/news/igry_playstation_4/" target="_blank">https://torrent-games.eu</a></li>
-  <li><a href="https://vk.com/invite/uAeSJe4" target="_blank">Игры для 6.72, а так же новые игры с бекпортами для 5.05</a>
-    <ul>
-      <li>Бекпорт - специальный патч, который позволдит запустить игру от 6.72 на приставке с 5.05</li>
-    </ul>
-  </li>
-  <li>Вы можете самостоятельно <a href="game-dumps">сделать дамп вашей купленной игры</a></li>
-</ul>
+<p>Подразумевается, что к этому моменту ваша приставка уже взломана, на ней установлен VitaShell</p>
 
-<h2 id="часть-i---запуск-эксплойта">Часть I - Запуск эксплойта</h2>
+<h3 id="nonpdrm">NoNpDrm</h3>
+
+<p>К всеобщему счастью, игры можно качать прямо с серверов Sony. Это работает благодаря плагину <a href="https://github.com/TheOfficialFloW/NoNpDrm">NoNpDrm</a> и открытой базе данных, содержащей ссылки на pkg игр на серверах Sony и фейковые ключи для их распаковки - <a href="http://nopaystation.com/">NoPayStation</a>.</p>
+
+<p>Скачиванием и распаковкой игр занимаются специальные программы: NPS Browser для ПК и PKGj для самой PSVita. Игры на ПК скачиваются и распаковываются заметно быстрее, чем на консоли, поэтому рекомендуется всё-таки использовать NPS Browser и перекидывать распакованные игры на консоль вручную.</p>
+
+<details class="spoiler"><summary class="spoiler-title">NPS Browser</summary><div class="spoiler-body">
+<details class="spoiler"><summary class="spoiler-title">Настройка NPS Browser</summary><div class="spoiler-body">
+<p class="notice--info">Настройку нужно провести всего раз</p>
 
 <ol>
-  <li>Вытащите из привода консоли диск и отключите USB-устройства перед активацией эксплойта</li>
-  <li>Перезагрузите приставку (не нужно перезагружать, если только её включили) и подождите пару минут
+  <li>Скачайте <a href="https://nopaystation.com">NPS Browser</a> на ваш ПК и поместите её в папку из которой будете в дальнейшем программу запускать
     <ul>
-      <li>Говорят, что после небольшого ожидания, а так же, если полазить немного по меню приставки, шанс срабатывания эксплойта сильно увеличивается</li>
+      <li>Версия для Windows(https://nopaystation.com/vita/npsReleases/NPS_Browser_0.94.exe)</li>
+      <li>Версия для MacOS(https://github.com/JK3Y/NPS-Browser-macOS)</li>
+      <li>Версии для Linux не существует</li>
+      <li>Убедитесь, что в пути к программе нет кириллицы!</li>
     </ul>
   </li>
-  <li>На приставке перейдите в Настройки в пункт “<strong>Руководство пользователя/полезная информация</strong>”, “<strong>Руководство пользователя</strong>”
-    <ul>
-      <li>При возникновении ошибки перезагрузите приставку</li>
-    </ul>
+  <li><strong>Только для Windows:</strong> Скачайте <a href="https://github.com/lusid1/pkg2zip/releases/tag/2.2">pkg2zip</a> и распакуйте содержимое скачанного архива в папку, содержащую <strong>NPS Browser</strong></li>
+  <li>
+    <p>Скачайте <a href="files/npsSettings.dat" target="_blank">файл конфигурации</a> <strong>NPS Browser</strong> и поместите его в папку, содержащую NPS Browser</p>
+
+    <p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/nsp_browser_folder.jpg" alt="" /></p>
   </li>
-  <li>Вместо руководства откроется страница “<strong>Exploit Selection</strong>”</li>
-  <li>Выберите “<strong>6.72</strong>”</li>
-  <li>Выберите “<strong>MIRA</strong>”</li>
-  <li>Надпись “<strong>You are all set</strong>” (в некоторых пейлоадах “<strong>Done</strong>” или “<strong>Success</strong>”) говорит о том, что пейлоад успешно активирован
-    <ul>
-      <li>Если с первого раза не выходит (Недостаточно памяти), нажимайте кнопку (O) для закрытия сообщения об ошибке и пробуйте еще раз.</li>
-      <li>Можно так же отчистить данные браузера и удалить cookies-файлы, после чего перезапустить приставку</li>
-    </ul>
-  </li>
-  <li>Нажмите (PS) для выхода на стартовый экран</li>
-  <li>Теперь можете подключить все отключённые ранее USB-устройства</li>
+  <li>Запустите <strong>NPS_Browser_X.XX.exe</strong></li>
+  <li>Дождитесь окончания загрузке кеша</li>
+  <li>Нажмите “<strong>File</strong>” -&gt; “<strong>Options</strong>”</li>
+  <li>Нажмите <strong>Browse</strong> напротив пункта “<strong>Download and unpack dir</strong>” и кажите программе папку, в которую будут помещаться скачанные и распакованные игры</li>
+  <li>Закройте окно настройки и программу</li>
+  <li>Программа готова к использованию.</li>
 </ol>
-
-<p class="notice--info">Если не получается запустить эксплойт через установку DNS - пробуйте сделать это <a href="payloads" target="_blank">через ваш ПК</a></p>
-
-<h2 id="часть-ii---установка-игр">Часть II - Установка игр</h2>
-<details class="spoiler"><summary class="spoiler-title">Способ I - Установка по с помощью USB-носителя</summary><div class="spoiler-body">
-<h4 id="что-понадобится">Что понадобится</h4>
-
-<ul>
-  <li>USB-накопитель (флешка\жёсткий диск) размером не менее устанавливаемой игры в формате exFAT</li>
-</ul>
-
-<h4 id="инструкция">Инструкция</h4>
-
-<p>Если у вас нет накопителя большого размера или по каким-то причинам вы не можете воспользоваться способом установки игр через него, воспользуйтесьУстановкой по локальной сети. О ней ниже.</p>
-
-<p class="notice--warning">Порядок установки игры, патчей и DLC может быть произвольным, если дополнительно не сказано обратного.</p>
-
-<ol>
-  <li>Скиньте в <strong>корень</strong> накопителя игру в формате PKG и подключите его к консоли в любой USB-порт</li>
-  <li>Запустите настройки</li>
-  <li>Листайте в самый низ и запустите пункт “<strong>Debug Settings</strong>”</li>
-  <li>Перейдите в меню “<strong>Game</strong>”</li>
-  <li>Перейдите в меню “<strong>Package Installer</strong>”</li>
-  <li>Выберите игру для установки.
-    <ul>
-      <li>Если игр несколько нажмите на кнопку “<strong>Install all</strong>”</li>
-    </ul>
-  </li>
-  <li>После окончания установки, нажмите (PS), чтобы вернуться к домашнему экрану</li>
-  <li>Игра окажется на стартовом экране</li>
-</ol>
-
 </div></details>
-<details class="spoiler"><summary class="spoiler-title">Способ II - Установка по локальной сети</summary><div class="spoiler-body">
-<h5 id="что-понадобится">Что понадобится</h5>
 
-<ul>
-  <li>USB-накопитель (флешка\жёсткий диск) размером не менее устанавливаемой игры в формате exFAT</li>
-  <li><a href="https://mega.nz/#!2dN1XajB!Z5fXyFoKOXFI_ujgGoCZfFFy5nyn7OWo6vF6h_HmWhQ" target="_blank">Remote Package Installer</a></li>
-  <li><a href="https://github.com/iref-use/ps4-remote-pkg-sender/releases/latest" target="_blank"><strong>PS4 Remote PKG Sender</strong></a></li>
-</ul>
-
-<h5 id="инструкция">Инструкция</h5>
-
-<p class="notice--warning">Порядок установки игры, патчей и DLC может быть произвольным, если дополнительно не сказано обратного.</p>
-
-<p class="notice--warning">Наибольшая скорость передачи будет только в том случае, если ПК с которого будет идти передача и консоль, будут подключены кабелем, а не по WiFi</p>
-
+<details class="spoiler"><summary class="spoiler-title">Использование NPS Browser</summary><div class="spoiler-body">
 <ol>
-  <li>Запустите приставку
+  <li>Запустите <strong>NPS_Browser_X.XX.exe</strong></li>
+  <li>Обратите внимание на три поля вверху программы:
+    <ol>
+      <li>Строка поиска. Сюда можно ввести часть названия игры и отфильтровать по нему список в главном окне программы</li>
+      <li>Выпадающий список с фильтром платформ. Снимите галочки с ненужных платформ, чтобы убрать их из главного окна программы и исключить из поиска</li>
+      <li>Выпадающий список с фильтром регионов. Снимите галочки с ненужных регионов, чтобы убрать их из главного окна программы и исключить из поиска</li>
+    </ol>
+  </li>
+  <li>Выделите нужную игру в главном окне
     <ul>
-      <li>На приставке должен быть <a href="start-hen#часть-i---настройка-dns" target="_blank">подключён интернет и настроены DNS</a>, а так же активирован эксплойт Mira <strong>(no-hb)</strong></li>
+      <li>Вы можете выделить несколько игр с помощью клавиш Shift и Ctrl</li>
     </ul>
   </li>
-  <li>Перейдите в <strong>Настройки</strong> -&gt; <strong>Сеть</strong> -&gt; <strong>Узнать состояние соединения</strong> и запишите указанный там <strong>IP-адрес</strong>, если не знаете какой он у консоли</li>
-  <li>Установите <a href="https://mega.nz/#!2dN1XajB!Z5fXyFoKOXFI_ujgGoCZfFFy5nyn7OWo6vF6h_HmWhQ" target="_blank">Remote Package Installer</a> на вашу PS4 с помощью USB-носителя
+  <li>Нажмите на выделенных играх правой кнопкой мыши и выберите “<strong>Download All</strong>”, чтобы скачать игру и все DLC к ней, а после автоматически распаковать</li>
+  <li>Нажмите на выделенной игре правой кнопкой мыши и выберите “<strong>Check for patches</strong>”, чтобы проверить наличие патча к игре. В появившимся окне нажмите “<strong>Download patch</strong>”
     <ul>
-      <li>Убедитесь, что в поле <strong>LOCAL IP</strong> указан IP именно вашего ПК
+      <li>К сожалению, это нужно проделывать для каждой игры</li>
+      <li>Патч модно скачать прямо на самой приставке через LiveArea после установки игры, поэтому сейчас этот пункт можно пропустить</li>
+    </ul>
+  </li>
+</ol>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Установка скачанных игр в приставку</summary><div class="spoiler-body">
+<ol>
+  <li>Перейдите в папку, в которую <strong>NPS Browser</strong> скачивает и распаковывает игры
+    <ul>
+      <li>Можете нажать на любую скачанную игру, а затем на иконку с папкой в нижней части экрана, чтобы открыть папку с игрой автоматически</li>
+    </ul>
+  </li>
+  <li>Вы увидите три папки:
+    <ul>
+      <li>В каждой из этих папок есть подпапки, названные в соответствии с “<strong>TitleID</strong>” скачанных игр</li>
+      <li>Любая из папок может отсутствовать, если вы не скачивали контент, соответствующий её названию</li>
+    </ul>
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">addcont</code> - содержит DLC со скачанными играми</li>
+      <li><code class="language-plaintext highlighter-rouge">app</code> - содержит сами скачанные игры</li>
+      <li><code class="language-plaintext highlighter-rouge">patch</code> - содержит патчи к скачанным играм</li>
+      <li><code class="language-plaintext highlighter-rouge">pspemu</code> - содержит в себе игры для PSP и PSX, запускаемые через <a href="adrenaline" target="_blank">Adrenaline</a>
         <ul>
-          <li>Как узнать IP вашего ПК можно справиться у гугла</li>
+          <li><code class="language-plaintext highlighter-rouge">pspemu\ISO</code> - содержит в себе игры для PSP в формате ISO</li>
+          <li><code class="language-plaintext highlighter-rouge">pspemu\PSP\GAME</code> - содержит в себе игры для PSX и PSP-minis</li>
+          <li>Обратите особое внимание на эту папку! Так как Adrenaline умеет запускать игры не только из ux0 (что требует отдельной умышленной настройки), то и папку эту нужно переместить в будущем на тот диск, который настроен в Adrenaline!</li>
         </ul>
       </li>
+      <li><code class="language-plaintext highlighter-rouge">psm</code> - содержит PlayStation Mobile-контент</li>
+    </ol>
+  </li>
+  <li>Запустите приложение <strong>VitaShell</strong> и подключите приставку к ПК <a href="vitashell#доступ-к-памяти-приставки-через-пк" about="_blank">удобным способом</a></li>
+  <li>Переместите вышеозначенные папки в корень <code class="language-plaintext highlighter-rouge">ux0</code> вашей PS Vita, соглашаясь на замену при запросе
+    <ul>
+      <li>Не забывайте, что папку <code class="language-plaintext highlighter-rouge">pspemu</code> нужно положить на тот диск, с которым настроен работать Adrenaline!</li>
     </ul>
   </li>
-  <li>Запустите <strong>Remote Package Installer</strong> на консоли
+  <li>После окончания перемещения, нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" /> на консоли, чтобы отключить PS Vita от ПК или остановить FTP-сервер, в зависимости от метода, который вы выбрали для перемещения файлов</li>
+  <li>
+    <p><strong>На PS Vita в VitaShell</strong> перейдите в самый верх иерархии списка дисков и нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /></p>
+
+    <p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/vs/vs_menu.jpg" alt="" /></p>
+  </li>
+  <li>Выберите “<strong>Refresh LiveArea™</strong>” и нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /></li>
+  <li>Подтвердите обновление LiveArea</li>
+  <li>Дождитесь окончания сканирования и нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /></li>
+  <li>Закройте <strong>VitaShell</strong>
     <ul>
-      <li>Не будет работать, если HEN ниже, чем 1.8</li>
+      <li>В главном меню приставки должны появиться все скачанные вами игры</li>
+      <li>Игры для PSP, PSP-minis и PSX ищите в <a href="adrenaline" target="_blank">Adrenaline</a></li>
     </ul>
   </li>
-  <li>На ПК запустите <a href="https://github.com/iref-use/ps4-remote-pkg-sender/releases/latest" target="_blank"><strong>PS4 Remote PKG Sender</strong></a> и в поле <strong>PS4 IP</strong> впишите <strong>IP-адрес</strong>, который вы записали выше
+  <li>Запустите пузырь игры (но не саму игру) и нажмите на символ поиска обновления <img src="https://vita.customfw.xyz/images/screenshots/find_upd.png" alt="" />
     <ul>
-      <li>Приставка и ПК должны находиться в одной подсети и “видеть” друг-друга</li>
+      <li>Не нужно делать этого, если вы скачали обновление через <strong>NPS Browser</strong></li>
     </ul>
   </li>
-  <li>Нажмите на кнопку <strong>Выбрать файлы</strong> и выберите PKG-файл, который хотите установить</li>
-  <li>Нажмите кнопку <strong>SEND</strong>, чтобы отправить PKG на приставку</li>
-  <li>Вы получите сообщение о том, что загрузка игры на приставку началась
+  <li>Если обновление есть, то вы увидите кнопку закачки обновления <img src="https://vita.customfw.xyz/images/screenshots/find_upd.png" alt="" />. Нажмите на неё</li>
+  <li>Нажмите “<strong>Загрузить</strong>”
     <ul>
-      <li>Вы можете свернуть приложение и даже играть в игры, пока ожидаете окончания установки</li>
+      <li>Следить за ходом загрузки обновления можно нажав в верхний правый угол</li>
+      <li>Да, это безопасно и за это не забанят</li>
+    </ul>
+  </li>
+</ol>
+</div></details>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">PKGj</summary><div class="spoiler-body">
+<ol>
+  <li>Запустите <strong>PKGj</strong> на вашей приставке</li>
+  <li>Если это ваш первый запуск, или вы хотите обновить базу с играми, нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> и выберите “<strong>Refresh</strong>”
+    <ul>
+      <li>Приставка должна быть подключена к интернету</li>
+    </ul>
+  </li>
+  <li>Нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> и выберите что вы хотите, чтобы было отображено на экране программы
+    <ul>
+      <li>Названия пунктов говорят сами за себя, поэтому нет смысла на них останавливаться</li>
+      <li>Здесь так же можно выбрать метод сортировки игр на экране</li>
+    </ul>
+  </li>
+  <li>Нажмите выбранную игру и выберите “<strong>Install game and patch</strong>” или “<strong>Install game</strong>”</li>
+  <li>После того, как выберите все игры, которые хотите установить, закройте программу
+    <ul>
+      <li>Обратите внимание, что игры от PS Vita устанавливаются прямо в Live Area, когда как игры от PSP, PSX и другие подобные, скачиваются прямо в программе!</li>
+      <li>Следить за ходом установки игр от PS Vita можно нажав в верхний правый угол на главном экране</li>
+      <li>Да, это безопасно и за это не забанят</li>
+    </ul>
+  </li>
+</ol>
+</div></details>
+
+<h3 id="другие-устаревшие-методы-установки">Другие, устаревшие методы установки</h3>
+<details class="spoiler"><summary class="spoiler-title">MaiDump</summary><div class="spoiler-body">
+<p><strong>MaiDump</strong> - это расшифрованные файлы игры, которые хранятся в виде структуры папок и файлов. Устанавливаются исключительно через программу <a href="https://github.com/LioMajor/MaiDumpToolEN/releases">MaiDumpTool</a>. Как правило, игры идут с инструкцией по установке, потому что она может различаться от игре к игре, поэтому мы не будем здесь заострять на нём внимание.</p>
+
+<p class="notice--info">Признак того, что дамп игры был сформирован с помощью MaiDumpTool: в структуре папок игры (TitleID) содержится папка <strong>mai_moe</strong></p>
+
+<p>Для установки игры в формате MaiDump необходимо сначала перенести структурно папки на консоль.</p>
+<ul>
+  <li>Папку с игрой <strong>(TitileID)</strong> перенести в <code class="language-plaintext highlighter-rouge">ux0:mai/</code></li>
+  <li>Папку с патчем <strong>(TitleID_patch)</strong> перенести в <code class="language-plaintext highlighter-rouge">ux0:mai/</code></li>
+  <li>Папку с DLC <strong>(TitileID_addc)</strong> перенести в <code class="language-plaintext highlighter-rouge">ux0:mai/</code>
+Игра может не иметь папок Patch и AddC</li>
+</ul>
+
+<p><strong>TitileID</strong> - это региональный код игры. Например, у игры Borderlands 2 американского региона TitleID - PCSE00383</p>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Игры в формате VPK</summary><div class="spoiler-body">
+<h3 id="способ-i---установка-vpk-через-vitashell">Способ I - Установка VPK через Vitashell</h3>
+<ol>
+  <li>Перенесите игру на PS Vita
+    <ul>
+      <li>Если не знаете как, <a href="vitashell#доступ-к-памяти-приставки-через-пк" target="_blank">воспользуйтесь инструкцией</a></li>
+    </ul>
+  </li>
+  <li>Установите как обычный VPK-файл
+    <ul>
+      <li>Если не знаете как, <a href="vitashell#установка-файлов-в-формате-vpk" target="_blank">воспользуйтесь инструкцией</a></li>
     </ul>
   </li>
 </ol>
 
+<h3 id="способ-ii---установка-распакованной-игры-через-vitashell">Способ II - Установка распакованной игры через Vitashell</h3>
+<ol>
+  <li>Файл <code class="language-plaintext highlighter-rouge">*.vpk</code> распаковать на компьютере любым архиватором, например WinRAR.</li>
+  <li>Перенести получившуюся папку на консоль, по USB либо FTP – через VitaShell.
+    <ul>
+      <li>Если не знаете как, <a href="vitashell#доступ-к-памяти-приставки-через-пк" target="_blank">воспользуйтесь инструкцией</a></li>
+    </ul>
+  </li>
+  <li>Выделить папку с файлами игры на консоли (не открывать!), нажать <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /></li>
+  <li>Перейти в диалоговом меню в <strong>More</strong></li>
+  <li>Выбрать пункт <strong>Install Folder</strong></li>
+  <li>Дождаться завершения процедуры. Иконка игры должна появится на экране LiveArea.</li>
+</ol>
 </div></details>
 
-<h2 id="важно-помнить">Важно помнить</h2>
+<h3 id="установка-игр-psm">Установка игр PSM</h3>
+
+<p>Для работы игр от <strong>PlayStation Mobile</strong> (PSM) вам понадобится плагин <code class="language-plaintext highlighter-rouge">nopsmdrm.skprx</code> (если прошивали по этому руководству, то уже установлен), а так же <strong>PSM Runtime Package</strong>. Скачать его можно через <strong>PKGj</strong> или <strong>NPS Browser</strong>, введя в поиске по Vita-играм <strong>PlayStation Mobile Runtime Package</strong>.</p>
+
+<h3 id="установка-игр-psp-и-psx">Установка игр PSP и PSX</h3>
+
+<p>Подробнее об этом в <a href="adrenaline" target="_blank">инструкции к Adrenaline</a></p>
+
+<h3 id="установка-переводов-и-модификаций">Установка переводов и модификаций</h3>
+
+<p>Современные русификаторы и модификации нужно класть в папку <code class="language-plaintext highlighter-rouge">rePatch/TitleID</code>, где <strong>TitleID</strong> - региональный код вашей игры. Как правило, с русификатором или модификацией идёт Readme-файл. Обязательно прочтите его и следуйте инструкции в нём написанной.</p>
+
 <ul>
-  <li>Вам следует <a href="/start-hen#%D0%A7%D0%B0%D1%81%D1%82%D1%8C-iii---%D0%97%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%8D%D0%BA%D1%81%D0%BF%D0%BB%D0%BE%D0%B9%D1%82%D0%B0" target="_blank">активировать взлом</a> каждый раз после включения приставки! Если вы активировали эксплойт и ввели приставку в режим покоя, то после пробуждения эксплойт уже будет активирован.</li>
-  <li>Не делайте реконструкцию базы данных без резервной копии этой самой базы! Это удалит все игры из меню, но на диске они по прежнему будут занимать место! Исправить можно будет только повторной установкой, или восстановлением бекапа базы! Подробнее об этом в разделе <a href="info" target="_blank">Важно знать</a></li>
-  <li>Ознакомьтесь с <a href="faq">FAQ</a> и <a href="addons">списком полезных инструкций</a></li>
+  <li><a href="https://4pda.ru/forum/index.php?showtopic=771459">Тема 4PDA с русификациями на PS Vita</a></li>
 </ul>
+
+<p class="notice--info">Вы можете удалить дубликаты файлов, которые добавляют модификации, с момощью приложения <a href="https://github.com/ONElua/ONEMenu-for-PSVita/releases">OneMenu</a>, наведя курсор на игру, нажав <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> и выбрав “<strong>Shrink Game</strong>”</p>
+
+<h3 id="порты-других-игр-и-эмуляторы">Порты других игр и эмуляторы</h3>
+
+<p>На PS Vita существует огромное количество портов классических игр с ПК и эмуляторов других систем. Мы не будем рассматривать здесь ни их установку, ни использование.</p>
+
+<ul>
+  <li>База данных приложений <a href="https://vitadb.rinnegatamante.it/">VitaDB</a>, где имеется большое количество различных портов и эмуляторов для консоли</li>
+</ul>
+
+<h3 id="разгон-на-ps-vita">Разгон на PS Vita</h3>
+
+<p>Разгон осуществляется путём использования плагина <a href="https://github.com/Electry/PSVshell">PSVshell</a></p>
+
+<ul>
+  <li>
+    <p>Нажимайте <img src="/images/buttons/SELECT.png" alt="(SELECT)" /> + <img src="/images/buttons/UP.png" alt="(UP)" /> или <img src="/images/buttons/SELECT.png" alt="(SELECT)" /> + <img src="/images/buttons/DOWN.png" alt="(DOWN)" /> для переключением между тремя видами плагина</p>
+  </li>
+  <li>
+    <p>В режиме “FULL”:</p>
+    <ul>
+      <li>Используйте <img src="/images/buttons/UP.png" alt="(UP)" /> / <img src="/images/buttons/DOWN.png" alt="(DOWN)" /> для навигации по меню</li>
+      <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> на устройстве, чью частоту хотите изменить:</li>
+      <li>Кнопками <img src="/images/buttons/LEFT.png" alt="(LEFT)" /> / <img src="/images/buttons/RIGHT.png" alt="(RIGHT)" /> вы можете указать минимальную частоту для выбранного устройства (частота применится незамедлительно)</li>
+      <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> на <strong>save profile</strong>, чтобы сохранить профиль. Таким образом текущие настройки будут сохранены для запущенной игр и применены к ней автоматически при следующем её запуске. Нажав на <strong>delete profile</strong>, вы удалите сохранённый профиль.</li>
+      <li>Значения указанные белым цветом - значения по-умолчанию. Синим - те, что выставили вы.</li>
+      <li>Зажав <img src="/images/buttons/L.png" alt="(L)" /> вы сможете сохранить профиль глобально для всех запущенных приложений. Строка <strong>save profile</strong> изменится на <strong>save global</strong></li>
+      <li>Глобальный профиль будет использован для запущенных игр только в том случае, если для них нет индивидуального профиля.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Разгон редко влияет на стабильную работу системы. Если после разгона ваша приставка стала работать хуже, отключите его, или используйте частоты ниже выставленных. Повышение частот быстрее расходует батарею консоли!</p>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрыть страницу</a></p>
 
 				
         
@@ -505,56 +642,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
     <div class="page__footer-container">
       <footer class="page__footer">
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-	  
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > 300) {
-				$('.scrollup').fadeIn();
-			} else {
-				$('.scrollup').fadeOut();
-			}
-			});
-			  
-			$('.scrollup').click(function(){
-			$("html, body").animate({ scrollTop: 0 }, 600);
-			return false;
-		});
-	  
-	});
-
-	$(document).ready(function() {
-    $('input').change(function() {
-    $('div.hideble').hide();
-      if ($('input[value="button1').is(':checked')) {
-        $('div.button1').show();
-      }
-      else if ($('input[value="button2').is(':checked')) {
-        $('div.button2').show();
-      }
-      else if ($('input[value="button3').is(':checked')) {
-        $('div.button3').show();
-      }
-      else {
-        $('div.hideble').hide();
-      }
-    });
-  });
-  
-
-var ref=document.referrer;
-var refArr=ref.split('/');
-ref=refArr[3];
-//alert(ref);
-
-if (ref=='preparation-fuse') {document.getElementById('selector').classList.add('hide');}
-
-</script>
-
-<script src="https://ps4.customfw.xyz/assets/js/main.min.js"></script>
-
+        
         <div class="page__footer-follow">
   <ul class="social-icons">
     
@@ -566,17 +654,14 @@ if (ref=='preparation-fuse') {document.getElementById('selector').classList.add(
     
     
     
-	  <li><a href="https://vk.com/rashevskyv" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> ВК</a></li>
-    
-    
-	  <li><a href="https://vk.com/nincfw" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Custom Nintendo
+	  <li><a href="https://vk.com/portablegaming" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Portable Gaming
 	  </a></li>	
     
-    <li><a href="https://ps4.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="https://vita.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2020 MeatWad, xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -588,6 +673,36 @@ if (ref=='preparation-fuse') {document.getElementById('selector').classList.add(
 
 
 
+
+    <script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        if(b.getAttribute("href") && b.hostname !== location.hostname) {
+            b.target = "_blank";
+            b.rel = "noopener";
+        }
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window();
+external_new_window();
+</script>
 
 
   </body>
