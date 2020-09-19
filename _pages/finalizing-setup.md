@@ -27,8 +27,7 @@ title: "Завершение установки"
 + **[pngshot](https://github.com/xyzz/pngshot)** - улучшает встроенную утилиту для скриншотов
 + **[PSVShell](https://github.com/Electry/PSVshell)** - плагин для разгона процессора и GPU приставки 
 + **[NoPowerLimitsVita](https://github.com/Electry/NoPowerLimitsVita)** - плагин, снимающий ограничения на максимальную яркость экрана и использование WiFi в некоторых играх
-+ **[Quick Volume](https://github.com/cuevavirus/QuickVolume)** - плагин, добавляющий регулировку системной громкости в быстром меню приставки
-+ **[Quick Power](https://github.com/cuevavirus/QuickPower)** - плагин, добавляющий кнопки выключения и перезагрузки приставки в быстрое меню
++ **[Quick Menu Plus](https://forum.devchroma.nl/index.php/topic,78.0.html)** - плагин, добавляющий кнопки выключения и перезагрузки приставки, а так же регуляторы громкости,  в быстрое меню. Для перезагрузки приставки удерживайте кнопку "**Power Off・Restart**"
 + **[Adrenaline](https://github.com/TheOfficialFloW/Adrenaline)** - это программа, которая модифицирует официальный эмулятор PSP, чтобы он запускал специальную прошивку PSP 6.61. В итоге, запустив Adrenaline, вы сможете использовать PSP и почти все её возможности в привычном для пользователей PSP окружении 
 + **[pkgj](https://github.com/blastrock/pkgj)** - приложение, позволяющее качать и распаковывать игры для PS Vita прямо на приставке 
 + **[VitaShell](https://github.com/RealYoti/VitaShell/)** - файловый менеджер, способный так же устанавливать `vpk-файлы` приложений
