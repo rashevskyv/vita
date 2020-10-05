@@ -69,7 +69,7 @@ title: "Завершение установки"
 
 1. Установите следующие файлы из папки `ux0:/VPK`
     * **Если вы не знаете как устанавливать `vpk-файлы` на PS Vita, [воспользуйтесь этой  инструкцией](vitashell#установка-файлов-в-формате-vpk){:target="_blank"}**
-    * `Adrenaline_v6.9_offline.vpk`
+    * `Adrenaline_offline.vpk`
     * `AppStorageManager.vpk`
     * `iTLS-Enso.vpk`
     * `pkgj.vpk`
