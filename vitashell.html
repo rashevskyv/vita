@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>VitaShell - Взлом PS Vita</title>
+
+
+
+
+<meta name="description" content="Полное руководство по прошивке PS Vita / Vita TV, от стоковой прошивки до HENkaku Ensō (3.60), ePSP CFW (3.61-3.63) или ePSP Homebrew (3.65+)">
+
+
+
+
+<meta name="author" content="PG-team">
+
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Взлом PS Vita">
+<meta property="og:title" content="VitaShell">
+
+
+  <link rel="canonical" href="https://vita.customfw.xyz/vitashell.html">
+  <meta property="og:url" content="https://vita.customfw.xyz/vitashell.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "xHR",
+      "url" : "https://vita.customfw.xyz",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://vita.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом PS Vita Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://vita.customfw.xyz/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 300) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+        });
+          
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+  
+});
+    
+$(document).ready(function() {
+  $('input').change(function() {
+  $('div.hideble').hide();
+    if ($('input[value="365').is(':checked')) {
+      $('div.365').show();
+    }
+    else if ($('input[value="367').is(':checked')) {
+      $('div.367').show();
+    }
+    else if ($('input[value="370').is(':checked')) {
+      $('div.370').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
+  });
+});</script>
+
+<script src="https://vita.customfw.xyz/assets/js/main.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://vita.customfw.xyz/">Взлом PS Vita</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/get-started">Взлом</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/faq">FAQ</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/addons">Полезные<br>инструкции</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/vitashell">Использование<br>VitaShell</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/sd2vita">sd2vita</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/games">Установка игр</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/plugins">Установка<br>плагинов</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/adrenaline">Adrenaline</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://vita.customfw.xyz/site-navigation">Навигация по сайту</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/contacts">Связаться с нами</a></li>
+          
+        </ul>
+        <button type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <center><img src="https://vita.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="PG-team" itemprop="image"></center>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">PG-team</h3><br>
+    
+  </div>
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+	<hr class="style-two">
+
+      
+
+<li><a href="https://vk.com/portablegaming" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
+</a></li>
+
+	
+      
+
+      
+        <li>
+          <a href="mailto:rashevsky.v@gmail.com">
+            <meta itemprop="email" content="rashevsky.v@gmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/rashevskyv" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+    </ul>
+  </div>
+</div>
+
+
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="VitaShell">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">VitaShell
+</h1>
+          
+        </header>
+      
+	  
+	  	
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Содержание</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#внешний-вид-и-управление" id="markdown-toc-внешний-вид-и-управление">Внешний вид и управление</a></li>
+  <li><a href="#настройки-программы" id="markdown-toc-настройки-программы">Настройки программы</a></li>
+  <li><a href="#установка-файлов-в-формате-vpk" id="markdown-toc-установка-файлов-в-формате-vpk">Установка файлов в формате VPK</a></li>
+  <li><a href="#доступ-к-памяти-приставки-через-пк" id="markdown-toc-доступ-к-памяти-приставки-через-пк">Доступ к памяти приставки через ПК</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
+
+<hr />
+
+<p><strong>VitaShell</strong> - многофункциональный файловый менеджер, умеющий монтировать память приставки в качестве сменного носителя на ПК, имеющий встроенный FTP-сервер, может производить операции с файлами, имеет доступ ко всем необходимым разделам внутренней памяти приставки, умеет устанавливать приложения в формате VPK, обновлять LiveArea, и многое другое. 
+На базе VitaShell построен <strong>molecularShell</strong>, который является облегчённым вариантом первой и распространяется вместе с установкой Henkaku на прошивке 3.60. Сам по себе он используется только для того, чтобы установить VitaShell на вашу приставку :)</p>
+
+<p>Большинство функций VitaShell и molecularShell совпадают, поэтому говоря об VitaShell, мы подразумеваем обе эти программы. В тех случаях, где не указано обратное.</p>
+
+<ul>
+  <li>VitaShell умнеет работать со следующими типами файлов: <code class="language-plaintext highlighter-rouge">png</code> / <code class="language-plaintext highlighter-rouge">jpg</code> / <code class="language-plaintext highlighter-rouge">mp3</code> / <code class="language-plaintext highlighter-rouge">ogg</code> / <code class="language-plaintext highlighter-rouge">txt</code> (и производные) / <code class="language-plaintext highlighter-rouge">zip</code> / <code class="language-plaintext highlighter-rouge">7zip</code> / <code class="language-plaintext highlighter-rouge">sfo</code> / и др.</li>
+  <li>Для установки <code class="language-plaintext highlighter-rouge">*.vpk</code> выберите необходимый файл и нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />.</li>
+  <li>Установка может занимать длительное время, так как скорость установки <code class="language-plaintext highlighter-rouge">*.vpk</code> напрямую зависит от количества файлов в этом контейнере.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">.vpk</code>-файл - обычный архив и его можно распаковать с помощью любого архиватора</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="внешний-вид-и-управление">Внешний вид и управление</h3>
+
+<p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/vs/vs_main.jpg" alt="" /></p>
+
+<p>Главное меню программы представляет из себя перечень всех доступных пользователю разделов памяти консоли.</p>
+
+<p>Основные разделы, которые необходимы для использования:</p>
+<ul>
+  <li><strong>ux0:</strong> - точка монтирования внешней карты памяти. После установки драйвера sd2vita, по этому пути будет доступна ваша microSD, а внешняя оригинальная карта станет находится в разделе <strong>uma0:</strong></li>
+  <li><strong>uma0:</strong> (может отсутствовать) - точка монтирования, которая будет доступен при использовании sd2vita. Сюда смонтируется оригинальная внешняя карта приставки</li>
+  <li><strong>imc0:</strong> (отсутствует в PS Vita 1000) - встроенная карта памяти вашей PS Vita Slim / PS Vita TV</li>
+  <li><strong>ur0:</strong> - системный раздел. Сюда мы будем устанавливать все наши плагины и конфиги</li>
+</ul>
+
+<p class="notice--warning">Остальные разделы являются системными и неизменяемыми по умолчанию. Любые попытки внести изменения в такие разделы - копирование, перемещение, удаление файлов - может повлечь за собой неработоспособность консоли!!!</p>
+
+<p>В левом верхнем углу (<strong>home (UNSAFE MODE)</strong>) отображена версия приложения, а так же каталог, в котором находиться пользователь и режим работы приложения.</p>
+
+<p>Пометка <strong>UNSAFE MODE</strong> указывает на то, что включён пункт меню “<strong>Небезопасные приложения</strong>” в разделе “<strong>Настройки HENkaku</strong>” приложения “<strong>Настройки</strong>” приставки.</p>
+
+<p>Пометка <strong>SAFE MODE</strong> указывает на то, что пункт меню “<strong>Небезопасные приложения</strong>” отключён, в таком случае будет доступен только раздел <strong>ux0:</strong>.</p>
+
+<p>Управление:</p>
+<ul>
+  <li>Навигация по меню происходит с помощью кнопок <img src="/images/buttons/UP.png" alt="(UP)" /> и <img src="/images/buttons/DOWN.png" alt="(DOWN)" /></li>
+  <li>Подтверждение и отмена выбора с помощью <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> и <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" /> соответственно</li>
+  <li>Вызов контекстного меню выделенных папок, а так же меню главного экрана программы - <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /></li>
+  <li>Вызов настроек самой программы - <img src="/images/buttons/START.png" alt="(START)" /></li>
+  <li>Режим соединения USB / FTP - <img src="/images/buttons/SELECT.png" alt="(SELECT)" /></li>
+</ul>
+
+<h3 id="настройки-программы">Настройки программы</h3>
+
+<details class="spoiler"><summary class="spoiler-title">Меню главного экрана программы</summary><div class="spoiler-body">
+<p>Нажав на <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" />, находясь в главном меню программы, вы попадёте в его меню.</p>
+
+<p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/vs/vs_menu.jpg" alt="" /></p>
+
+<ul>
+  <li><strong>Refresh LiveArea</strong> - обновление экрана LiveArea, используется так же как пункт для установки NoNpDrm-игр.</li>
+  <li><strong>Refresh license database</strong> - обновление базы данных лицензий консоли. Добавляет недостающие лицензии, если они есть.</li>
+  <li><strong>Mount uma0:/, imc0:/, xmc0:/</strong> - монтирует выбранный раздел памяти для использования.</li>
+  <li><strong>Unmount uma0:/, imc0:/, xmc0:/</strong> - размонтирование выбранного раздела.</li>
+  <li><strong>Mount USB ux0:</strong> - монтирование внешнего накопителя, подключённого по USB, как <strong>ux0:</strong></li>
+  <li><strong>Unmount USB ux0:</strong> - размонтирование внешнего накопителя, подключённого по USB</li>
+  <li><strong>Mount/Unmount gamecard ux0</strong> - Монтирование / размонтирование sd2vita-карты памяти в качестве раздела <strong>ux0:</strong></li>
+</ul>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Меню настроек программы</summary><div class="spoiler-body">
+<p>Меню <strong>Main Settings</strong> вызывается с помощью кнопки <img src="/images/buttons/START.png" alt="(START)" /> из любого каталога.</p>
+
+<p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/vs/vs_settings.jpg" alt="" /></p>
+
+<ul>
+  <li><strong>Theme</strong> - Выбор установленной темы. По умолчанию доступно две - Default и Electron. Можно установить сторонние темы оформления. Тему следует класть в <code class="language-plaintext highlighter-rouge">ux0:/VitaShell/theme/</code></li>
+  <li><strong>USB Device</strong> - Выбор монтируемого устройства для режима передачи данных по USB
+    <ul>
+      <li><strong>Memory Card</strong> - оригинальная внешняя карта памяти приставки. Важно понимать, что этот пункт подключит оригинальную карту памяти к ПК, как бы она был не смонтирована в вашей приставке. То есть, даже если у вас установлена sd2vita и её карта памяти смонтирована в ux0, при значении <strong>Memory Card</strong> к ПК все равно подмонтируется оригинальная карта памяти, находящаяся в uma0</li>
+      <li><strong>Game Card</strong> - игровой картридж</li>
+      <li><strong>sd2vita</strong> - microSD, подключённая через адаптер sd2vita. Важно понимать, что этот пункт подключит карту памяти в переходнике sd2vita к ПК, как бы она был не смонтирована в вашей приставке.</li>
+      <li><strong>psvsd</strong> - microSD, подключённая через адаптер psvsd. Важно понимать, что этот пункт подключит окарту памяти в переходнике psvsd к ПК, как бы она был не смонтирована в вашей приставке.</li>
+    </ul>
+  </li>
+  <li><strong>SELECT button</strong> - Выбор между монтированием консоли по USB или FTP-сервером
+    <ul>
+      <li>Режим передачи данных - вызывается с помощью <img src="/images/buttons/SELECT.png" alt="(SELECT)" /> из любого каталога. Отключается кнопкой <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" />. В случае, если активирован FTP-сервер, можно свернуть сообщение с IP-адресом кнопкой <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> и продолжать использовать VitaShell, когда как FTP-сервер будет запущен в фоне</li>
+    </ul>
+  </li>
+  <li><strong>Disable auto-updates</strong> - Отключение автообновления VitaShell</li>
+  <li><strong>Disable warning messages</strong> - Отключение предупреждения перед установкой файлов *.vpk (рекомендуется активировать)</li>
+  <li><strong>Restart VitaShell</strong> - перезапуск программы без перехода на экран LiveArea</li>
+  <li><strong>Подраздел Power</strong>
+    <ul>
+      <li><strong>Reboot</strong> - перезагрузка консоли</li>
+      <li><strong>Power off</strong> - выключение консоли</li>
+      <li><strong>Standby</strong> - переход в режим ожидания</li>
+    </ul>
+  </li>
+</ul>
+</div></details>
+
+<p class="text-center notice--info"><img src="https://vita.customfw.xyz/images/screenshots/vs/vs_context.jpg" alt="" /></p>
+
+<ul>
+  <li>Навигация по меню происходит с помощью кнопок <img src="/images/buttons/UP.png" alt="(UP)" /> и <img src="/images/buttons/DOWN.png" alt="(DOWN)" /></li>
+  <li>Подтверждение и отмена выбора с помощью <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> и <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" /> соответственно</li>
+  <li>Вызов контекстного меню выделенных папок, а так же меню главного экрана программы - <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /></li>
+  <li>Выделить один или несколько объектов - <img src="/images/buttons/SQUARE.png" alt="(SQUARE)" /></li>
+</ul>
+
+<details class="spoiler"><summary class="spoiler-title">Функции контекстного меню при работе с файлами и папками</summary><div class="spoiler-body">
+<p class="notice--info">Вызов контекстного меню выделенных папок осуществляется по нажатию клавиши <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /></p>
+
+<ul>
+  <li><strong>Open decrypted</strong> - позволяет перейти в зашифрованный каталог</li>
+  <li><strong>Mark All / Unmark All</strong> - выделить/снять выделение с объектов в текущем каталоге</li>
+  <li><strong>Move / Copy / Paste</strong> - действия “Переместить”, “Копировать”, “Вставить”</li>
+  <li><strong>Delete</strong> - Удалить объект</li>
+  <li><strong>Rename</strong> - Переименовать файл или папку</li>
+  <li><strong>Properties</strong> - Свойства объекта</li>
+  <li><strong>New</strong>
+    <ul>
+      <li><strong>New File</strong> - создать новый файл в текущем каталоге. Создаётся пустой файл без расширения. Необходимо переименовать файл с указанием расширения (например *.txt) для его формирования</li>
+      <li><strong>New folder</strong> - создать новую папку в текущем каталоге</li>
+      <li><strong>New bookmark</strong> - создать новую закладку выбранного каталога</li>
+    </ul>
+  </li>
+  <li><strong>Sort by</strong> - отсортировать файлы и папки в каталоге:
+    <ul>
+      <li><strong>By name</strong> - по имени</li>
+      <li><strong>By size</strong> - по размеру</li>
+      <li><strong>By date</strong> - по дате создания</li>
+    </ul>
+  </li>
+  <li><strong>More</strong> - Дополнительные функции:
+    <ul>
+      <li><strong>Compress</strong> - создать <code class="language-plaintext highlighter-rouge">*.zip</code>-архив из выбранных объектов (файлов и папок)</li>
+      <li><strong>Install all/Install Folder</strong> - функция для <a href="vitashell#установка-файлов-в-формате-vpk">установки игр из папки или распакованного *.vpk</a></li>
+      <li><strong>Export Media</strong> - регистрация и экспорт в систему изображений и аудио-файлов</li>
+      <li><strong>Calculate SHA1</strong> - подсчёт контрольной суммы для файла и/или папки. Необходимо для проверки целостности объекта</li>
+    </ul>
+  </li>
+  <li><strong>Ad-Hoc</strong> - передача файлов между двумя консолями по Wi-Fi:
+    <ul>
+      <li><strong>Send</strong> - передать выбранное</li>
+      <li><strong>Recieve</strong> - принять данные</li>
+    </ul>
+  </li>
+  <li><strong>Bookmarks</strong> - закладки и недавние файлы:
+    <ul>
+      <li><strong>Show bookmarks</strong> - показать созданные закладки. С закладками возможно взаимодействовать как с каталогами и ярлыками. Закладки расположены в <code class="language-plaintext highlighter-rouge">ux00:/VitaShell/bookmarks/</code></li>
+      <li><strong>Recent files</strong> - недавние файлы. Открывает список недавних файлов и операций с ними</li>
+    </ul>
+  </li>
+</ul>
+</div></details>
+
+<h3 id="установка-файлов-в-формате-vpk">Установка файлов в формате VPK</h3>
+
+<p class="notice--info">Для поддержания порядка на носителе, мы рекомендуем скидывать <code class="language-plaintext highlighter-rouge">vpk-файлы</code> в папку <code class="language-plaintext highlighter-rouge">VPK</code> на вашей карте памяти. Разумеется, это может быть и другая папка</p>
+
+<p class="notice--info">Перед началом установки множества файлов, рекомендуем зайти в меню программы и поставить значение пункта <strong>Disable warning messages</strong> в положение “<strong>On</strong>”, чтобы отключить навязчивые запросы о предоставлении расширенных прав.</p>
+
+<details class="spoiler"><summary class="spoiler-title">Установка одного VPK-файла</summary><div class="spoiler-body">
+<ol>
+  <li>На консоли перейдите в <code class="language-plaintext highlighter-rouge">ux0:</code> -&gt; <code class="language-plaintext highlighter-rouge">VPK</code></li>
+  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />, выделив необходимый файл, чтобы установить его</li>
+  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы подтвердить установку</li>
+  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы продолжить, если появится запрос о расширенных правах
+    <ul>
+      <li>Не будет появляться, если программа не требует расширенных прав для работы, а так же если запросы отключены в меню VitaShell (<img src="/images/buttons/START.png" alt="(START)" /> -&gt; “<strong>Disable warning messages</strong>” -&gt; “<strong>On</strong>”)</li>
+    </ul>
+  </li>
+  <li>Нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> чтобы открыть меню, затем выберите “<strong>Delete</strong>” чтобы удалить выделенный файл, если он вам больше не нужен</li>
+  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы подтвердить удаление</li>
+  <li>Закройте файловый менедже</li>
+</ol>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Установка всех VPK-файлов в папке</summary><div class="spoiler-body">
+<ol>
+  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">ux0:/VPK</code> и выделите любой <code class="language-plaintext highlighter-rouge">vpk-файл</code>, нажав <img src="/images/buttons/SQUARE.png" alt="(SQUARE)" /></li>
+  <li>Нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> чтобы открыть меню, затем выберите “<strong>More</strong>” -&gt; “<strong>Install all</strong>” чтобы установить все выделенные файлы</li>
+  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы подтвердить установку</li>
+  <li>Нажимайте <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы продолжить каждый раз, если появляется запрос о расширенных правах
+    <ul>
+      <li>Не будет появляться, если программа не требует расширенных прав для работы, а так же если запросы отключены в меню VitaShell (<img src="/images/buttons/START.png" alt="(START)" /> -&gt; “<strong>Disable warning messages</strong>” -&gt; “<strong>On</strong>”)</li>
+    </ul>
+  </li>
+  <li>Нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> чтобы открыть меню, затем выберите “<strong>Mark All</strong>”, нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> чтобы открыть меню ещё раз и выберите “<strong>Delete</strong>”, чтобы удалить все выделенные файлы, если они вам больше не нужен</li>
+  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы подтвердить удаление</li>
+  <li>Выйдите в главное меню PS Vita, нажав на кнопку <img src="/images/buttons/PS.png" alt="(PS)" /></li>
+</ol>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Установка игр из папок или распакованного VPK</summary><div class="spoiler-body">
+<p class="notice--info">Этот метод быстрее установки на PS Vita, потому что самый ресурсоёмкий процесс - распаковку, мы будем проводить на ПК</p>
+
+<ol>
+  <li>Переименуйте ваш <code class="language-plaintext highlighter-rouge">.vpk</code>-файл в <code class="language-plaintext highlighter-rouge">.zip</code> и распакуйте</li>
+  <li>Переместите папку на консоль <a href="vitashell#доступ-к-памяти-приставки-через-пк">любым удобным способом</a></li>
+  <li>Выделите папку с файлами  нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" />
+    <ul>
+      <li>Не нужно заходить в саму папку, нужно её просто выделить</li>
+      <li>Убедитесь, что папка, на который вы это делаете - это папка, содержащая файлы игры, а не папка, содержащая одну папку, в которой уже, в свою очередь, находятся игровые файлы</li>
+    </ul>
+  </li>
+  <li>Перейдите в диалоговом меню “<strong>More</strong>” и выберите “<strong>Install Folder</strong>”</li>
+  <li>Дождитесь окончания установки. Игра появится на главном экране консоли</li>
+</ol>
+</div></details>
+
+<h3 id="доступ-к-памяти-приставки-через-пк">Доступ к памяти приставки через ПК</h3>
+
+<details class="spoiler"><summary class="spoiler-title">Монтирование приставки в качестве USB-диска (рекомендуется)</summary><div class="spoiler-body">
+<p class="notice--warning">molecularShell не поддерживает монтирование приставки к ПК в качестве носителя. Для получения доступа к памяти приставки используйте протокол FTP</p>
+
+<ol>
+  <li>Запустите приложение <strong>VitaShell</strong></li>
+  <li>Нажмите <img src="/images/buttons/START.png" alt="(START)" /> чтобы открыть настройки <strong>VitaShell</strong></li>
+  <li>Выделите пункт “<strong>SELECT button</strong>”, нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />, чтобы изменить режим на “<strong>USB</strong>”
+    <ul>
+      <li>Обратите внимание, что в режиме USB по умолчанию открывается раздел <strong>ux0</strong></li>
+      <li>Некоторые файлы будут скрыты в режиме USB под Windows; вам необходимо <a href="https://customfw.xyz/file-extensions-windows">настроить проводник</a> для отображения всех файлов и папок на диске</li>
+    </ul>
+  </li>
+  <li>Нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" /> чтобы закрыть настройки VitaShell</li>
+  <li>Нажмите <img src="/images/buttons/SELECT.png" alt="(SELECT)" /> чтобы примонтировать приставку к ПК в виде съёмного носителя</li>
+  <li>Нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" />, чтобы отмонтировать приставку от ПК</li>
+</ol>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Запуск на приставке FTP-сервера</summary><div class="spoiler-body">
+<p class="notice--info">Этот метод походит как для <strong>molecularShell</strong>, так и для <strong>VitaShell</strong>, поэтому ниже мы будем говорить просто “файловый менеджер”, имея ввиду обе эти программы</p>
+
+<ol>
+  <li>Запустите файловый менеджер</li>
+  <li><strong>Только для VitaShell</strong>, molecularShell не ребует ддополнительной настройки:
+    <ol>
+      <li>Нажмите <img src="/images/buttons/START.png" alt="(START)" /> чтобы открыть настройки <strong>VitaShell</strong></li>
+      <li>Выделите пункт “<strong>SELECT button</strong>”, нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />, чтобы изменить режим на “<strong>FTP</strong>”</li>
+      <li>Нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" /> чтобы закрыть настройки VitaShell</li>
+    </ol>
+  </li>
+  <li>Нажмите <img src="/images/buttons/SELECT.png" alt="(SELECT)" /> чтобы включить доступ по FTP на консоли</li>
+  <li>Запустите FTP клиент на компьютере
+    <ul>
+      <li>Например, <a href="https://filezilla-project.org">FileZilla</a></li>
+    </ul>
+  </li>
+  <li>Введите IP адрес и порт, отображаемые на консоли и подключитесь к приставке
+    <ul>
+      <li>Если вы не знаете как использовать FTP-клиент, поищите инструкцию в интернете</li>
+    </ul>
+  </li>
+  <li>Нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" />, чтобы отключить FTP-сервер если он больше не нужен</li>
+</ol>
+</div></details>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрыть страницу</a></p>
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    
+	  <li><a href="https://vk.com/portablegaming" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Portable Gaming
+	  </a></li>	
+    
+    <li><a href="https://vita.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        if(b.getAttribute("href") && b.hostname !== location.hostname) {
+            b.target = "_blank";
+            b.rel = "noopener";
+        }
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window();
+external_new_window();
+</script>
+
+
+  </body>
+</html>
