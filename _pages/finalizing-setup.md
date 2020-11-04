@@ -21,6 +21,7 @@ title: "Завершение установки"
 + **[NoNpDrm](https://github.com/TheOfficialFloW/NoNpDrm)** - позволяет использовать зашифрованные игры и приложения
 + **[0syscall6](https://github.com/SKGleba/0syscall6)** - позволяет прозрачно расшифровывать игры и приложения на любой версии прошивки
 + **[rePatch reDux0](https://github.com/dots-tb/rePatch-reDux0)** - позволяет использовать модификации на манер LayeredFS y 3DS или Switch
++ **[FdFix](https://github.com/TheOfficialFloW/FdFix)** - патч, предотвращающий зависание homebrew после спящего режима 
 + **[DownloadEnabler](https://github.com/TheOfficialFloW/VitaTweaks/releases/tag/DownloadEnabler) + [iTLS](https://github.com/SKGleba/iTLS-Enso)** - позволяет скачивать файлы любых типов с помощью браузера
 + **[notrophymsg](https://github.com/TheOfficialFloW/VitaTweaks/releases/tag/NoTrophyMsg)** - убирает назойливое сообщение про трофеи, при использовании homebrew
 + **[shellbat](https://github.com/nowrep/vita-shellbat)** - отображает процент заряда батареи в строке состояния
