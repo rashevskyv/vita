@@ -16,12 +16,12 @@ title: "Настройка и работа с sd2vita"
 ## Инструкция
 
 ### Часть I - Форматирование microSD-карты 
+Прежде чем начать, рекомендуется [проверить свою SD-карту на подлинность](https://customfw.xyz/test_sd){:target="_blank"}
+{: .notice--warning}
+
 {% spoiler Windows %}
 * [zzBlank.img]({{ "/files/zzBlank.img" | absolute_url }})
 * Свежая версия [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
-
-Прежде чем начать, рекомендуется проверить свою SD-карту на ошибки с помощью [H2testw (Windows)](http://customfw.xyz/h2testw-windows)
-{: .notice--warning}
 
 1. Установите [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/) на ваш ПК
 1. Вставьте microSD, которую вы планируете использовать с sd2vita, в компьютер
@@ -45,9 +45,6 @@ title: "Настройка и работа с sd2vita"
 * Свежая версия [exfat-utils](https://github.com/relan/exfat) для вашего дистрибутива (используйте свой менеджер пакетов)
 * Свежая версия [fuse-exfat](https://github.com/relan/exfat) для вашего дистрибутива (используйте свой менеджер пакетов)
 
-Прежде чем начать, рекомендуется проверить свою SD-карту на ошибки с помощью [F3 (Linux)](http://customfw.xyz/f3-linux)
-{: .notice--warning}
-
 1. Вставьте накопитель в компьютер
 1. Размонтируйте накопитель командой `umount`
 1. Выполните `sudo dd if=/dev/zero of=/dev/sdX` чтобы очистить накопитель
@@ -59,8 +56,6 @@ title: "Настройка и работа с sd2vita"
 {% endspoiler %}
 
 {% spoiler MacOS %}
-Прежде чем начать, рекомендуется проверить свою SD-карту на ошибки с помощью [H2testw (Windows)](http://customfw.xyz/h2testw-windows), [F3 (Linux)](http://customfw.xyz/f3-linux), или [F3X (Mac)](http://customfw.xyz/f3x-mac)!
-{: .notice--warning}
 
 1. Вставьте накопитель в компьютер
 1. Запустите Дисковую утилиту
