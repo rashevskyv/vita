@@ -98,5 +98,5 @@ title: "Понижение версии системного ПО до 3.65"
 
 ___
 
-### Следующий шаг: [Установка Ensō (3.65)](installing-enso)
+### Следующий шаг: [Установка H-Encore (3.65)](installing-h-encore)
 {: .notice--success}
