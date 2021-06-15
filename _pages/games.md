@@ -153,7 +153,7 @@ title: "Установка игр"
 
 Современные русификаторы и модификации нужно класть в папку `rePatch/TitleID`, где **TitleID** - региональный код вашей игры. Как правило, с русификатором или модификацией идёт Readme-файл. Обязательно прочтите его и следуйте инструкции в нём написанной. 
 
-* [Тема 4PDA с русификациями на PS Vita](https://4pda.ru/forum/index.php?showtopic=771459)
+* [Тема 4PDA с русификациями на PS Vita](https://4pda.to/forum/index.php?showtopic=771459)
 
 Вы можете удалить дубликаты файлов, которые добавляют модификации, с момощью приложения [OneMenu](https://github.com/ONElua/ONEMenu-for-PSVita/releases), наведя курсор на игру, нажав {% include inc/btn.md btn="TRIANGLE" %} и выбрав "**Shrink Game**"
 {: .notice--info}
