@@ -416,8 +416,13 @@ $(document).ready(function() {
 
 <details class="spoiler"><summary class="spoiler-title">MacOS</summary><div class="spoiler-body">
 <ol>
-  <li><a href="files/FinalHE_mac.zip">Скачайте</a> собранный бинарник версии 1.92</li>
-  <li>Скопируйте содержимое <code class="language-plaintext highlighter-rouge">zip-архива</code> <strong>Final h-encore</strong> в папку на вашем компьютере</li>
+  <li>Установите brew на MacOS, если ранее этого не делали.
+    <ul>
+      <li>Откройте Терминал, введите: <code class="language-plaintext highlighter-rouge">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
+    </ul>
+  </li>
+  <li>Установите библиотеки QT5 (!) командой <code class="language-plaintext highlighter-rouge">brew install qt5</code> в терминале ОС</li>
+  <li>Загрузите и распакуйте архив <a href="files/FinalHE_MacOS_PreBuild.zip" target="_blank">FinalHE_MacOS_PreBuild</a> в любом удобном для вас месте</li>
 </ol>
 
 <details class="spoiler"><summary class="spoiler-title">Инструкция для самостоятельного компилирования под MacOS</summary><div class="spoiler-body">
@@ -602,7 +607,7 @@ $(document).ready(function() {
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2021 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2022 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
