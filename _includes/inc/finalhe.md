@@ -23,8 +23,10 @@
 
 {% spoiler MacOS %}
 
-1. [Скачайте](files/FinalHE_mac.zip) собранный бинарник версии 1.92
-1. Скопируйте содержимое `zip-архива` **Final h-encore** в папку на вашем компьютере
+1. Установите brew на MacOS, если ранее этого не делали.
+   * Откройте Терминал, введите: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+1. Установите библиотеки QT5 (!) командой `brew install qt5` в терминале ОС
+1. Загрузите и распакуйте архив [FinalHE_MacOS_PreBuild](files/FinalHE_MacOS_PreBuild.zip){:target="_blank"} в любом удобном для вас месте
 
 {% spoiler Инструкция для самостоятельного компилирования под MacOS %}
 

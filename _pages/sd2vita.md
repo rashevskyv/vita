@@ -19,8 +19,9 @@ title: "Настройка и работа с sd2vita"
 Прежде чем начать, рекомендуется [проверить свою SD-карту на подлинность](https://customfw.xyz/test_sd){:target="_blank"}
 {: .notice--warning}
 
-{% spoiler Windows %}
 * [zzBlank.img]({{ "/files/zzBlank.img" | absolute_url }})
+
+{% spoiler Windows %}
 * Свежая версия [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
 
 1. Установите [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/) на ваш ПК
