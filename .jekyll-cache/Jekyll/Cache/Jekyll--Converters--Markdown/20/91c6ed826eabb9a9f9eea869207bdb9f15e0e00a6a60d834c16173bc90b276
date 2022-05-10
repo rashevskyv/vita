@@ -1,15 +1,0 @@
-I"
-<ol>
-  <li>На консоли перейдите в <code class="language-plaintext highlighter-rouge">ux0:</code> -&gt; <code class="language-plaintext highlighter-rouge">VPK</code></li>
-  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />, выделив необходимый файл, чтобы установить его</li>
-  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы подтвердить установку</li>
-  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы продолжить, если появится запрос о расширенных правах
-    <ul>
-      <li>Не будет появляться, если программа не требует расширенных прав для работы, а так же если запросы отключены в меню VitaShell (<img src="/images/buttons/START.png" alt="(START)" /> -&gt; “<strong>Disable warning messages</strong>” -&gt; “<strong>On</strong>”)</li>
-    </ul>
-  </li>
-  <li>Нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> чтобы открыть меню, затем выберите “<strong>Delete</strong>” чтобы удалить выделенный файл, если он вам больше не нужен</li>
-  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы подтвердить удаление</li>
-  <li>Закройте файловый менедже</li>
-</ol>
-:ET
