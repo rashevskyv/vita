@@ -1,0 +1,16 @@
+I"�
+<ol>
+  <li>Установить brew командой из терминала: <code class="language-plaintext highlighter-rouge">/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</code></li>
+  <li>Установить qt5 libs командой из терминала: <code class="language-plaintext highlighter-rouge">brew install libusb qt</code></li>
+  <li>Загрузить исходники (source code): <code class="language-plaintext highlighter-rouge">https://github.com/soarqin/finalhe/releases</code></li>
+  <li>Загрузить cmake-3.16.2-Darwin-x86_64.dmg по ссылке <code class="language-plaintext highlighter-rouge">https://cmake.org/download/</code></li>
+  <li>Запустить программу cmake и указать пути для исходного кода и выходного файла (makefile)</li>
+  <li>Нажать “<strong>Configure</strong>”, выбрать тип <strong>Unix Makefile</strong>. Надстройка стандартная.</li>
+  <li>Указать поочередно пути: QT - Core / GUI / LinguistTools / Network / PrintSupport / Widgests.</li>
+  <li>Нажать “<strong>Generate</strong>” и дождаться выполнения</li>
+  <li>Открыть Терминал и выполнить команду <code class="language-plaintext highlighter-rouge">cd ~/finalheс/</code> (путь до директории с makefile)</li>
+  <li>Выполнить команду <code class="language-plaintext highlighter-rouge">make</code>. Дождаться завершения компиляции.</li>
+  <li>*.exec будет находиться в папке «src» (папка с makefile)</li>
+</ol>
+
+:ET

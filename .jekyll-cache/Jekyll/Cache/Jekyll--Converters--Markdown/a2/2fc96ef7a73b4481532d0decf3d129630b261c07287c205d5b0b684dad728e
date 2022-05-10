@@ -1,0 +1,67 @@
+I"�
+<p>Плагины добавляют новый функционал к вашей прошивке. К сожалению, не все плагины от PSP подходят для Adrenaline, но большинство подходят.</p>
+
+<p>Плагины распространяются в формате <code class="language-plaintext highlighter-rouge">.prx</code>, однако, в ряде случаев, с плагином могут идти и дополнительные файлы.</p>
+
+<p>Плагины располагаются в папке <code class="language-plaintext highlighter-rouge">pspemu\seplugins</code>.</p>
+
+<h4 id="как-устанавливать-плагины">Как устанавливать плагины</h4>
+
+<ol>
+  <li>Скиньте необходимый плагин в папку <code class="language-plaintext highlighter-rouge">pspemu\seplugins</code>.</li>
+  <li>Пропишите путь к плагину в текстовом файле <code class="language-plaintext highlighter-rouge">vsh.txt</code>, <code class="language-plaintext highlighter-rouge">game.txt</code> или <code class="language-plaintext highlighter-rouge">pops.txt</code> в зависимости от того для чего этот плагин нужен
+    <ul>
+      <li>Как правило, информация о том куда конкретно прописывать плагин находится в readme к нему</li>
+      <li>В <code class="language-plaintext highlighter-rouge">vsh.txt</code> находятся плагины, работающие с основным меню PSP (XMB-меню)</li>
+      <li>В <code class="language-plaintext highlighter-rouge">game.txt</code> находятся плагины, работающие в играх и программах PSP</li>
+      <li>В <code class="language-plaintext highlighter-rouge">pops.txt</code> находятся плагины, работающие в играх PSX</li>
+      <li>В общем виде прописывать надо так: <code class="language-plaintext highlighter-rouge">ms0:/seplugins/Название_Плагина.prx 1</code>, где число в конце показывает включён плагин или нет; 1 - включён, 2 - отключён</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="включение-и-отключение-плагинов">Включение и отключение плагинов</h4>
+
+<ol>
+  <li>В главном меню нажмите <img src="/images/buttons/SELECT.png" alt="(SELECT)" />, чтобы открыть <strong>VSH-меню</strong></li>
+  <li>Перейдите в <strong>Plugins</strong></li>
+  <li>Выделите плагин, который хотите включить или выключить и нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />
+    <ul>
+      <li><strong>Enabled</strong> значит что плагин включён</li>
+      <li><strong>Disabled</strong> значит что плагин выключен</li>
+    </ul>
+  </li>
+  <li>Нажмите <strong>Back</strong></li>
+  <li>Нажмите <strong>Exit</strong>, чтобы закрыть рекавери</li>
+  <li>Снова откройте <strong>VSH-меню</strong> и выберите <strong>RESTART VSH</strong>
+    <ul>
+      <li>После перезагрузки меню плагин примет новое значение</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="плагины-в-составе-сборки">Плагины в составе сборки</h4>
+
+<p>Если вы прошивались по этому руководству, то вместе с Adrenaline будут установлены следующие плагины:</p>
+
+<ul>
+  <li><strong>category_lite.prx</strong> - плагин, позволяющий делить установленные игры и приложения по категориям. Для этого игры нужно класть в папки. Название папки будет совпадать с названием категории.</li>
+  <li><strong>dayviewer.prx</strong> - плагин, показывающий текущую дату вместе с часами</li>
+  <li><a href="https://wololo.net/talk/viewtopic.php?t=4997"><strong>nploader.prx</strong></a> - плагин, позволяющий устанавливать DLC для PSP-игр</li>
+  <li><strong>Набор плагинов Remaster Control</strong> - специальные плагины, активирующие работу второго аналогового стика в <strong>некоторых</strong> играх. По-умолчанию эти плагины отключены. Для того, чтобы они начали работать - включите из и перезагрузите VSH-меню
+    <ul>
+      <li><strong>acbl_control.prx</strong> - Assassin’s Creed: Bloodlines</li>
+      <li><strong>gta_remastered_v2.prx</strong> - Grand Theft Auto: Liberty City Stories и Grand Theft Auto: Vice City Stories</li>
+      <li><strong>khbbs_remastered.prx</strong> - Kingdom Hearts Birth By Sleep (+ Final Mix)</li>
+      <li><strong>mgs_remastered.prx</strong> - Metal Gear Solid Peace Walker и Metal Gear Solid Portable Ops</li>
+      <li><strong>pop_remastered.prx</strong> - Prince of Persia: Revelation и Prince of Persia: Rival Swords</li>
+      <li><strong>resistance_remastered.prx</strong> - Resistance: Retribution</li>
+      <li><strong>splintercell_remastered.prx</strong> - Tom Clancy’s Splinter Cell: Essentials</li>
+      <li><strong>tombraider_remastered.prx</strong> - Lara Croft: Tomb Raider Legend и Lara Croft: Tomb Raider Anniversary</li>
+      <li><strong>warriors_remastered.prx</strong> - The Warriors</li>
+      <li><strong>tonyhawk_remastered.prx</strong> - Tony Hawk</li>
+    </ul>
+  </li>
+  <li><strong>npdrm_free.prx</strong> - плагин, позволяющий запускать PSP игры в формате PBP</li>
+</ul>
+:ET

@@ -1,0 +1,23 @@
+I"F
+<ul>
+  <li>Свежая версия <a href="https://github.com/relan/exfat">exfat-utils</a> для вашего дистрибутива (используйте свой менеджер пакетов)</li>
+  <li>Свежая версия <a href="https://github.com/relan/exfat">fuse-exfat</a> для вашего дистрибутива (используйте свой менеджер пакетов)</li>
+</ul>
+
+<ol>
+  <li>Вставьте накопитель в компьютер</li>
+  <li>Размонтируйте накопитель командой <code class="language-plaintext highlighter-rouge">umount</code></li>
+  <li>Выполните <code class="language-plaintext highlighter-rouge">sudo dd if=/dev/zero of=/dev/sdX</code> чтобы очистить накопитель
+    <ul>
+      <li>Замените <code class="language-plaintext highlighter-rouge">sdX</code> на устройство, соответствующее вашему накопителю</li>
+    </ul>
+  </li>
+  <li>Извлеките накопитель из компьютера</li>
+  <li>Снова вставьте накопитель в компьютер</li>
+  <li>Выполните <code class="language-plaintext highlighter-rouge">mkfs.exfat /dev/sdX</code> чтобы отформатировать накопитель в exFAT
+    <ul>
+      <li>Если накопитель имеет емкость 256 ГБ или больше, то необходимо произвести форматирование с размером кластера 64 КБ</li>
+    </ul>
+  </li>
+</ol>
+:ET

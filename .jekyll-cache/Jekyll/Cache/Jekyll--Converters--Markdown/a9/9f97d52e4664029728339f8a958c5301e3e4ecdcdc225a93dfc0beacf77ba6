@@ -1,0 +1,78 @@
+I"
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Содержание</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
+  <li><a href="#инструкция" id="markdown-toc-инструкция">Инструкция</a>    <ul>
+      <li><a href="#часть-i---подготовительные-работы" id="markdown-toc-часть-i---подготовительные-работы">Часть I - Подготовительные работы</a></li>
+      <li><a href="#часть-ii---установка-ensō" id="markdown-toc-часть-ii---установка-ensō">Часть II - Установка Ensō</a></li>
+    </ul>
+  </li>
+  <li><a href="#следующий-шаг-завершение-установки" id="markdown-toc-следующий-шаг-завершение-установки">Следующий шаг: Завершение установки</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
+
+<div class="notice--danger"><strong>10.05.2022 вышло системное ПО версии 3.74. На данный момент оно не подлежит взлому!! Если вы хотите взломать свою консоль, не обновляйте прошивку через настройки!</strong></div>
+
+<hr />
+
+<h3 id="что-понадобится">Что понадобится</h3>
+
+<ul>
+  <li>Свежая версия <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a></li>
+  <li>Установленное приложение VitaShell или molecularShell 
+   Если у вас не установлено ни одно из этих приложений, начните выполнять гайд <a href="get-started">заново</a>!</li>
+</ul>
+
+<h3 id="инструкция">Инструкция</h3>
+
+<p class="notice--warning">Для выполнения этой части необходимо, чтобы на приставке стоял и был запущен <a href="installing-h-encore" target="_blank">h-encore</a> (для приставок с версией прошивки 3.65 или выше) или <a href="installing-henkaku" target="_blank">henkaku</a> (для приставок с прошивкой 3.60). Запустите взлом, если ещё не делали этого.</p>
+
+<h4 id="часть-i---подготовительные-работы">Часть I - Подготовительные работы</h4>
+
+<div class="notice--warning">
+<p class="notice--success">Выполните следующее, если ещё не скидывали на приставку <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a>:</p>
+
+<ol>
+  <li>Скачайте и разархивируйте <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a> на ПК в удобное для вас место</li>
+  <li>Запустите приложение <strong>VitaShell</strong> и подключите приставку к ПК <a href="vitashell#доступ-к-памяти-приставки-через-пк" about="_blank">удобным способом</a></li>
+  <li>Скопируйте содержимое <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a> на PS Vita удобным для вас способом
+    <ul>
+      <li>Если вы не знаете как перенести файлы на PS Vita, <a href="vitashell#доступ-к-памяти-приставки-через-пк" target="_blank">воспользуйтесь этой  инструкцией</a></li>
+    </ul>
+  </li>
+</ol>
+</div>
+<ol>
+  <li>Через <strong>VitaShell</strong> установите файл <code class="language-plaintext highlighter-rouge">ux0:/VPK/enso.vpk</code>
+    <ul>
+      <li>Если вы не знаете как устанавливать <code class="language-plaintext highlighter-rouge">vpk-файлы</code> на PS Vita, <a href="vitashell#установка-файлов-в-формате-vpk" target="_blank">воспользуйтесь этой  инструкцией</a></li>
+    </ul>
+  </li>
+  <li>Выйдите на главный экран, нажав кнопку <img src="/images/buttons/PS.png" alt="(PS)" /></li>
+</ol>
+
+<h4 id="часть-ii---установка-ensō">Часть II - Установка Ensō</h4>
+
+<ol>
+  <li>Запустите приложение <strong>Ensō</strong></li>
+  <li>Нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" /> чтобы принять условия соглашения</li>
+  <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> чтобы установить <strong>Ensō</strong>
+    <ul>
+      <li>После завершения процесса нажмите любую кнопку для перезагрузки</li>
+      <li>Теперь при запуске приставки, взлом будет активирован автоматически</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h3 class="notice--success" id="следующий-шаг-завершение-установки">Следующий шаг: <a href="finalizing-setup">Завершение установки</a></h3>
+:ET

@@ -1,0 +1,13 @@
+I"
+<p class="notice--warning">Версию для Debian-совместимых дистрибутивов придётся компилировать самому! Версия же для RPM-менеджера пакетов доступна в репозитории. Там же находится и инструкция по установке.</p>
+
+<ol>
+  <li>Для компиляции вам понадобятся следующие пакеты: <code class="language-plaintext highlighter-rouge">build-essential libxml2-dev libusb-1.0-0-dev zlib1g-dev qtbase5-dev cmake qt5-default qt5-qmake qtbase5-dev-tools qttools5-dev-tools git qttools5-dev pkg-config</code></li>
+  <li>Клонируйте репозиторий в удобную папку. Например, <code class="language-plaintext highlighter-rouge">git clone https://github.com/soarqin/finalhe.git</code></li>
+  <li>Перейдите в папку с исходниками программы <code class="language-plaintext highlighter-rouge">cd finalhe/</code></li>
+  <li>Выполните команду <code class="language-plaintext highlighter-rouge">cmake</code>, указав в качестве её параметра местонахождение папки с исходниками: <code class="language-plaintext highlighter-rouge">cmake ~/finalhe/</code></li>
+  <li>Начните компилирование: <code class="language-plaintext highlighter-rouge">make</code></li>
+  <li>После окончания компилирования, запустите программу: <code class="language-plaintext highlighter-rouge">./src/FinalHE</code>. Бинарник программы будет находится в папке <code class="language-plaintext highlighter-rouge">src</code></li>
+</ol>
+
+:ET

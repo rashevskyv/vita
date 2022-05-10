@@ -1,0 +1,261 @@
+I"�j
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Содержание</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#выберите-версию-вашей-консоли" id="markdown-toc-выберите-версию-вашей-консоли">Выберите версию вашей консоли:</a></li>
+  <li><a href="#обязательно-к-прочтению" id="markdown-toc-обязательно-к-прочтению">Обязательно к прочтению</a></li>
+  <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
+  <li><a href="#инструкция" id="markdown-toc-инструкция">Инструкция</a>    <ul>
+      <li><a href="#часть-i---подготовительные-работы" id="markdown-toc-часть-i---подготовительные-работы">Часть I - Подготовительные работы</a></li>
+      <li><a href="#часть-ii---установка-vpk" id="markdown-toc-часть-ii---установка-vpk">Часть II - Установка VPK</a></li>
+      <li><a href="#часть-iii---настройка-системы" id="markdown-toc-часть-iii---настройка-системы">Часть III - Настройка системы</a></li>
+      <li><a href="#часть-iv---установка-плагинов" id="markdown-toc-часть-iv---установка-плагинов">Часть IV - Установка плагинов</a></li>
+      <li><a href="#часть-v---установка-sd2vita-опционально" id="markdown-toc-часть-v---установка-sd2vita-опционально">Часть V - Установка SD2Vita (опционально)</a></li>
+      <li><a href="#часть-vi---очистка" id="markdown-toc-часть-vi---очистка">Часть VI - Очистка</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
+
+<div class="notice--danger"><strong>10.05.2022 вышло системное ПО версии 3.74. На данный момент оно не подлежит взлому!! Если вы хотите взломать свою консоль, не обновляйте прошивку через настройки!</strong></div>
+
+<hr />
+
+<h2 id="выберите-версию-вашей-консоли">Выберите версию вашей консоли:</h2>
+
+<div class=".select_fw__wrapper">
+    <div class="select_fw">
+        <input type="radio" id="365" name="fw" value="365" checked="" />
+        <label for="365">PS Vita</label>
+        <input type="radio" id="370" name="fw" value="370" />
+        <label for="370">PS Vita TV</label>
+    </div>
+</div>
+
+<h2 id="обязательно-к-прочтению">Обязательно к прочтению</h2>
+
+<p>Мы установим и настроим следующие приложения и плагины:</p>
+<ul>
+  <li><strong><a href="https://github.com/TheOfficialFloW/NoNpDrm">NoNpDrm</a></strong> - позволяет использовать зашифрованные игры и приложения</li>
+  <li><strong><a href="https://github.com/SKGleba/0syscall6">0syscall6</a></strong> - позволяет прозрачно расшифровывать игры и приложения на любой версии прошивки</li>
+  <li><strong><a href="https://github.com/dots-tb/rePatch-reDux0">rePatch reDux0</a></strong> - позволяет использовать модификации на манер LayeredFS y 3DS или Switch</li>
+  <li><strong><a href="https://github.com/TheOfficialFloW/FdFix">FdFix</a></strong> - патч, предотвращающий зависание homebrew после спящего режима</li>
+  <li><strong><a href="https://github.com/TheOfficialFloW/VitaTweaks/releases/tag/DownloadEnabler">DownloadEnabler</a> + <a href="https://github.com/SKGleba/iTLS-Enso">iTLS</a></strong> - позволяет скачивать файлы любых типов с помощью браузера</li>
+  <li><strong><a href="https://github.com/TheOfficialFloW/VitaTweaks/releases/tag/NoTrophyMsg">notrophymsg</a></strong> - убирает назойливое сообщение про трофеи, при использовании homebrew</li>
+  <li><strong><a href="https://github.com/nowrep/vita-shellbat">shellbat</a></strong> - отображает процент заряда батареи в строке состояния</li>
+  <li><strong><a href="https://github.com/xyzz/pngshot">pngshot</a></strong> - улучшает встроенную утилиту для скриншотов</li>
+  <li><strong><a href="https://github.com/Electry/PSVshell">PSVShell</a></strong> - плагин для разгона процессора и GPU приставки</li>
+  <li><strong><a href="https://github.com/Electry/NoPowerLimitsVita">NoPowerLimitsVita</a></strong> - плагин, снимающий ограничения на максимальную яркость экрана и использование WiFi в некоторых играх</li>
+  <li><strong><a href="https://forum.devchroma.nl/index.php/topic,78.0.html">Quick Menu Plus</a></strong> - плагин, добавляющий кнопки выключения и перезагрузки приставки, а так же регуляторы громкости,  в быстрое меню. Для перезагрузки приставки удерживайте кнопку “<strong>Power Off・Restart</strong>”</li>
+  <li><strong><a href="https://forum.devchroma.nl/index.php/topic,46.0.html">JAV</a></strong> - Плагин запоминает уровень громкости для динамиков, наушников и bluetooth, и автоматически переходит на нужный уровень громкости при смене устройства воспроизведения</li>
+  <li><strong><a href="https://github.com/TheOfficialFloW/Adrenaline">Adrenaline</a></strong> - это программа, которая модифицирует официальный эмулятор PSP, чтобы он запускал специальную прошивку PSP 6.61. В итоге, запустив Adrenaline, вы сможете использовать PSP и почти все её возможности в привычном для пользователей PSP окружении</li>
+  <li><strong><a href="https://github.com/blastrock/pkgj">pkgj</a></strong> - приложение, позволяющее качать и распаковывать игры для PS Vita прямо на приставке</li>
+  <li><strong><a href="https://github.com/TheOfficialFloW/VitaShell/releases/latest">VitaShell</a></strong> - файловый менеджер, способный так же устанавливать <code class="language-plaintext highlighter-rouge">vpk-файлы</code> приложений</li>
+  <li><strong><a href="https://github.com/theheroGAC/TF-Card-Plugin-Tool">TF-Card-Plugin-Tool</a></strong> - <strong>опциональный</strong> плагин, позволяющий монитровать обычную SD-карту через специальный переходник, вставляемый в слот картриджа приставки</li>
+  <li><strong><a href="https://bitbucket.org/Lupo511/appstoragemanager/downloads/">Application Storage Manager</a></strong> - программа, позволяющая заменить системное приложение своим, что позволит не остаться без VitaShell даже при случайном его удалении</li>
+  <li><strong><a href="https://www.psx-place.com/threads/release-ps-vita-3g-disabler.14652/">Vita 3G Disabler</a></strong> - <strong>опционально</strong> для приставок с 3G-модулем, чтобы отключить его назойливые ошибки</li>
+</ul>
+
+<div class="hideble 370 hide">
+<ul>
+  <li><strong><a href="https://github.com/KuromeSan/DolcePolce">DolcePolce</a></strong> - плагин, снимающий ограничения на запуск некоторых приложений на PS Vits TV, а так же приложений от PS Vita TV на обычной PS Vita</li>
+  <li><strong><a href="https://github.com/OperationNT414C/DSMotion">DSMotion</a></strong> - плагин, активирующий возможность управления гироскопом на DualSchock-контроллере. Необходим для тех игр на PS Vita TV, которые подразумевают управление движением на PS Vita.</li>
+  <li><strong><a href="https://github.com/OperationNT414C/FakeCamera">FakeCamera</a></strong> - плагин, необходимый для запуска тех игр, которым необходима камера для правильной работы.</li>
+</ul>
+</div>
+
+<h2 id="что-понадобится">Что понадобится</h2>
+
+<ul>
+  <li>Свежая версия <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a></li>
+</ul>
+
+<h2 id="инструкция">Инструкция</h2>
+
+<h3 id="часть-i---подготовительные-работы">Часть I - Подготовительные работы</h3>
+
+<div class="notice--warning">
+<p class="notice--success">Выполните следующее, если ещё не скидывали на приставку <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a>:</p>
+
+<ol>
+  <li>Скачайте и разархивируйте <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a> на ПК в удобное для вас место</li>
+  <li>Запустите приложение <strong>VitaShell</strong> и подключите приставку к ПК <a href="vitashell#доступ-к-памяти-приставки-через-пк" about="_blank">удобным способом</a></li>
+  <li>На ПК, на примонтированном диске, удалите папку <code class="language-plaintext highlighter-rouge">tai</code>
+    <ul>
+      <li>Если вы уже удаляли эту папку на предыдущих страницах, пропустите этот шаг</li>
+      <li>Если вы не можете найти эту папку, убедитесь, что вы <a href="https://customfw.xyz/file-extensions-windows">настроили проводник</a> для отображения всех файлов и папок на диске</li>
+      <li>Если папки всё равно нет, отключите PS Vita от ПК и убедитесь, что и в VitaShell её тоже нет</li>
+    </ul>
+  </li>
+  <li>Скопируйте содержимое <a href="https://github.com/rashevskyv/vita/releases/latest">VitaSDFiles</a> на PS Vita удобным для вас способом
+    <ul>
+      <li>Если вы не знаете как перенести файлы на PS Vita, <a href="vitashell#доступ-к-памяти-приставки-через-пк" target="_blank">воспользуйтесь этой  инструкцией</a></li>
+    </ul>
+  </li>
+  <li>Нажмите <img src="/images/buttons/CIRCLE.png" alt="(CIRCLE)" /> на консоли чтобы отключить PS Vita от ПК</li>
+</ol>
+</div>
+
+<h3 id="часть-ii---установка-vpk">Часть II - Установка VPK</h3>
+
+<ol>
+  <li>Установите следующие файлы из папки <code class="language-plaintext highlighter-rouge">ux0:/VPK</code>
+    <ul>
+      <li><strong>Если вы не знаете как устанавливать <code class="language-plaintext highlighter-rouge">vpk-файлы</code> на PS Vita, <a href="vitashell#установка-файлов-в-формате-vpk" target="_blank">воспользуйтесь этой  инструкцией</a></strong></li>
+      <li><code class="language-plaintext highlighter-rouge">Adrenaline_offline.vpk</code></li>
+      <li><code class="language-plaintext highlighter-rouge">AppStorageManager.vpk</code></li>
+      <li><code class="language-plaintext highlighter-rouge">iTLS-Enso.vpk</code></li>
+      <li><code class="language-plaintext highlighter-rouge">pkgj.vpk</code></li>
+      <li><code class="language-plaintext highlighter-rouge">disable_3g.vpk</code> - только в том случае, если у вас PS Vita с 3G-модулем</li>
+      <li><code class="language-plaintext highlighter-rouge">TF.Card.Plugin.Tool.vpk</code> - только в том случае, если вы планируете использовать с PS Vita переходник sd2vita и microSD-карту. О настройке и использовании sd2vita мы поговорим <a href="sd2vita" target="_blank">отдельно</a></li>
+      <li><code class="language-plaintext highlighter-rouge">VitaShell.vpk</code> - только в том случае, если он у вас не установлен</li>
+    </ul>
+  </li>
+  <li>Выйдите в главное меню PS Vita, нажав на кнопку <img src="/images/buttons/PS.png" alt="(PS)" /></li>
+</ol>
+
+<h3 id="часть-iii---настройка-системы">Часть III - Настройка системы</h3>
+
+<ol>
+  <li>Запустите “<strong>iTLS-Enso</strong>”
+    <ol>
+      <li>Выберите “<strong>Install the full iTLS package</strong>” и нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />, чтобы начать установку сертификатов</li>
+      <li>Дождитесь окончания установки и выйдите в главное меню PS Vita, нажав на кнопку <img src="/images/buttons/PS.png" alt="(PS)" /></li>
+      <li>Перезапустите приставку</li>
+    </ol>
+  </li>
+  <li>Запустите “<strong>Adrenaline</strong>”
+    <ul>
+      <li>Если приложение закрылось, запустите его повторно. Ниже, после установки плагинов, этот недостаток будет исправлен
+        <ol>
+          <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />, чтобы начать установку Adrenaline</li>
+          <li>Когда на экране появится надпись “<strong>The firmware has been installed successfully</strong>”, нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />, чтобы запустить Adrenaline</li>
+          <li>Настройте его, затем нажмите дважды на кнопку <img src="/images/buttons/PS.png" alt="(PS)" />, чтобы выйти в главное меню PS Vita и закройте Adrenaline</li>
+        </ol>
+        <ul>
+          <li>Подробнее об использовании Adrenaline, можно почитать на странице <a href="adrenaline" target="_blank">Adrenaline</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Запустите “<strong>AppStorageManager</strong>”
+    <ol>
+      <li>Выберите “<strong>Memory Card -&gt; Internal Storage</strong>”
+        <ol>
+          <li>Выберите “<strong>[VITASHELL] VitaShell</strong>”
+            <ol>
+              <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> для  подтверждения перемещения</li>
+              <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> для продолжения работы, как только на экране появится зелёная надпись</li>
+            </ol>
+          </li>
+          <li>Выберите “<strong>[TFCARDPL0] TF Card Plugin Tool</strong>”, если таковой устанавливался на приставку
+            <ol>
+              <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> для  подтверждения перемещения</li>
+              <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" /> для продолжения работы, как только на экране появится зелёная надпись</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>Выйдите в главное меню PS Vita, нажав на кнопку <img src="/images/buttons/PS.png" alt="(PS)" /></li>
+    </ol>
+  </li>
+  <li>Запустите “<strong>3G Disabler</strong>”, если в вашей PS Vita есть 3G-модуль и вы устанавливали это приложение
+    <ol>
+      <li>Нажмите <img src="/images/buttons/CROSS.png" alt="(CROSS)" />, чтобы отключить функции 3G на PS Vita</li>
+      <li>Выйдите в главное меню PS Vita, нажав на кнопку <img src="/images/buttons/PS.png" alt="(PS)" /></li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="часть-iv---установка-плагинов">Часть IV - Установка плагинов</h3>
+
+<ol>
+  <li>Запустите <strong>VitaShell</strong></li>
+  <li>Удалите папку <code class="language-plaintext highlighter-rouge">tai</code> из раздел <code class="language-plaintext highlighter-rouge">ux0:</code>, если таковая тут есть</li>
+  <li>Перейдите в <code class="language-plaintext highlighter-rouge">ux0:/plugins</code></li>
+  <li>Переместите папку <code class="language-plaintext highlighter-rouge">tai</code> из папки <code class="language-plaintext highlighter-rouge">ux0:/plugins</code> в корень раздела <code class="language-plaintext highlighter-rouge">ur0:</code> с заменой (если таковая потребуется)
+    <ul>
+      <li><strong>ОБРАТИТЕ ВНИМАНИЕ</strong>, мы переносим папку из раздела u<strong>x</strong>0 в раздел u<strong>r</strong>0!</li>
+      <li>Для перемещения, нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> на выбранной папке и выберите <code class="language-plaintext highlighter-rouge">Move</code></li>
+      <li>Для того, чтобы вставить скопированное в другую папку, зайдите в папку, в которую хотите скопировать данные, нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> и выберите <code class="language-plaintext highlighter-rouge">Paste</code></li>
+    </ul>
+  </li>
+</ol>
+
+<div class="hideble 370 hide">
+<ol start="12">
+  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">tai</code> на диске, которым смонтирована PS Vita, и удалите файл <code class="language-plaintext highlighter-rouge">config.txt</code></li>
+  <li>Переименуйте файл <code class="language-plaintext highlighter-rouge">config_psvtv.txt</code> в <code class="language-plaintext highlighter-rouge">config.txt</code>
+    <ul>
+      <li>Для переименования нажмите на файле <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> и выберите <strong>Rename</strong></li>
+    </ul>
+  </li>
+</ol>
+</div>
+
+<h3 id="часть-v---установка-sd2vita-опционально">Часть V - Установка SD2Vita (опционально)</h3>
+
+<p class="notice--info"><strong>SD2Vita</strong> - это адаптер для microSD карты, который вставляется в слот для картриджа с игрой, а <strong>psvd</strong> это адаптер для microSD карты, который заменяет собой 3g модем на моделях PS Vita с поддержкой 3g. При помощи SD2Vita, microSD карта (или USB диск, если у вас PS Vita TV) могут быть смонтированы как <code class="language-plaintext highlighter-rouge">ux0:</code> вместо карты памяти Sony. Это весьма полезно, поскольку оригинальные карты Sony, сколь-либо значимой ёмкости, стоят невероятно дорого.</p>
+
+<p class="notice--warning">Если вы не планируете использовать SD2Vita, пропустите этот шаг</p>
+
+<ol>
+  <li>Запустите <strong>VitaShell</strong></li>
+  <li>Удалите папку <code class="language-plaintext highlighter-rouge">tai</code> из раздел <code class="language-plaintext highlighter-rouge">ux0:</code>, если таковая тут есть</li>
+  <li>Перейдите в <code class="language-plaintext highlighter-rouge">ux0:/plugins</code></li>
+  <li>Переместите <code class="language-plaintext highlighter-rouge">storage_config.txt</code> и <code class="language-plaintext highlighter-rouge">storagemgr.skprx</code> из папки <code class="language-plaintext highlighter-rouge">ux0:/plugins</code> в папку <code class="language-plaintext highlighter-rouge">ur0:tai</code> с заменой (если таковая потребуется)
+    <ul>
+      <li><strong>ОБРАТИТЕ ВНИМАНИЕ</strong>, мы переносим файлы из раздела u<strong>x</strong>0 в раздел u<strong>r</strong>0!</li>
+      <li>Для перемещения, нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> на выбранной папке и выберите <code class="language-plaintext highlighter-rouge">Move</code></li>
+      <li>Для того, чтобы вставить скопированное в другую папку, зайдите в папку, в которую хотите скопировать данные, нажмите <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> и выберите <code class="language-plaintext highlighter-rouge">Paste</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="часть-vi---очистка">Часть VI - Очистка</h3>
+
+<ol>
+  <li>Запустите приложение <strong>Управление данными</strong></li>
+  <li>Выберите “<strong>Управление данными на карте памяти</strong>”</li>
+  <li>Выберите “<strong>PS Vita</strong>”</li>
+  <li>Удалите следующие приложения, если они есть (в зависимости от метода установки некоторые либо все эти приложения могут отсутствовать):
+    <ul>
+      <li>“<strong>3G Disabler</strong>”</li>
+      <li>“<strong>Application Storage Manager</strong>”</li>
+      <li>“<strong>ensō</strong>”</li>
+      <li>“<strong>iTLS-Enso</strong>”</li>
+      <li>“<strong>modoru 戻る</strong>”</li>
+      <li>“<strong>molecularShell</strong>”</li>
+    </ul>
+  </li>
+  <li>Закройте приложение <strong>Управление данными</strong></li>
+  <li>Запустите <strong>VitaShell</strong></li>
+  <li>Удалите папки <code class="language-plaintext highlighter-rouge">plugins</code> и <code class="language-plaintext highlighter-rouge">VPK</code> из <code class="language-plaintext highlighter-rouge">ux0:/</code></li>
+  <li>Перезапустите PS Vita</li>
+</ol>
+
+<p class="notice--info">Если всё сделано правильно, вы сможете запускать и обновлять игры от PS Vita, PSP и PSX бесплатно, устанавливать для PSV-игр патчи и модификации. Благодаря плагинам у вас появится возможность <a href="games#разгон-на-ps-vita" target="blank_">разгонять приставку</a> по нажатию <img src="/images/buttons/SELECT.png" alt="(SELECT)" />+<img src="/images/buttons/UP.png" alt="(UP)" />, процентное значение заряда возле индикатора батареи, дополнительные пункты в быстром меню (вызывается по долгому нажатию кнопки <img src="/images/buttons/PS.png" alt="(PS)" />), возможность прослушивать свою музыку даже в играх и управлять ей через быстрое меню, делать скриншоты в PNG по нажатию <img src="/images/buttons/PS.png" alt="(PS)" />+<img src="/images/buttons/START.png" alt="(START)" />.</p>
+
+<hr />
+
+<p class="notice--success">Для получения информации о замене карты памяти Sony на microSD карту (или USB диск, если у вас PS Vita TV), перейдите к странице <a href="sd2vita" target="_blank">sd2vita</a>.</p>
+
+<p class="notice--success"><a href="addons" target="_blank">Полезные инструкции</a></p>
+
+<p class="notice--success">Для получения информации об установке игр, перейдите к странице <a href="games" target="_blank">Установка игр</a>.</p>
+
+<p class="notice--success">Для получения информации об установке CFW во встроенный эмулятор PSP, перейдите к странице <a href="adrenaline">Adrenaline</a>.</p>
+
+<p class="notice--success">Подробнее про установку плагинов можете почитать <a href="plugins" target="_blank">здесь</a>.</p>
+
+<p class="notice--info">Вы можете найти новые хоумбрю приложения на <a href="https://vitadb.rinnegatamante.it/">VitaDB</a>.</p>
+
+<p class="notice--danger"><em>НЕ</em> рекомендуется модифицировать кастомную прошивку путём установки хоумбрю приложений, предназначенных для опытных пользователей (таких как “Enso EX”). Такие действия без полного понимания системы могут привести к БРИКУ!</p>
+:ET

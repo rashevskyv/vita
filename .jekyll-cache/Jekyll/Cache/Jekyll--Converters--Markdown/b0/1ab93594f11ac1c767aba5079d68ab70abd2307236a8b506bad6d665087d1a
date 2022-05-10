@@ -1,0 +1,10 @@
+I"�
+<ol start="12">
+  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">tai</code> на диске, которым смонтирована PS Vita, и удалите файл <code class="language-plaintext highlighter-rouge">config.txt</code></li>
+  <li>Переименуйте файл <code class="language-plaintext highlighter-rouge">config_psvtv.txt</code> в <code class="language-plaintext highlighter-rouge">config.txt</code>
+    <ul>
+      <li>Для переименования нажмите на файле <img src="/images/buttons/TRIANGLE.png" alt="(TRIANGLE)" /> и выберите <strong>Rename</strong></li>
+    </ul>
+  </li>
+</ol>
+:ET
