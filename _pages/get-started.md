@@ -78,9 +78,5 @@ title: "Начало"
       <td style="text-align: center; font-weight: bold;">{% include vars/sys_version.txt %}</td>
       <td style="text-align: center; font-weight: bold;"><a href="installing-h-encore">Установка h-encore</a></td>
     </tr>
-    <tr>
-      <td style="text-align: center; font-weight: bold;" colspan="2">3.74</td>
-      <td style="text-align: center; font-weight: bold;"><strong>Взлом невозможен!</strong></td>
-    </tr>
   </tbody>
 </table>
