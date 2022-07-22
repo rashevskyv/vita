@@ -107,7 +107,7 @@ title: "Понижение версии системного ПО до 3.65"
 
 ___
 
-### Следующий шаг: [Установка H-Encore (3.65)](installing-h-encore)
+## Следующий шаг: [Установка H-Encore (3.65)](installing-h-encore)
 {: .notice--success}
 
 <script>

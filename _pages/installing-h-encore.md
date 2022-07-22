@@ -78,28 +78,22 @@ ___
 ## Ваша версия системного ПО **выше** 3.65: [Понижение версии системного ПО до 3.65](downgrading-firmware)
 {: .notice--success}
 {% endcapture %}
-<div id="to_hide" class="hideble to_hide">{{ notice-1 | markdownify }}</div>
+<div id="to_hide" class="hideble">{{ notice-1 | markdownify }}</div>
 
 {% capture notice-2 %}
 ## Следующий шаг: [Установка Ensō (3.65)](installing-enso)
 {: .notice--success}
 {% endcapture %}
-<div class="hideble to_hide hide">{{ notice-2 | markdownify }}</div>
+<div id="to_show" class="hideble hide">{{ notice-2 | markdownify }}</div>
 
 
 <script>
 	flag = localStorage.getItem('downgrade-to-365');
-	// caffeine = localStorage.getItem('caffeine');
 
-	// if (fuse == "1") {
-	// 	document.getElementById('selector').classList.add('hide');
-	// }
-
-	if (flag == "downgrade-to-365") {
+	if (flag) {
 		document.getElementById('to_hide').classList.add('hide');
-		// $('div.button2').addClass('show')
-		document.getElementsByClassName('to_hide')[0].classList.add('show')
-		document.getElementsByClassName('to_hide')[0].classList.remove('hide')
+		document.getElementById('to_show').classList.add('show')
+		document.getElementById('to_show').classList.remove('hide')
 	}
 
 	localStorage.clear();
