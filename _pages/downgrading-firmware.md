@@ -109,3 +109,7 @@ ___
 
 ### Следующий шаг: [Установка H-Encore (3.65)](installing-h-encore)
 {: .notice--success}
+
+<script>
+	localStorage.setItem('downgrade-to-365', 1);
+</script>
