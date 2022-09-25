@@ -329,6 +329,8 @@
 
 <hr />
 
+<div class="notice--danger"><h2>НЕ ИДИТЕ ВОЕВАТЬ В УКРАИНУ! ВЫ ТАМ УМРЁТЕ!</h2><ul><li><a href="https://www.youtube.com/watch?v=X39ZkynPjpQ" target="_blank">Как избежать мобилизации</a></li><li><a href="https://t.me/hochu_zhyt/4" target="_blank">Как сдаться в плен</a></li><li><a href="https://www.youtube.com/watch?v=teB8NVagI7c" target="_blank">Условия проживания пленных в Украине</a> и <a href="https://www.youtube.com/c/VolodymyrZolkin/videos" target="_blank">интервью с ними</a></li></ul></div>
+
 <div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
 
 <hr />
@@ -511,29 +513,23 @@
 
 <hr />
 
-<div id="to_hide" class="hideble to_hide">
+<div id="to_hide" class="hideble">
 <h2 class="notice--success" id="ваша-версия-системного-по-365-установка-ensō-365">Ваша версия системного ПО 3.65: <a href="installing-enso">Установка Ensō (3.65)</a></h2>
 
 <h2 class="notice--success" id="ваша-версия-системного-по-выше-365-понижение-версии-системного-по-до-365">Ваша версия системного ПО <strong>выше</strong> 3.65: <a href="downgrading-firmware">Понижение версии системного ПО до 3.65</a></h2>
 </div>
 
-<div class="hideble to_hide hide">
+<div id="to_show" class="hideble hide">
 <h2 class="notice--success" id="следующий-шаг-установка-ensō-365">Следующий шаг: <a href="installing-enso">Установка Ensō (3.65)</a></h2>
 </div>
 
 <script>
 	flag = localStorage.getItem('downgrade-to-365');
-	// caffeine = localStorage.getItem('caffeine');
 
-	// if (fuse == "1") {
-	// 	document.getElementById('selector').classList.add('hide');
-	// }
-
-	if (flag == "downgrade-to-365") {
+	if (flag) {
 		document.getElementById('to_hide').classList.add('hide');
-		// $('div.button2').addClass('show')
-		document.getElementsByClassName('to_hide')[0].classList.add('show')
-		document.getElementsByClassName('to_hide')[0].classList.remove('hide')
+		document.getElementById('to_show').classList.add('show')
+		document.getElementById('to_show').classList.remove('hide')
 	}
 
 	localStorage.clear();
