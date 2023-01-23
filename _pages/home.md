@@ -9,6 +9,10 @@ header:
 excerpt: "Полное руководство по прошивке PS Vita / PS Vita TV, от начала до Ensō"
 ---
 
+<script>
+location.href = 'https://vk.com/portablegaming';
+</script>
+
 {% include toc title="Разделы" %}
 
 Внимательно прочитайте все вводные страницы (включая эту!) прежде чем продолжить.
