@@ -10,7 +10,7 @@ excerpt: "Полное руководство по прошивке PS Vita / PS
 ---
 
 <script>
-location.href = 'https://pgtmp.gitbook.io/pginfo/';
+location.href = 'https://dev.pgteam.org/guides/';
 </script>
 
 {% include toc title="Разделы" %}
